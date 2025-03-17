@@ -1,0 +1,35 @@
+---
+interface Play {
+  id: number;
+  title: string;
+  thumbnail: string;
+  short_description: string;
+  game_url: string;
+  genre: string;
+  platform: string;
+  publisher: string;
+  developer: string;
+  release_date: string;
+  freetogame_profile_url: string;
+}
+
+const dataPlays = await fetch("https://www.freetogame.com/api/games");
+let resPlays = (await dataPlays.json()) as Play[];
+resPlays = resPlays.slice(0, 5);
+---
+
+<section class="flex flex-wrap justify-center gap-4">
+  {
+    resPlays.map((play: Play) => (
+      <div class="flex flex-col w-[30%] items-center p-3 min-w-[350px] max-h-[400px] h-max bg-gray-100 rounded-lg shadow-md">
+        <h2 class="w-[90%] text-center">{play.title}</h2>
+        <p class="py-9">
+          {play.short_description.length > 100
+            ? play.short_description.slice(0, 100) + "..."
+            : play.short_description}
+        </p>
+        <img class="mt-auto h-[300px] w-300px object-cover" src={play.thumbnail} alt={play.title} />
+      </div>
+    ))
+  }
+</section>
