@@ -15,20 +15,27 @@ interface Play {
 
 const dataPlays = await fetch("https://www.freetogame.com/api/games");
 let resPlays = (await dataPlays.json()) as Play[];
-resPlays = resPlays.slice(0, 5);
+resPlays = resPlays.slice(0, 10);
 ---
 
-<section class="flex flex-wrap justify-center gap-4">
+<section class="flex flex-wrap justify-center gap-10 max-w-[1350px] m-auto my-10">
   {
     resPlays.map((play: Play) => (
-      <div class="flex flex-col w-[30%] items-center p-3 min-w-[350px] max-h-[400px] h-max bg-gray-100 rounded-lg shadow-md">
-        <h2 class="w-[90%] text-center">{play.title}</h2>
-        <p class="py-9">
+      <div class="flex flex-col items-center p-3 w-[30%] min-w-[350px] max-w-[400px] bg-gray-100 rounded-lg shadow-md
+      max-md:w-[90%] max-md:min-w-none max-md:max-w-[600px] prose">
+        <h3 class="w-[90%] text-center">{play.title}</h3>
+        <p class="">
           {play.short_description.length > 100
             ? play.short_description.slice(0, 100) + "..."
             : play.short_description}
         </p>
-        <img class="mt-auto h-[300px] w-300px object-cover" src={play.thumbnail} alt={play.title} />
+        <figure class="mt-auto mb-3 w-full aspect-94/53">
+          <img
+            class="size-full object-cover"
+            src={play.thumbnail}
+            alt={play.title}
+          />
+        </figure>
       </div>
     ))
   }
