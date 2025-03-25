@@ -1,2 +1,13 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin '@tailwindcss/typography';
+
+
+@theme {
+  --animate-loader: Loader 1s ease-in-out 1 forwards;
+
+  @keyframes Loader {
+    to {
+      opacity: 1;
+    }
+  }
+}

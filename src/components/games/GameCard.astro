@@ -13,16 +13,22 @@ interface Play {
   freetogame_profile_url: string;
 }
 
+const { numberCard } = Astro.props;
 const dataPlays = await fetch("https://www.freetogame.com/api/games");
 let resPlays = (await dataPlays.json()) as Play[];
-resPlays = resPlays.slice(0, 10);
+resPlays = resPlays.slice(0, numberCard);
 ---
 
-<section class="flex flex-wrap justify-center gap-10 max-w-[1350px] m-auto my-10">
+<section
+  class="flex flex-wrap justify-center gap-10 max-w-[1350px] m-auto my-10"
+>
   {
-    resPlays.map((play: Play) => (
-      <div class="flex flex-col items-center p-3 w-[30%] min-w-[350px] max-w-[400px] bg-gray-100 rounded-lg shadow-md
-      max-md:w-[90%] max-md:min-w-none max-md:max-w-[600px] prose">
+    resPlays.map((play: Play, index) => (
+      <div
+        style={`animation: var(--animate-loader) ${index * 0.1}s;`}
+        class="flex flex-col items-center p-3 w-[30%] min-w-[350px] max-w-[400px] bg-gray-100 rounded-lg shadow-md
+      max-md:w-[90%] max-md:min-w-none max-md:max-w-[600px] prose opacity-0"
+      >
         <h3 class="w-[90%] text-center">{play.title}</h3>
         <p class="">
           {play.short_description.length > 100
