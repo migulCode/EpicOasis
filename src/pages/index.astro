@@ -2,12 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import GameCard from "../components/games/GameCard.astro";
 import GameList from "../components/games/GameList.astro";
+import Buscador from "../components/ui/Buscador.jsx";
 
 export const prerender = true;
 ---
 
 <Layout>
   <h2 class="text-center text-5xl font-bold mt-10">El Oasis se ha formado</h2>
+  <Buscador client:load/>
   <GameCard server:defer numberCard={9}>
     <GameList slot="fallback" numberLoader={9} />
   </GameCard>
