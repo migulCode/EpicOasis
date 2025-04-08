@@ -3,15 +3,38 @@ import { useState } from "react";
 const App = () => {
   const [cont, setCont] = useState(0);
 
-  const aumentCont = () => {
-    setCont(cont + 1);
+  const handlerWrite = (event) => {
+    const { value } = event.target;
+    console.log(value);
+    setCont(value);
   };
 
   return (
-    <div className="bg-gray-200 h-[100px] w-[200px]">
-      <h1>{cont}</h1>
-      <button onClick={aumentCont}>Pressiona</button>
-    </div>
+    <form className="bg-gray-200 flex flex-col justify-center h-20 w-[90%] m-auto mt-6 max-w-5xl border-1 rounded-xl">
+      <div className="flex flex-row ">
+        <input
+        className="flex-grow outline-none h-20 placeholder:pl-1 pl-4"
+          type="text"
+          name="search"
+          onChange={handlerWrite}
+          placeholder="Escribe para comenzar a buscar"
+        />
+        <div>
+          <select name="type" className="outline-none h-20 z-0 mr-4">
+            <option value="none">Genero</option>
+            <option value="freWorld">Mundo abierto</option>
+            <option value="action">Accion</option>
+            <option value="all">Todos</option>
+          </select>
+          <select name="type" className="outline-none h-20 mr-4">
+            <option value="none">Plataforma</option>
+            <option value="freWorld">Mundo abierto</option>
+            <option value="action">Accion</option>
+            <option value="all">Todos</option>
+          </select>
+        </div>
+      </div>
+    </form>
   );
 };
 
