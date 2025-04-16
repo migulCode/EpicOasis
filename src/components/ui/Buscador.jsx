@@ -9,11 +9,15 @@ const App = () => {
     setCont(value);
   };
 
+
   return (
-    <form className="bg-gray-200 flex flex-col justify-center h-20 w-[90%] m-auto mt-6 max-w-5xl border-1 rounded-xl">
+    <form
+      autoComplete="off"
+      className="bg-gray-100 flex flex-col justify-center h-20 w-[90%] m-auto mt-6 max-w-5xl border-1 rounded-xl"
+    >
       <div className="flex flex-row ">
         <input
-        className="flex-grow outline-none h-20 placeholder:pl-1 pl-4"
+          className="flex-grow outline-none h-20 placeholder:pl-1 pl-4"
           type="text"
           name="search"
           onChange={handlerWrite}
