@@ -10,5 +10,5 @@ const resGames = await allGames()
 
 <Layout>
   <Buscador client:load />
-  <GameCard client:load allGames={resGames}/>
+  <GameCard client:visible allGames={resGames}/>
 </Layout>
