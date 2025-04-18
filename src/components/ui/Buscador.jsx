@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-const App = () => {
-  const [cont, setCont] = useState(0);
+const App = (props) => {
+  const [nameGame, setNameGame] = useState("Hola mundoooooo");
 
   const handlerWrite = (event) => {
     const { value } = event.target;
     console.log(value);
-    setCont(value);
+    setNameGame(value);
   };
 
 
@@ -21,6 +21,7 @@ const App = () => {
           type="text"
           name="search"
           onChange={handlerWrite}
+          value={nameGame}
           placeholder="Escribe para comenzar a buscar"
         />
         <div>

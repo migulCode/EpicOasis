@@ -1,15 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import GameCard from "../components/games/GameCard.astro";
+import GameCard from "../components/games/GameCard.jsx"
 import GameList from "../components/games/GameList.astro";
 import Buscador from "../components/ui/Buscador.jsx";
+import {allGames } from "../services/games"
 
-export const prerender = true;
+const resGames = await allGames()
 ---
 
 <Layout>
-  <Buscador client:load/>
-  <GameCard server:defer numberCard={20}>
-    <GameList slot="fallback" numberLoader={9} />
-  </GameCard>
+  <Buscador client:load />
+  <GameCard client:load allGames={resGames}/>
 </Layout>
