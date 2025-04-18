@@ -4,10 +4,10 @@ function GameCard({ allGames }) {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
-    const showGames = allGames.slice(0, 9)
+    const showGames = allGames.slice(0, 9);
     setGames(showGames);
-  }, [allGames]);
 
+  }, [allGames]);
 
   return (
     <section className="flex flex-wrap justify-center gap-10 max-w-[1350px] m-auto my-10">
