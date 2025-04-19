@@ -1,0 +1,15 @@
+---
+import GameLoader from "./GameLoader.astro";
+
+const { numberLoader } = Astro.props
+---
+
+<section
+  class="flex flex-wrap justify-center gap-10 max-w-[1350px] m-auto my-10"
+>
+{
+    Array.from({ length: numberLoader }).map((_, index) => (
+        <GameLoader />
+    ))
+}
+</section>

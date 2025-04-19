@@ -1,10 +1,73 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro";
+import GameCard from "../components/games/GameCard.jsx";
+import GameList from "../components/games/GameList.astro";
+import Buscador from "../components/ui/Buscador.jsx";
+import { allGames } from "../services/games";
 
-export const prerender = true
+const resGames = await allGames();
 ---
 
 <Layout>
-	<p>El oasis se esta formando</p>
-	<a href="/games/fornite">click aqui</a>
+  <div data-role="background"></div>
+  <Buscador client:load />
+  <GameCard client:visible allGames={resGames} />
 </Layout>
+
+<style is:inline>
+  /*Los valores como box-sizing, margin y etc ya se sobre escriben por el hecho de usar tailwind*/
+
+  [data-role="background"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: -1;
+  }
+
+  .box {
+    width: var(--box-size);
+    height: var(--box-size);
+    flex-grow: 1;
+    background-color: #1e1e1e;
+    border: 1px solid #3a3a3a;
+
+    background-color: #e1e1e1;
+    border: 1px solid rgb(197, 197, 197);
+  }
+
+</style>
+<script is:inline>
+  const backgroundContainer = document.querySelector(
+    "[data-role='background']"
+  );
+  const SIZES = 50;
+
+  function makeBoxes() {
+    backgroundContainer.innerHTML = "";
+
+    // Valores en px
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    const howBoxesX = Math.ceil(width / SIZES);
+    const howBoxesY = Math.ceil(height / SIZES);
+
+    const howBoxes = howBoxesX * howBoxesY;
+
+    backgroundContainer.style.setProperty("--box-size", `${SIZES}px`);
+
+    for (let i = 0; i < howBoxes; i++) {
+      const box = document.createElement("div");
+      box.classList.add("box");
+      backgroundContainer.appendChild(box);
+    }
+  }
+
+  makeBoxes();
+
+  window.addEventListener("resize", makeBoxes);
+</script>
