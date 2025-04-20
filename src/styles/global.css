@@ -1,10 +1,6 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
-:root{
-  --background-image: url('https://www.freetogame.com/g/540/thumbnail.jpg');
-}
-
 
 @theme {
   --animate-loader: Loader 1s ease-in-out 1 forwards;
@@ -14,14 +10,4 @@
       opacity: 1;
     }
   }
-}
-
-body{
-  background-image: var(--background-image);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  transition: all 1s;
 }
