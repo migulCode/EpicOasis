@@ -28,30 +28,30 @@
     }),
   });
 
-  // function animateGrid() {
-  //   const width = window.innerWidth;
-  //   const height = window.innerHeight;
-
-  //   const howBoxesX = Math.ceil(width / 50);
-  //   const howBoxesY = Math.ceil(height / 50);
-
-  //   animate(".box", {
-  //     scale: [{ to: [0, 1.25] }, { to: 0 }],
-  //     boxShadow: [
-  //       { to: "0 0 1rem 0 currentColor" },
-  //       { to: "0 0 0rem 0 currentColor" },
-  //     ],
-  //     delay: stagger(100, {
-  //       grid: [howBoxesX, howBoxesY],
-  //       from: utils.random(0, howBoxesX * howBoxesY),
-  //     }),
-  //     onComplete: animateGrid,
-  //   });
-  // }
-
-  // animateGrid();
-
   function animateGrid() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    const howBoxesX = Math.ceil(width / 50);
+    const howBoxesY = Math.ceil(height / 50);
+
+    animate(".box", {
+      scale: [{ to: [0, 1.25] }, { to: 0 }],
+      boxShadow: [
+        { to: "0 0 1rem 0 currentColor" },
+        { to: "0 0 0rem 0 currentColor" },
+      ],
+      delay: stagger(100, {
+        grid: [howBoxesX, howBoxesY],
+        from: utils.random(0, howBoxesX * howBoxesY),
+      }),
+      onComplete: animateGrid,
+    });
+  }
+
+  animateGrid()
+
+  function animateGridInvert() {
     const width = window.innerWidth;
     const height = window.innerHeight;
     const howBoxesX = Math.ceil(width / 50);
@@ -70,9 +70,19 @@
       ],
       opacity: [{ to: 0.5 }, { to: 1 }],
       delay: stagger(85, { grid, from }),
-      onComplete: animateGrid,
+      onComplete: animateGridInvert,
     });
   }
 
-  animateGrid();
+
+  function animateBox(){
+    animate(".box", {
+      scale: () => utils.random(0.5, 1.1),
+      duration: 1000,
+      onComplete: animateBox,
+    })
+  }
+
+
+
 </script>

@@ -6,13 +6,23 @@ function GameCard({ allGames }) {
   useEffect(() => {
     const showGames = allGames.slice(0, 9);
     setGames(showGames);
-
   }, [allGames]);
+
+  const handlerFocus = (e) => {
+    const target = e.currentTarget;
+    const img = target.querySelector("img");
+
+    document.documentElement.style.setProperty(
+      "--background-image",
+      `url(${img.src})`
+    );
+  };
 
   return (
     <section className="flex flex-wrap justify-center gap-10 max-w-[1350px] m-auto my-10">
       {games.map((play, index) => (
         <div
+          onMouseEnter={handlerFocus}
           key={play.id}
           style={{ animation: `var(--animate-loader) ${index * 0.1}s` }}
           className="flex flex-col items-center p-3 w-[30%] min-w-[350px] max-w-[400px] bg-gray-100 rounded-lg shadow-md
