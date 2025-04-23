@@ -11,3 +11,8 @@
     }
   }
 }
+
+
+.card-container{
+  @apply flex flex-wrap justify-center gap-10 max-w-[1350px] m-auto my-10
+}
