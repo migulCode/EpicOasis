@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
-
 @theme {
   --animate-loader: Loader 1s ease-in-out 1 forwards;
 
@@ -13,6 +12,115 @@
 }
 
 
-.card-container{
-  @apply flex flex-wrap justify-center gap-10 max-w-[1350px] m-auto my-10
+@theme {
+
+    --color-claro-fondo: #F6F8FA;
+    --color-claro-tarjeta: #EAEEF2;
+    --color-claro-texto: #24292F;
+    --color-claro-texto-secundario: #424A53;
+    --color-claro-borde: #D0D7DE;
+    --color-claro-icono: #6E7781;
+
+  /* -variables para el tema oscuro */
+    --color-oscuro-fondo: #0F1115;
+    --color-oscuro-tarjeta: #24292F;
+    --color-oscuro-texto: #F6F8FA;
+    --color-oscuro-texto-secundario: #D0D7DE;
+    --color-oscuro-borde: #32383F;
+    --color-oscuro-icono: #AFB8C1;
+}
+
+/*
+  Rules for selector css names
+
+ 1 container
+ 2 box
+ 3 element + box
+*/
+
+/* Slider design */
+
+.slider-container {
+  @apply relative
+  h-[calc(100dvh)]
+  w-full
+  top-0
+  left-0
+
+}
+
+.carrousel-box {
+  @apply
+  flex
+  justify-start
+  w-full
+  gap-6
+  px-10
+}
+
+.left-carrousel-box {
+  @apply
+  flex flex-col gap-6 w-[50%]
+  prose-lg
+  max-w-[600px]
+}
+
+.title-carrousel-box {
+  @apply
+  text-5xl font-bold text-black px-4 py-2 rounded-md w-fit
+  dark:text-oscuro-texto
+}
+
+.description-carrousel-box {
+  @apply
+  rounded-md leading-snug
+  dark:text-oscuro-texto-secundario
+}
+
+
+.right-carrousel-box {
+  @apply
+  absolute
+  top-0
+  right-0
+  h-[100vh]
+  w-[100%]
+  -z-1
+}
+
+.bg-carrousel-box {
+  @apply
+  absolute
+  top-0
+  left-0
+  h-[100vh]
+  w-[100%]
+  bg-gradient-to-r from-[var(--color-claro-fondo)] to-[rgba(237,221,83,0)]
+ dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(237,221,83,0)]
+}
+
+.img-carrousel-box {
+  @apply
+  w-full
+  h-full
+  object-cover
+  object-right
+  max-sm:object-center
+  transition-[object-position]
+  duration-700 ease-in-out
+}
+
+
+
+/* Cards Design */
+
+.card-container {
+  @apply
+  flex
+  flex-wrap
+  justify-center
+  gap-10
+  max-w-[1350px]
+  m-auto
+  my-10
 }

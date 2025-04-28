@@ -14,68 +14,63 @@ function Slider({ games }) {
     );
   };
 
-  const currentGame = games[currentIndex];
+  if(!games || games.length === 0) {
+    return <div className="slider-container">No hay juegos disponibles</div>;
+  }
+
+  const currentGame = games[currentIndex]
 
   return (
-    <div className="h-screen flex items-center justify-center bg-black overflow-hidden relative">
-      {/* Fondo animado */}
-      <motion.div
-        key={currentIndex}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 1.5 }}
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundColor: "rgba(0, 0, 0, 0.8)",
-        }}
-      />
-
+    <div className="slider-container">
       {/* Contenido */}
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <motion.div
           key={currentGame.id}
-          className="z-10 flex items-center w-full max-w-7xl px-10 gap-10"
+          className="carrousel-box"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         >
           {/* Columna izquierda: Título + Descripción */}
-          <div className="flex flex-col gap-6 text-white w-[30%]">
+          <motion.div
+            className="left-carrousel-box"
+            exit={{ opacity: 0}}
+          >
             <motion.h2
-              className="text-3xl font-bold bg-white text-black px-4 py-2 rounded-md w-fit"
-              initial={{ x: 200, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -200, opacity: 0 }}
+              className="title-carrousel-box"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 1 }}
             >
               {currentGame.title}
             </motion.h2>
 
             <motion.p
-              className="bg-white text-black px-4 py-4 rounded-md text-md leading-snug"
-              initial={{ x: 200, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -200, opacity: 0 }}
+              className="description-carrousel-box"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
               {currentGame.short_description}
             </motion.p>
-          </div>
+          </motion.div>
 
           {/* Columna derecha: Imagen */}
           <motion.div
-            className="w-[70%]"
-            initial={{ opacity: 0 }}
+            className="right-carrousel-box"
+            initial={{ opacity: 1 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
           >
+            <div className="bg-carrousel-box"></div>
             <img
               src={currentGame.thumbnail}
               alt={currentGame.title}
-              className="w-full h-auto rounded-lg shadow-lg object-cover"
+              className="img-carrousel-box"
             />
           </motion.div>
         </motion.div>
