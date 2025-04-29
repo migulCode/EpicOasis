@@ -1,0 +1,1454 @@
+[
+  {
+    "id": 428090,
+    "slug": "hazumi-and-the-pregnation",
+    "name": "Hazumi and the Pregnation",
+    "name_original": "Hazumi and the Pregnation",
+    "description": "    After mass infertility strikes the globe, a new community is created with the goal to save our species. Their solution? SEX! Now the young and inexperienced Hazumi leaves her old life behind to aid in the repopulation effort. Of course, she must learn how to live in a land where common sense is seemingly flipped on its head.<br/><br/><br/><ul><li><strong>Fully Playable Prostitution Action</strong> – Most sexual encounters are fully interactive. Players may select from a variety of techniques, and have complete control of every action. Satisfy your partner for a bigger payout.<br/><br/></li><li><strong>Grow as a Person</strong> – Hazumi’s stats can be viewed through her smartphone. Raise her sensitivity through sexual acts, or increase charm by redecorating and remodeling Hazumi’s apartment.<br/><br/></li><li><strong>Comprehensive Pregnancy Mechanic</strong> – Hazumi’s body will actively change as a result of pregnancy. In addition to her belly growing each trimester, she will also experience things such as morning sickness, darkening nipples, lactation, and postpartum period. Sexual encounters can also be affected.<br/><br/></li><li><strong>Detailed Menstrual Cycle</strong> – The chance of getting pregnant will depend on the current phase of Hazumi’s menstrual cycle. She will even have her period. \t<br/><br/></li><li><strong>Play at Your Own Pace</strong> – There aren’t any silly things like combat or falling in love to worry about. Some content, such as birth scenes, and x-ray view, can enabled or disabled via an in-game menu.</li></ul><br/>*The Steam Edition supports PCs.<br/>The Android version is not included.<br/><br/>Developer: Mihiraghi<br/>Artist: Taji<br/>English Translation: Feunski<br/>Store page design: Kurige Yoshitaka<br/>Store page PV: Kiyo",
+    "metacritic": null,
+    "metacritic_platforms": [],
+    "released": "2020-02-20",
+    "tba": false,
+    "updated": "2025-02-07T01:21:10",
+    "background_image": "https://media.rawg.io/media/screenshots/bcd/bcdcee4066b1eb3fb8e949189088314f.jpg",
+    "background_image_additional": "https://media.rawg.io/media/screenshots/65e/65ecd9f345930214eb379a44dc1f5a71.jpg",
+    "website": "",
+    "rating": 5.0,
+    "rating_top": 5,
+    "ratings": [
+      {
+        "id": 5,
+        "title": "exceptional",
+        "count": 7,
+        "percent": 100.0
+      }
+    ],
+    "reactions": {},
+    "added": 31,
+    "added_by_status": {
+      "yet": 2,
+      "owned": 23,
+      "beaten": 1,
+      "toplay": 3,
+      "dropped": 1,
+      "playing": 1
+    },
+    "playtime": 4,
+    "screenshots_count": 8,
+    "movies_count": 0,
+    "creators_count": 0,
+    "achievements_count": 12,
+    "parent_achievements_count": 12,
+    "reddit_url": "",
+    "reddit_name": "",
+    "reddit_description": "",
+    "reddit_logo": "",
+    "reddit_count": 0,
+    "twitch_count": 0,
+    "youtube_count": 0,
+    "reviews_text_count": 0,
+    "ratings_count": 7,
+    "suggestions_count": 300,
+    "alternative_names": [],
+    "metacritic_url": "",
+    "parents_count": 1,
+    "additions_count": 0,
+    "game_series_count": 0,
+    "user_game": null,
+    "reviews_count": 7,
+    "saturated_color": "0f0f0f",
+    "dominant_color": "0f0f0f",
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      }
+    ],
+    "platforms": [
+      {
+        "platform": {
+          "id": 4,
+          "name": "PC",
+          "slug": "pc",
+          "image": null,
+          "year_end": null,
+          "year_start": null,
+          "games_count": 547584,
+          "image_background": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg"
+        },
+        "released_at": "2020-02-20",
+        "requirements": {
+          "minimum": "Minimum:\nOS: Windows® 7/8/8.1/10\nProcessor: Intel Core 2 Duo or better\nMemory: 4 GB RAM\nGraphics: DirectX 9/OpenGL 4.1 capable GPU\nDirectX: Version 9.0\nStorage: 1 GB available space"
+        }
+      }
+    ],
+    "stores": [
+      {
+        "id": 419018,
+        "url": "",
+        "store": {
+          "id": 1,
+          "name": "Steam",
+          "slug": "steam",
+          "domain": "store.steampowered.com",
+          "games_count": 110569,
+          "image_background": "https://media.rawg.io/media/games/6fc/6fcf4cd3b17c288821388e6085bb0fc9.jpg"
+        }
+      }
+    ],
+    "developers": [
+      {
+        "id": 172052,
+        "name": "Mihiraghi",
+        "slug": "mihiraghi",
+        "games_count": 1,
+        "image_background": "https://media.rawg.io/media/screenshots/bcd/bcdcee4066b1eb3fb8e949189088314f.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg",
+        "games_count": 59443,
+        "image_background": "https://media.rawg.io/media/games/713/713269608dc8f2f40f5a670a14b2de94.jpg"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie",
+        "games_count": 77227,
+        "image_background": "https://media.rawg.io/media/games/d0f/d0f91fe1d92332147e5db74e207cfc7a.jpg"
+      }
+    ],
+    "tags": [
+      {
+        "id": 31,
+        "name": "Singleplayer",
+        "slug": "singleplayer",
+        "language": "eng",
+        "games_count": 238777,
+        "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+      },
+      {
+        "id": 40847,
+        "name": "Steam Achievements",
+        "slug": "steam-achievements",
+        "language": "eng",
+        "games_count": 45242,
+        "image_background": "https://media.rawg.io/media/games/198/1988a337305e008b41d7f536ce9b73f6.jpg"
+      },
+      {
+        "id": 40845,
+        "name": "Partial Controller Support",
+        "slug": "partial-controller-support",
+        "language": "eng",
+        "games_count": 13021,
+        "image_background": "https://media.rawg.io/media/games/4e0/4e0e7b6d6906a131307c94266e5c9a1c.jpg"
+      },
+      {
+        "id": 11669,
+        "name": "stats",
+        "slug": "stats",
+        "language": "eng",
+        "games_count": 5482,
+        "image_background": "https://media.rawg.io/media/games/f8c/f8c6a262ead4c16b47e1219310210eb3.jpg"
+      },
+      {
+        "id": 44,
+        "name": "Nudity",
+        "slug": "nudity",
+        "language": "eng",
+        "games_count": 7753,
+        "image_background": "https://media.rawg.io/media/games/a0e/a0ef08621301a1eab5e04fa5c96978fa.jpeg"
+      },
+      {
+        "id": 192,
+        "name": "Mature",
+        "slug": "mature",
+        "language": "eng",
+        "games_count": 4033,
+        "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+      },
+      {
+        "id": 1465,
+        "name": "combat",
+        "slug": "combat",
+        "language": "eng",
+        "games_count": 14472,
+        "image_background": "https://media.rawg.io/media/games/e1f/e1ffbeb1bac25b19749ad285ca29e158.jpg"
+      },
+      {
+        "id": 5842,
+        "name": "steam",
+        "slug": "steam",
+        "language": "eng",
+        "games_count": 817,
+        "image_background": "https://media.rawg.io/media/screenshots/800/800c59bb908eb13c696dc7a46f59c148.jpg"
+      },
+      {
+        "id": 1081,
+        "name": "adult",
+        "slug": "adult",
+        "language": "eng",
+        "games_count": 1672,
+        "image_background": "https://media.rawg.io/media/screenshots/370/3702b7056a560955ecd3c0679c8e8b65.jpg"
+      },
+      {
+        "id": 1333,
+        "name": "android",
+        "slug": "android",
+        "language": "eng",
+        "games_count": 3365,
+        "image_background": "https://media.rawg.io/media/screenshots/4a1/4a194da0aa322a24fa8cdeb060323fd5.jpg"
+      },
+      {
+        "id": 1131,
+        "name": "sex",
+        "slug": "sex",
+        "language": "eng",
+        "games_count": 349,
+        "image_background": "https://media.rawg.io/media/screenshots/b91/b9119e9e9f73f068c8c4876ec5eafd29.jpg"
+      }
+    ],
+    "publishers": [
+      {
+        "id": 41582,
+        "name": "Mihiraghi",
+        "slug": "mihiraghi",
+        "games_count": 1,
+        "image_background": "https://media.rawg.io/media/screenshots/bcd/bcdcee4066b1eb3fb8e949189088314f.jpg"
+      }
+    ],
+    "esrb_rating": null,
+    "clip": null,
+    "description_raw": "Mature Content Description\nAll characters depicted are age 18 years or older.\nThis game contains graphic sex, non-consensual sex, adult language, full nudity, depictions of childbirth, drug use, abortion, and prostitution. All depictions of genitals are censored with a mosaic pattern.About This Game\nAfter mass infertility strikes the globe, a new community is created with the goal to save our species. Their solution? SEX! Now the young and inexperienced Hazumi leaves her old life behind to aid in the repopulation effort. Of course, she must learn how to live in a land where common sense is seemingly flipped on its head.\nFully Playable Prostitution Action – Most sexual encounters are fully interactive. Players may select from a variety of techniques, and have complete control of every action. Satisfy your partner for a bigger payout.\nGrow as a Person – Hazumi’s stats can be viewed through her smartphone. Raise her sensitivity through sexual acts, or increase charm by redecorating and remodeling Hazumi’s apartment.\nComprehensive Pregnancy Mechanic – Hazumi’s body will actively change as a result of pregnancy. In addition to her belly growing each trimester, she will also experience things such as morning sickness, darkening nipples, lactation, and postpartum period. Sexual encounters can also be affected.\nDetailed Menstrual Cycle – The chance of getting pregnant will depend on the current phase of Hazumi’s menstrual cycle. She will even have her period.\nPlay at Your Own Pace – There aren’t any silly things like combat or falling in love to worry about. Some content, such as birth scenes, and x-ray view, can enabled or disabled via an in-game menu.\n*The Steam Edition supports PCs.\nThe Android version is not included.\nDeveloper: Mihiraghi\nArtist: Taji\nEnglish Translation: Feunski\nStore page design: Kurige Yoshitaka\nStore page PV: Kiyo"
+  },
+  {
+    "id": 974379,
+    "slug": "dragon-ball-sparking-zero",
+    "name": "DRAGON BALL: Sparking! ZERO",
+    "name_original": "DRAGON BALL: Sparking! ZERO",
+    "description": "<p>DRAGON BALL: Sparking! ZERO takes the legendary gameplay of the Budokai Tenkaichi series and raises it to whole new levels. DRAGON BALL: Sparking! ZERO has an incredible number of playable characters, each with signature abilities, transformations and techniques. Unleash the fighting spirit within you and take the fight to arenas that crumble and react to your power as the battle rages on.</p>",
+    "metacritic": null,
+    "metacritic_platforms": [],
+    "released": null,
+    "tba": true,
+    "updated": "2025-04-19T20:41:41",
+    "background_image": "https://media.rawg.io/media/screenshots/64f/64fdee7e7b863fbc22460cb8e38614b9.jpg",
+    "background_image_additional": "https://media.rawg.io/media/screenshots/2a2/2a208aaa3169f7efa0be514cde5557f5.jpg",
+    "website": "https://dragonballsparkingzero.com/",
+    "rating": 4.86,
+    "rating_top": 5,
+    "ratings": [
+      {
+        "id": 5,
+        "title": "exceptional",
+        "count": 6,
+        "percent": 85.71
+      },
+      {
+        "id": 4,
+        "title": "recommended",
+        "count": 1,
+        "percent": 14.29
+      }
+    ],
+    "reactions": null,
+    "added": 107,
+    "added_by_status": {
+      "yet": 9,
+      "owned": 55,
+      "beaten": 7,
+      "toplay": 22,
+      "dropped": 5,
+      "playing": 9
+    },
+    "playtime": 13,
+    "screenshots_count": 6,
+    "movies_count": 0,
+    "creators_count": 0,
+    "achievements_count": 29,
+    "parent_achievements_count": 29,
+    "reddit_url": "",
+    "reddit_name": "",
+    "reddit_description": "",
+    "reddit_logo": "",
+    "reddit_count": 0,
+    "twitch_count": 0,
+    "youtube_count": 0,
+    "reviews_text_count": 0,
+    "ratings_count": 7,
+    "suggestions_count": 202,
+    "alternative_names": [],
+    "metacritic_url": "https://www.metacritic.com/game/dragon-ball-sparking-zero/",
+    "parents_count": 0,
+    "additions_count": 0,
+    "game_series_count": 56,
+    "user_game": null,
+    "reviews_count": 7,
+    "saturated_color": "0f0f0f",
+    "dominant_color": "0f0f0f",
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "platforms": [
+      {
+        "platform": {
+          "id": 4,
+          "name": "PC",
+          "slug": "pc",
+          "image": null,
+          "year_end": null,
+          "year_start": null,
+          "games_count": 547583,
+          "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+        },
+        "released_at": null,
+        "requirements": {
+          "minimum": "Minimum:\nRequires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5-9600K / AMD Ryzen 5 2600\nMemory: 8 GB RAM\nGraphics: Nvidia GeForce GTX 980 / AMD Radeon RX 590 / Intel Arc A750\nDirectX: Version 12\nStorage: 29 GB available space\nAdditional Notes: Estimated performance: 1080p/60fps with graphics settings at &quot;Low&quot;. Framerate might drop in graphics-intensive scenes. - 64-bit processor and operating system are required.",
+          "recommended": "Recommended:\nRequires a 64-bit processor and operating system\nOS: Windows 10 / Windows 11\nProcessor: Intel Core i7-9700K / AMD Ryzen 5 3600\nMemory: 16 GB RAM\nGraphics: Nvidia GeForce RTX 2060 / AMD Radeon RX Vega 64\nDirectX: Version 12\nStorage: 29 GB available space\nAdditional Notes: Estimated performance: 1080p/60fps with graphics settings at &quot;High&quot;. Framerate might drop in graphics-intensive scenes. - 64-bit processor and operating system are required. - Windows 10 (Version 1809 or later) and a 4GB VRAM GPU (graphics board or video card) are required for DirectX 12 API."
+        }
+      },
+      {
+        "platform": {
+          "id": 187,
+          "name": "PlayStation 5",
+          "slug": "playstation5",
+          "image": null,
+          "year_end": null,
+          "year_start": 2020,
+          "games_count": 1241,
+          "image_background": "https://media.rawg.io/media/games/9f1/9f1891779cb20f44de93cef33b067e50.jpg"
+        },
+        "released_at": null,
+        "requirements": {}
+      },
+      {
+        "platform": {
+          "id": 186,
+          "name": "Xbox Series S/X",
+          "slug": "xbox-series-x",
+          "image": null,
+          "year_end": null,
+          "year_start": 2020,
+          "games_count": 1075,
+          "image_background": "https://media.rawg.io/media/games/6cc/6cc23249972a427f697a3d10eb57a820.jpg"
+        },
+        "released_at": null,
+        "requirements": {}
+      }
+    ],
+    "stores": [
+      {
+        "id": 991207,
+        "url": "",
+        "store": {
+          "id": 1,
+          "name": "Steam",
+          "slug": "steam",
+          "domain": "store.steampowered.com",
+          "games_count": 110568,
+          "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+        }
+      }
+    ],
+    "developers": [
+      {
+        "id": 19710,
+        "name": "Spike Chunsoft",
+        "slug": "spike-chunsoft",
+        "games_count": 56,
+        "image_background": "https://media.rawg.io/media/games/201/201012468d5d20ff06cca1007815d0e4.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action",
+        "games_count": 186751,
+        "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Fighting",
+        "slug": "fighting",
+        "games_count": 11763,
+        "image_background": "https://media.rawg.io/media/games/35b/35b47c4d85cd6e08f3e2ca43ea5ce7bb.jpg"
+      }
+    ],
+    "tags": [
+      {
+        "id": 31,
+        "name": "Singleplayer",
+        "slug": "singleplayer",
+        "language": "eng",
+        "games_count": 238777,
+        "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+      },
+      {
+        "id": 40847,
+        "name": "Steam Achievements",
+        "slug": "steam-achievements",
+        "language": "eng",
+        "games_count": 45242,
+        "image_background": "https://media.rawg.io/media/games/198/1988a337305e008b41d7f536ce9b73f6.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Multiplayer",
+        "slug": "multiplayer",
+        "language": "eng",
+        "games_count": 40575,
+        "image_background": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg"
+      },
+      {
+        "id": 40836,
+        "name": "Full controller support",
+        "slug": "full-controller-support",
+        "language": "eng",
+        "games_count": 21335,
+        "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg"
+      },
+      {
+        "id": 40849,
+        "name": "Steam Cloud",
+        "slug": "steam-cloud",
+        "language": "eng",
+        "games_count": 21933,
+        "image_background": "https://media.rawg.io/media/games/be0/be01c3d7d8795a45615da139322ca080.jpg"
+      },
+      {
+        "id": 18,
+        "name": "Co-op",
+        "slug": "co-op",
+        "language": "eng",
+        "games_count": 13165,
+        "image_background": "https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg"
+      },
+      {
+        "id": 36,
+        "name": "Open World",
+        "slug": "open-world",
+        "language": "eng",
+        "games_count": 8508,
+        "image_background": "https://media.rawg.io/media/games/d82/d82990b9c67ba0d2d09d4e6fa88885a7.jpg"
+      },
+      {
+        "id": 411,
+        "name": "cooperative",
+        "slug": "cooperative",
+        "language": "eng",
+        "games_count": 5889,
+        "image_background": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg"
+      },
+      {
+        "id": 149,
+        "name": "Third Person",
+        "slug": "third-person",
+        "language": "eng",
+        "games_count": 13305,
+        "image_background": "https://media.rawg.io/media/games/5c0/5c0dd63002cb23f804aab327d40ef119.jpg"
+      },
+      {
+        "id": 198,
+        "name": "Split Screen",
+        "slug": "split-screen",
+        "language": "eng",
+        "games_count": 7474,
+        "image_background": "https://media.rawg.io/media/games/f95/f95ec06eddda5c5bf206618c49cd3e68.jpg"
+      },
+      {
+        "id": 69,
+        "name": "Action-Adventure",
+        "slug": "action-adventure",
+        "language": "eng",
+        "games_count": 19060,
+        "image_background": "https://media.rawg.io/media/games/af7/af7a831001c5c32c46e950cc883b8cb7.jpg"
+      },
+      {
+        "id": 72,
+        "name": "Local Multiplayer",
+        "slug": "local-multiplayer",
+        "language": "eng",
+        "games_count": 13650,
+        "image_background": "https://media.rawg.io/media/games/e0f/e0f05a97ff926acf4c8f43e0849b6832.jpg"
+      },
+      {
+        "id": 157,
+        "name": "PvP",
+        "slug": "pvp",
+        "language": "eng",
+        "games_count": 10864,
+        "image_background": "https://media.rawg.io/media/games/cc7/cc77035eb972f179f5090ee2a0fabd99.jpg"
+      },
+      {
+        "id": 134,
+        "name": "Anime",
+        "slug": "anime",
+        "language": "eng",
+        "games_count": 15394,
+        "image_background": "https://media.rawg.io/media/games/c40/c40f9f0a3d1b4601a7a44d230c95f126.jpg"
+      },
+      {
+        "id": 571,
+        "name": "3D",
+        "slug": "3d",
+        "language": "eng",
+        "games_count": 89206,
+        "image_background": "https://media.rawg.io/media/games/c89/c89ca70716080733d03724277df2c6c7.jpg"
+      },
+      {
+        "id": 114,
+        "name": "Physics",
+        "slug": "physics",
+        "language": "eng",
+        "games_count": 20543,
+        "image_background": "https://media.rawg.io/media/screenshots/69b/69bb243ea9896ddfc2e051b58e81624d.jpg"
+      },
+      {
+        "id": 1465,
+        "name": "combat",
+        "slug": "combat",
+        "language": "eng",
+        "games_count": 14472,
+        "image_background": "https://media.rawg.io/media/games/e1f/e1ffbeb1bac25b19749ad285ca29e158.jpg"
+      },
+      {
+        "id": 170,
+        "name": "Competitive",
+        "slug": "competitive",
+        "language": "eng",
+        "games_count": 1234,
+        "image_background": "https://media.rawg.io/media/games/1a1/1a17e9b6286edb7e1f1e510110ccb0c0.jpg"
+      },
+      {
+        "id": 45878,
+        "name": "Online PvP",
+        "slug": "online-pvp",
+        "language": "eng",
+        "games_count": 5615,
+        "image_background": "https://media.rawg.io/media/games/370/3703c683968a54f09630dcf03366ea35.jpg"
+      },
+      {
+        "id": 171,
+        "name": "PvE",
+        "slug": "pve",
+        "language": "eng",
+        "games_count": 6623,
+        "image_background": "https://media.rawg.io/media/screenshots/6d3/6d367773c06886535620f2d7fb1cb866.jpg"
+      },
+      {
+        "id": 116,
+        "name": "2.5D",
+        "slug": "25d",
+        "language": "eng",
+        "games_count": 2529,
+        "image_background": "https://media.rawg.io/media/games/8a0/8a02f84a5916ede2f923b88d5f8217ba.jpg"
+      },
+      {
+        "id": 45201,
+        "name": "Remote Play Together",
+        "slug": "remote-play-together",
+        "language": "eng",
+        "games_count": 3511,
+        "image_background": "https://media.rawg.io/media/games/a4c/a4c1fd4265ac2c1edc87cb9a6a7644e4.jpg"
+      },
+      {
+        "id": 91686,
+        "name": "Family Sharing",
+        "slug": "family-sharing",
+        "language": "eng",
+        "games_count": 17912,
+        "image_background": "https://media.rawg.io/media/games/10b/10bbea9e3307778dd9a4dce704aede2e.jpg"
+      },
+      {
+        "id": 254,
+        "name": "Spectacle fighter",
+        "slug": "spectacle-fighter",
+        "language": "eng",
+        "games_count": 733,
+        "image_background": "https://media.rawg.io/media/games/372/3724c266c9d028a6cff791dd8df4b98e.jpg"
+      },
+      {
+        "id": 46114,
+        "name": "Shared/Split Screen PvP",
+        "slug": "sharedsplit-screen-pvp",
+        "language": "eng",
+        "games_count": 2562,
+        "image_background": "https://media.rawg.io/media/games/dfe/dfe14d30ed6fccd9db4ae79d3be51d54.jpg"
+      },
+      {
+        "id": 240,
+        "name": "Martial Arts",
+        "slug": "martial-arts",
+        "language": "eng",
+        "games_count": 628,
+        "image_background": "https://media.rawg.io/media/games/75e/75e95dc8d5b290f6875062af6b35fb59.jpg"
+      },
+      {
+        "id": 91537,
+        "name": "HDR available",
+        "slug": "hdr-available",
+        "language": "eng",
+        "games_count": 127,
+        "image_background": "https://media.rawg.io/media/games/686/686909717c3aa01518bc42ae2bf4259e.jpg"
+      },
+      {
+        "id": 49961,
+        "name": "3D Fighter",
+        "slug": "3d-fighter-2",
+        "language": "eng",
+        "games_count": 1139,
+        "image_background": "https://media.rawg.io/media/screenshots/b0f/b0ff50755a27be1ad8b39908b1d2d366.jpg"
+      },
+      {
+        "id": 56826,
+        "name": "3D-файтинг",
+        "slug": "3d-faiting",
+        "language": "eng",
+        "games_count": 1093,
+        "image_background": "https://media.rawg.io/media/screenshots/544/544fbb0b70cff90a73b01d72bbd7185a.jpeg"
+      }
+    ],
+    "publishers": [
+      {
+        "id": 8352,
+        "name": "Bandai Namco Entertainment",
+        "slug": "bandai-namco-entertainment",
+        "games_count": 604,
+        "image_background": "https://media.rawg.io/media/games/b92/b924c4beeed6617201d5d91511cfcf8e.jpg"
+      }
+    ],
+    "esrb_rating": {
+      "id": 3,
+      "name": "Teen",
+      "slug": "teen"
+    },
+    "clip": null,
+    "description_raw": "DRAGON BALL: Sparking! ZERO takes the legendary gameplay of the Budokai Tenkaichi series and raises it to whole new levels. DRAGON BALL: Sparking! ZERO has an incredible number of playable characters, each with signature abilities, transformations and techniques. Unleash the fighting spirit within you and take the fight to arenas that crumble and react to your power as the battle rages on."
+  },
+  {
+    "id": 58781,
+    "slug": "the-elder-scrolls-vi",
+    "name": "The Elder Scrolls VI",
+    "name_original": "The Elder Scrolls VI",
+    "description": "<p>Currently in pre-production at Bethesda Game Studios, the acclaimed developers of Skyrim and Fallout 4. The highly-anticipated next chapter in the iconic The Elder Scrolls series.</p>",
+    "metacritic": null,
+    "metacritic_platforms": [],
+    "released": null,
+    "tba": true,
+    "updated": "2024-04-12T10:28:14",
+    "background_image": "https://media.rawg.io/media/games/b40/b40eba32d8715d5fdf9634939fe0eca3.jpg",
+    "background_image_additional": null,
+    "website": "",
+    "rating": 4.86,
+    "rating_top": 5,
+    "ratings": [
+      {
+        "id": 5,
+        "title": "exceptional",
+        "count": 6,
+        "percent": 85.71
+      },
+      {
+        "id": 4,
+        "title": "recommended",
+        "count": 1,
+        "percent": 14.29
+      }
+    ],
+    "reactions": {},
+    "added": 236,
+    "added_by_status": {
+      "yet": 28,
+      "owned": 19,
+      "beaten": 1,
+      "toplay": 187,
+      "playing": 1
+    },
+    "playtime": 0,
+    "screenshots_count": 1,
+    "movies_count": 0,
+    "creators_count": 1,
+    "achievements_count": 0,
+    "parent_achievements_count": 0,
+    "reddit_url": "https://www.reddit.com/r/ElderScrolls/",
+    "reddit_name": "",
+    "reddit_description": "",
+    "reddit_logo": "",
+    "reddit_count": 9457,
+    "twitch_count": 3,
+    "youtube_count": 440700,
+    "reviews_text_count": 1,
+    "ratings_count": 6,
+    "suggestions_count": 45,
+    "alternative_names": [],
+    "metacritic_url": "",
+    "parents_count": 0,
+    "additions_count": 0,
+    "game_series_count": 13,
+    "user_game": null,
+    "reviews_count": 7,
+    "saturated_color": "0f0f0f",
+    "dominant_color": "0f0f0f",
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      }
+    ],
+    "platforms": [
+      {
+        "platform": {
+          "id": 4,
+          "name": "PC",
+          "slug": "pc",
+          "image": null,
+          "year_end": null,
+          "year_start": null,
+          "games_count": 547584,
+          "image_background": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg"
+        },
+        "released_at": null,
+        "requirements": {}
+      },
+      {
+        "platform": {
+          "id": 186,
+          "name": "Xbox Series S/X",
+          "slug": "xbox-series-x",
+          "image": null,
+          "year_end": null,
+          "year_start": 2020,
+          "games_count": 1077,
+          "image_background": "https://media.rawg.io/media/games/6cc/6cc23249972a427f697a3d10eb57a820.jpg"
+        },
+        "released_at": null,
+        "requirements": {}
+      }
+    ],
+    "stores": [],
+    "developers": [
+      {
+        "id": 4207,
+        "name": "Bethesda Game Studios",
+        "slug": "bethesda-game-studios",
+        "games_count": 41,
+        "image_background": "https://media.rawg.io/media/screenshots/5a6/5a63022f15130f18ac58621070e375cd.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action",
+        "games_count": 186754,
+        "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg",
+        "games_count": 59443,
+        "image_background": "https://media.rawg.io/media/games/713/713269608dc8f2f40f5a670a14b2de94.jpg"
+      }
+    ],
+    "tags": [
+      {
+        "id": 31,
+        "name": "Singleplayer",
+        "slug": "singleplayer",
+        "language": "eng",
+        "games_count": 238777,
+        "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Atmospheric",
+        "slug": "atmospheric",
+        "language": "eng",
+        "games_count": 36784,
+        "image_background": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg"
+      },
+      {
+        "id": 24,
+        "name": "RPG",
+        "slug": "rpg",
+        "language": "eng",
+        "games_count": 24180,
+        "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+      },
+      {
+        "id": 36,
+        "name": "Open World",
+        "slug": "open-world",
+        "language": "eng",
+        "games_count": 8508,
+        "image_background": "https://media.rawg.io/media/games/d82/d82990b9c67ba0d2d09d4e6fa88885a7.jpg"
+      },
+      {
+        "id": 8,
+        "name": "First-Person",
+        "slug": "first-person",
+        "language": "eng",
+        "games_count": 34786,
+        "image_background": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg"
+      },
+      {
+        "id": 64,
+        "name": "Fantasy",
+        "slug": "fantasy",
+        "language": "eng",
+        "games_count": 30681,
+        "image_background": "https://media.rawg.io/media/games/04a/04a7e7e185fb51493bdcbe1693a8b3dc.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Exploration",
+        "slug": "exploration",
+        "language": "eng",
+        "games_count": 26446,
+        "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
+      },
+      {
+        "id": 69,
+        "name": "Action-Adventure",
+        "slug": "action-adventure",
+        "language": "eng",
+        "games_count": 19060,
+        "image_background": "https://media.rawg.io/media/games/af7/af7a831001c5c32c46e950cc883b8cb7.jpg"
+      },
+      {
+        "id": 478,
+        "name": "3rd-Person Perspective",
+        "slug": "3rd-person-perspective",
+        "language": "eng",
+        "games_count": 87,
+        "image_background": "https://media.rawg.io/media/games/909/909974d1c7863c2027241e265fe7011f.jpg"
+      },
+      {
+        "id": 215,
+        "name": "Dragons",
+        "slug": "dragons",
+        "language": "eng",
+        "games_count": 2759,
+        "image_background": "https://media.rawg.io/media/screenshots/755/7557715b92e3db2914e73c4fccfa7fdc.jpg"
+      },
+      {
+        "id": 324,
+        "name": "Experience",
+        "slug": "experience",
+        "language": "eng",
+        "games_count": 294,
+        "image_background": "https://media.rawg.io/media/screenshots/291/29135ecd06cd54c4f13a8bcddbba8fba.jpg"
+      }
+    ],
+    "publishers": [
+      {
+        "id": 339,
+        "name": "Bethesda Softworks",
+        "slug": "bethesda-softworks",
+        "games_count": 184,
+        "image_background": "https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+      }
+    ],
+    "esrb_rating": null,
+    "clip": null,
+    "description_raw": "Currently in pre-production at Bethesda Game Studios, the acclaimed developers of Skyrim and Fallout 4. The highly-anticipated next chapter in the iconic The Elder Scrolls series."
+  },
+  {
+    "id": 974923,
+    "slug": "winter-memories-2",
+    "name": "Winter Memories",
+    "name_original": "Winter Memories",
+    "description": "After the unforgettable summer memories you’ve made half a year ago, Yui, Rio, and Miyuki are back. With the change of seasons and the cold falling snow, a new page to your story is about to begin. <br/><br/>Revisit the peaceful, seaside town, and spend time catching up with your family and friends.<br/><br/>What new memories will you make this winter?<br/><br/><br/><br/><br/><br/><br/><br/><strong>A Relaxing, Adventure RPG<strong><br/><br/><strong>Explore the Beautiful, Seaside Town<strong><br/><br/><strong>Manage How You Spend Your TIme</strong></strong></strong></strong></strong>",
+    "metacritic": null,
+    "metacritic_platforms": [],
+    "released": "2024-01-05",
+    "tba": false,
+    "updated": "2025-01-04T16:30:52",
+    "background_image": "https://media.rawg.io/media/screenshots/326/326267a294202a9d93e55879a6f61d48.jpg",
+    "background_image_additional": "https://media.rawg.io/media/screenshots/22b/22bad148e80732be27db151f30703e56.jpg",
+    "website": "",
+    "rating": 4.83,
+    "rating_top": 5,
+    "ratings": [
+      {
+        "id": 5,
+        "title": "exceptional",
+        "count": 5,
+        "percent": 83.33
+      },
+      {
+        "id": 4,
+        "title": "recommended",
+        "count": 1,
+        "percent": 16.67
+      }
+    ],
+    "reactions": null,
+    "added": 33,
+    "added_by_status": {
+      "yet": 2,
+      "owned": 18,
+      "beaten": 8,
+      "toplay": 4,
+      "playing": 1
+    },
+    "playtime": 6,
+    "screenshots_count": 5,
+    "movies_count": 0,
+    "creators_count": 0,
+    "achievements_count": 0,
+    "parent_achievements_count": 0,
+    "reddit_url": "",
+    "reddit_name": "",
+    "reddit_description": "",
+    "reddit_logo": "",
+    "reddit_count": 0,
+    "twitch_count": 0,
+    "youtube_count": 0,
+    "reviews_text_count": 0,
+    "ratings_count": 6,
+    "suggestions_count": 177,
+    "alternative_names": [],
+    "metacritic_url": "",
+    "parents_count": 0,
+    "additions_count": 0,
+    "game_series_count": 0,
+    "user_game": null,
+    "reviews_count": 6,
+    "saturated_color": "0f0f0f",
+    "dominant_color": "0f0f0f",
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      }
+    ],
+    "platforms": [
+      {
+        "platform": {
+          "id": 4,
+          "name": "PC",
+          "slug": "pc",
+          "image": null,
+          "year_end": null,
+          "year_start": null,
+          "games_count": 547583,
+          "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+        },
+        "released_at": "2024-01-05",
+        "requirements": {
+          "minimum": "Minimum:\nOS *: Windows® 7/8/8.1/10/11\nProcessor: Intel Core2 Duo or better\nMemory: 4 GB RAM\nGraphics: DirectX 9/OpenGL 4.1 capable GPU\nDirectX: Version 9.0\nStorage: 2 GB available space\nAdditional Notes: 1280x768 or better Display.  Lag may occur from loading menus or maps.  Turn off other programs before running the game.",
+          "recommended": "Recommended:\nOS *: Windows® 7/8/8.1/10/11\nProcessor: 2+ GHz Processor\nMemory: 4 GB RAM\nGraphics: OpenGL ES 2.0 hardware driver support required for WebGL acceleration. (AMD Catalyst 10.9, nVidia 358.50)\nStorage: 4 GB available space\nAdditional Notes: 1280x768 or better Display.  Lag may occur from loading menus or maps.  Turn off other programs before running the game."
+        }
+      }
+    ],
+    "stores": [
+      {
+        "id": 975162,
+        "url": "",
+        "store": {
+          "id": 5,
+          "name": "GOG",
+          "slug": "gog",
+          "domain": "gog.com",
+          "games_count": 6725,
+          "image_background": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg"
+        }
+      },
+      {
+        "id": 975128,
+        "url": "",
+        "store": {
+          "id": 1,
+          "name": "Steam",
+          "slug": "steam",
+          "domain": "store.steampowered.com",
+          "games_count": 110568,
+          "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+        }
+      }
+    ],
+    "developers": [
+      {
+        "id": 221383,
+        "name": "Dojin Otome",
+        "slug": "dojin-otome",
+        "games_count": 2,
+        "image_background": "https://media.rawg.io/media/screenshots/326/326267a294202a9d93e55879a6f61d48.jpg"
+      }
+    ],
+    "genres": [
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure",
+        "games_count": 146620,
+        "image_background": "https://media.rawg.io/media/games/c50/c5085506fe4b5e20fc7aa5ace842c20b.jpg"
+      },
+      {
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg",
+        "games_count": 59442,
+        "image_background": "https://media.rawg.io/media/games/1f4/1f47a270b8f241e4676b14d39ec620f7.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Simulation",
+        "slug": "simulation",
+        "games_count": 73580,
+        "image_background": "https://media.rawg.io/media/screenshots/f2f/f2f3c93d6153da7aee590f3ab8ccd803.jpg"
+      },
+      {
+        "id": 40,
+        "name": "Casual",
+        "slug": "casual",
+        "games_count": 61500,
+        "image_background": "https://media.rawg.io/media/screenshots/6fe/6fe228662a253cd929cc78a103541ee0.jpg"
+      }
+    ],
+    "tags": [
+      {
+        "id": 31,
+        "name": "Singleplayer",
+        "slug": "singleplayer",
+        "language": "eng",
+        "games_count": 238777,
+        "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+      },
+      {
+        "id": 40849,
+        "name": "Steam Cloud",
+        "slug": "steam-cloud",
+        "language": "eng",
+        "games_count": 21933,
+        "image_background": "https://media.rawg.io/media/games/be0/be01c3d7d8795a45615da139322ca080.jpg"
+      },
+      {
+        "id": 24,
+        "name": "RPG",
+        "slug": "rpg",
+        "language": "eng",
+        "games_count": 24180,
+        "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+      },
+      {
+        "id": 30,
+        "name": "FPS",
+        "slug": "fps",
+        "language": "eng",
+        "games_count": 14224,
+        "image_background": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg"
+      },
+      {
+        "id": 122,
+        "name": "Pixel Graphics",
+        "slug": "pixel-graphics",
+        "language": "eng",
+        "games_count": 96691,
+        "image_background": "https://media.rawg.io/media/games/9fa/9fa63622543e5d4f6d99aa9d73b043de.jpg"
+      },
+      {
+        "id": 134,
+        "name": "Anime",
+        "slug": "anime",
+        "language": "eng",
+        "games_count": 15394,
+        "image_background": "https://media.rawg.io/media/games/c40/c40f9f0a3d1b4601a7a44d230c95f126.jpg"
+      },
+      {
+        "id": 44,
+        "name": "Nudity",
+        "slug": "nudity",
+        "language": "eng",
+        "games_count": 7753,
+        "image_background": "https://media.rawg.io/media/games/a0e/a0ef08621301a1eab5e04fa5c96978fa.jpeg"
+      },
+      {
+        "id": 88,
+        "name": "Cute",
+        "slug": "cute",
+        "language": "eng",
+        "games_count": 36919,
+        "image_background": "https://media.rawg.io/media/games/c40/c40f9f0a3d1b4601a7a44d230c95f126.jpg"
+      },
+      {
+        "id": 192,
+        "name": "Mature",
+        "slug": "mature",
+        "language": "eng",
+        "games_count": 4033,
+        "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+      },
+      {
+        "id": 50,
+        "name": "Sexual Content",
+        "slug": "sexual-content",
+        "language": "eng",
+        "games_count": 7586,
+        "image_background": "https://media.rawg.io/media/games/370/3703c683968a54f09630dcf03366ea35.jpg"
+      },
+      {
+        "id": 90,
+        "name": "Visual Novel",
+        "slug": "visual-novel",
+        "language": "eng",
+        "games_count": 8524,
+        "image_background": "https://media.rawg.io/media/games/c60/c60be8ddf91ede65c65b13eff2e06c37.jpg"
+      },
+      {
+        "id": 233,
+        "name": "JRPG",
+        "slug": "jrpg",
+        "language": "eng",
+        "games_count": 4828,
+        "image_background": "https://media.rawg.io/media/games/3ea/3ea0e57ede873970c0f1130e30d88749.jpg"
+      },
+      {
+        "id": 312,
+        "name": "NSFW",
+        "slug": "nsfw",
+        "language": "eng",
+        "games_count": 4169,
+        "image_background": "https://media.rawg.io/media/games/85f/85f9c6504b3a43298216691619cc37fe.jpg"
+      },
+      {
+        "id": 786,
+        "name": "hentai",
+        "slug": "hentai",
+        "language": "eng",
+        "games_count": 3235,
+        "image_background": "https://media.rawg.io/media/screenshots/c1f/c1f104c610cc78e05f6c0766edf81903.jpg"
+      },
+      {
+        "id": 58128,
+        "name": "Хентай",
+        "slug": "khentai",
+        "language": "eng",
+        "games_count": 2847,
+        "image_background": "https://media.rawg.io/media/screenshots/907/90738715f735af95811e292ede73ed44.jpg"
+      }
+    ],
+    "publishers": [
+      {
+        "id": 21329,
+        "name": "Kagura Games",
+        "slug": "kagura-games",
+        "games_count": 179,
+        "image_background": "https://media.rawg.io/media/screenshots/723/7239aacdf3bf58adee2e8cb4c7f52f35.jpg"
+      }
+    ],
+    "esrb_rating": null,
+    "clip": null,
+    "description_raw": "Latest Releasehttps://store.steampowered.com/app/2687990/The_Black_Guards_of_Odom__Desert_Town_Prison/\nhttps://store.steampowered.com/app/1551550/Philana_and_the_Elixir_of_Life/\nhttps://store.steampowered.com/app/2420620/Demon_Slayer_Shion/\nUpcoming Gameshttps://store.steampowered.com/app/2429890/Incubus_Quest/\nhttps://store.steampowered.com/app/2582660/And_the_Hero_Was_Never_Seen_Again/\nAbout the Game\nAfter the unforgettable summer memories you’ve made half a year ago, Yui, Rio, and Miyuki are back. With the change of seasons and the cold falling snow, a new page to your story is about to begin.\nRevisit the peaceful, seaside town, and spend time catching up with your family and friends.\nWhat new memories will you make this winter?\nA Relaxing, Adventure RPG\nExplore the Beautiful, Seaside Town\nManage How You Spend Your TIme"
+  },
+  {
+    "id": 964507,
+    "slug": "geometry-dash-razorleaf",
+    "name": "Geometry Dash RazorLeaf",
+    "name_original": "Geometry Dash RazorLeaf",
+    "description": "<p>Geometry Dash RazorLeaf is a casual arcade game. It was originally released in 2023. Most rawgers rated the game as \"Exceptional\". <br>Geometry Dash RazorLeaf is available on Android and PC. </p>\n\n<p></p>",
+    "metacritic": null,
+    "metacritic_platforms": [],
+    "released": "2023-07-19",
+    "tba": false,
+    "updated": "2025-01-30T12:29:24",
+    "background_image": "https://media.rawg.io/media/screenshots/8ad/8ad83b99a7ea2116a72688ba26644b3f.jpg",
+    "background_image_additional": null,
+    "website": "",
+    "rating": 4.83,
+    "rating_top": 5,
+    "ratings": [
+      {
+        "id": 5,
+        "title": "exceptional",
+        "count": 5,
+        "percent": 83.33
+      },
+      {
+        "id": 4,
+        "title": "recommended",
+        "count": 1,
+        "percent": 16.67
+      }
+    ],
+    "reactions": {
+      "5": 1
+    },
+    "added": 23,
+    "added_by_status": {
+      "yet": 2,
+      "owned": 10,
+      "beaten": 1,
+      "toplay": 5,
+      "playing": 5
+    },
+    "playtime": 0,
+    "screenshots_count": 1,
+    "movies_count": 0,
+    "creators_count": 0,
+    "achievements_count": 0,
+    "parent_achievements_count": 0,
+    "reddit_url": "",
+    "reddit_name": "",
+    "reddit_description": "",
+    "reddit_logo": "",
+    "reddit_count": 0,
+    "twitch_count": 0,
+    "youtube_count": 0,
+    "reviews_text_count": 1,
+    "ratings_count": 5,
+    "suggestions_count": 27,
+    "alternative_names": [],
+    "metacritic_url": "",
+    "parents_count": 0,
+    "additions_count": 0,
+    "game_series_count": 0,
+    "user_game": null,
+    "reviews_count": 6,
+    "saturated_color": "0f0f0f",
+    "dominant_color": "0f0f0f",
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "platform": {
+          "id": 8,
+          "name": "Android",
+          "slug": "android"
+        }
+      }
+    ],
+    "platforms": [
+      {
+        "platform": {
+          "id": 21,
+          "name": "Android",
+          "slug": "android",
+          "image": null,
+          "year_end": null,
+          "year_start": null,
+          "games_count": 52428,
+          "image_background": "https://media.rawg.io/media/games/a91/a911f0a91991469e398fa70091507a5b.jpg"
+        },
+        "released_at": "2023-07-19",
+        "requirements": {}
+      },
+      {
+        "platform": {
+          "id": 4,
+          "name": "PC",
+          "slug": "pc",
+          "image": null,
+          "year_end": null,
+          "year_start": null,
+          "games_count": 547583,
+          "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+        },
+        "released_at": "2023-07-19",
+        "requirements": {}
+      }
+    ],
+    "stores": [],
+    "developers": [],
+    "genres": [
+      {
+        "id": 11,
+        "name": "Arcade",
+        "slug": "arcade",
+        "games_count": 22659,
+        "image_background": "https://media.rawg.io/media/games/cfe/cfe114c081281960bd79ace5209c0a4a.jpg"
+      },
+      {
+        "id": 40,
+        "name": "Casual",
+        "slug": "casual",
+        "games_count": 61500,
+        "image_background": "https://media.rawg.io/media/screenshots/6fe/6fe228662a253cd929cc78a103541ee0.jpg"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie",
+        "games_count": 77227,
+        "image_background": "https://media.rawg.io/media/games/d0f/d0f91fe1d92332147e5db74e207cfc7a.jpg"
+      }
+    ],
+    "tags": [],
+    "publishers": [],
+    "esrb_rating": null,
+    "clip": null,
+    "description_raw": ""
+  },
+  {
+    "id": 830060,
+    "slug": "sonic-triple-trouble-16-bit",
+    "name": "Sonic Triple Trouble 16-Bit (NoahNCopeland)",
+    "name_original": "Sonic Triple Trouble 16-Bit (NoahNCopeland)",
+    "description": "<p>What if Sonic Triple Trouble had been originally released on the Sega Genesis/MegaDrive, after Sonic 3 &amp; Knuckles?</p>\n<p>This is a fangame re-imagining of the Game Gear game Sonic Triple Trouble in the style of the Genesis Sonic classics.</p>\n<p>All credit goes to Noah N. Copeland at:<br />\nhttps://twitter.com/NoahNCopeland?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor</p>\n<p>Features:</p>\n<pre><code>- All levels themes from Sonic Triple Trouble recreated in 16-Bit Style  \n- New stage layouts, enemies, and gimmicks!  \n- 3D Special Stages  \n- Sega Genesis accurate Colors &amp;amp; Sound  \n- 360 Sonic Physics  \n- Switch between Sonic and Tails in real-time!  \n- Gamepad Support\n</code></pre>\n<p><strong><em>Sonic Triple Trouble 16-Bit is in no way affiliated with Sega or Sonic Team. This is a non-profit fan project.</em></strong></p>",
+    "metacritic": null,
+    "metacritic_platforms": [],
+    "released": "2022-08-02",
+    "tba": false,
+    "updated": "2025-02-13T23:27:58",
+    "background_image": "https://media.rawg.io/media/screenshots/a9c/a9c0a6fb4def5538d39544934bded4b3.jpg",
+    "background_image_additional": "https://media.rawg.io/media/screenshots/eeb/eeb7cbbd6a40d6583495dfcca03c85db.jpg",
+    "website": "https://gamejolt.com/games/sonictripletrouble16bit/322794",
+    "rating": 4.83,
+    "rating_top": 5,
+    "ratings": [
+      {
+        "id": 5,
+        "title": "exceptional",
+        "count": 5,
+        "percent": 83.33
+      },
+      {
+        "id": 4,
+        "title": "recommended",
+        "count": 1,
+        "percent": 16.67
+      }
+    ],
+    "reactions": {},
+    "added": 10,
+    "added_by_status": {
+      "owned": 2,
+      "beaten": 7,
+      "toplay": 1
+    },
+    "playtime": 0,
+    "screenshots_count": 6,
+    "movies_count": 0,
+    "creators_count": 0,
+    "achievements_count": 0,
+    "parent_achievements_count": 0,
+    "reddit_url": "",
+    "reddit_name": "",
+    "reddit_description": "",
+    "reddit_logo": "",
+    "reddit_count": 0,
+    "twitch_count": 0,
+    "youtube_count": 0,
+    "reviews_text_count": 0,
+    "ratings_count": 6,
+    "suggestions_count": 211,
+    "alternative_names": [],
+    "metacritic_url": "",
+    "parents_count": 0,
+    "additions_count": 0,
+    "game_series_count": 0,
+    "user_game": null,
+    "reviews_count": 6,
+    "saturated_color": "0f0f0f",
+    "dominant_color": "0f0f0f",
+    "parent_platforms": [
+      {
+        "platform": {
+          "id": 1,
+          "name": "PC",
+          "slug": "pc"
+        }
+      }
+    ],
+    "platforms": [
+      {
+        "platform": {
+          "id": 4,
+          "name": "PC",
+          "slug": "pc",
+          "image": null,
+          "year_end": null,
+          "year_start": null,
+          "games_count": 547583,
+          "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
+        },
+        "released_at": "2022-08-02",
+        "requirements": {}
+      }
+    ],
+    "stores": [],
+    "developers": [],
+    "genres": [
+      {
+        "id": 4,
+        "name": "Action",
+        "slug": "action",
+        "games_count": 186751,
+        "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure",
+        "games_count": 146620,
+        "image_background": "https://media.rawg.io/media/games/c50/c5085506fe4b5e20fc7aa5ace842c20b.jpg"
+      },
+      {
+        "id": 51,
+        "name": "Indie",
+        "slug": "indie",
+        "games_count": 77227,
+        "image_background": "https://media.rawg.io/media/games/d0f/d0f91fe1d92332147e5db74e207cfc7a.jpg"
+      },
+      {
+        "id": 83,
+        "name": "Platformer",
+        "slug": "platformer",
+        "games_count": 100869,
+        "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
+      }
+    ],
+    "tags": [],
+    "publishers": [],
+    "esrb_rating": null,
+    "clip": null,
+    "description_raw": "What if Sonic Triple Trouble had been originally released on the Sega Genesis/MegaDrive, after Sonic 3 & Knuckles?\n\nThis is a fangame re-imagining of the Game Gear game Sonic Triple Trouble in the style of the Genesis Sonic classics.\n\nAll credit goes to Noah N. Copeland at:\nhttps://twitter.com/NoahNCopeland?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor\n\nFeatures:\n\n    - All levels themes from Sonic Triple Trouble recreated in 16-Bit Style\n    - New stage layouts, enemies, and gimmicks!\n    - 3D Special Stages\n    - Sega Genesis accurate Colors & Sound\n    - 360 Sonic Physics\n    - Switch between Sonic and Tails in real-time!\n    - Gamepad Support\n\n***Sonic Triple Trouble 16-Bit is in no way affiliated with Sega or Sonic Team. This is a non-profit fan project.***"
+  }
+]

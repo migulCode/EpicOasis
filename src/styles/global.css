@@ -1,11 +1,14 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
-:root{
-  --background-image: url('https://www.freetogame.com/g/540/thumbnail.jpg');
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
 }
 
-
+/* Create variables for animate kiader */
 @theme {
   --animate-loader: Loader 1s ease-in-out 1 forwards;
 
@@ -16,12 +19,136 @@
   }
 }
 
-body{
-  background-image: var(--background-image);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@theme{
+  --font-jetbrains: 'JetBrains Mono', monospace;
+}
 
-  transition: all 1s;
+/* Variables for light and dark themes */
+@theme {
+
+    --color-claro-fondo: #F6F8FA;
+    --color-claro-tarjeta: #EAEEF2;
+    --color-claro-texto: #24292F;
+    --color-claro-texto-secundario: #424A53;
+    --color-claro-borde: #D0D7DE;
+    --color-claro-icono: #6E7781;
+
+  /* -variables para el tema oscuro */
+    --color-oscuro-fondo: #0F1115;
+    --color-oscuro-tarjeta: #24292F;
+    --color-oscuro-texto: #F6F8FA;
+    --color-oscuro-texto-secundario: #D0D7DE;
+    --color-oscuro-borde: #32383F;
+    --color-oscuro-icono: #AFB8C1;
+}
+
+/*
+  Rules for selector css names
+
+ 1 container
+ 2 box
+ 3 element + box
+*/
+
+/* Slider design */
+
+.slider-container {
+  @apply relative
+  h-[calc(100dvh)]
+  w-full
+  top-0
+  left-0
+
+}
+
+.carrousel-box {
+  @apply
+  flex
+  justify-start
+  w-full
+  gap-6
+  px-10
+}
+
+.left-carrousel-box {
+  @apply
+  flex flex-col
+  xl:max-w-[700px]
+  xl:my-[calc(70px_+_10px)]
+  xl:ml-10
+  items-start
+  max-xl:w-[100%]
+  max-xl:justify-end
+  max-xl:items-center
+  max-xl:h-full
+  max-xl:px-10
+  absolute
+  left-0
+  top-0
+  gap-6
+
+  max-sm:prose-h2:prose-2xl
+
+}
+
+.title-carrousel-box {
+  @apply
+  font-bold
+  sm:text-4xl
+}
+
+.description-carrousel-box {
+  @apply
+  dark:text-oscuro-texto-secundario
+  max-xl:mb-30
+
+}
+
+
+.right-carrousel-box {
+  @apply
+  absolute
+  top-0
+  right-0
+  h-[100vh]
+  w-[100%]
+  -z-1
+}
+
+.bg-carrousel-box {
+  @apply
+  absolute
+  top-0
+  left-0
+  h-[100vh]
+  w-[100%]
+  bg-gradient-to-r from-[var(--color-claro-fondo)] to-[rgba(255,255,255,.2)]
+  max-xl:bg-gradient-to-t
+ dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.2)]
+}
+
+.img-carrousel-box {
+  @apply
+  w-full
+  h-full
+  object-cover
+  object-right
+  max-xl:object-center
+  transition-[object-position]
+  duration-700 ease-in-out
+}
+
+
+
+/* Cards Design */
+
+.card-container {
+  @apply
+  flex
+  flex-wrap
+  justify-center
+  gap-10
+  max-w-[1350px]
+  m-auto
+  my-10
 }

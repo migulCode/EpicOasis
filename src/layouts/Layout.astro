@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import Header from "../components/layout/Header.astro";
+import Header from "../components/Header.astro";
 import { ClientRouter } from "astro:transitions";
 ---
 
@@ -13,7 +13,7 @@ import { ClientRouter } from "astro:transitions";
     <title>EpicOasis</title>
     <ClientRouter fallback="none" />
   </head>
-  <body>
+  <body class="bg-claro-fondo dark:bg-oscuro-fondo font-jetbrains max-sm:prose-p:prose-sm dark:text-oscuro-texto">
     <Header />
     <slot />
   </body>

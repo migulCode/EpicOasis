@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const App = (props) => {
-  const [nameGame, setNameGame] = useState("Hola mundoooooo");
+  const [nameGame, setNameGame] = useState("");
 
   const handlerWrite = (event) => {
     const { value } = event.target;
