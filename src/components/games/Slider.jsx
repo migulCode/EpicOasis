@@ -27,7 +27,7 @@ function Slider({ games }) {
         <motion.div
           key={currentGame.id}
           className="carrousel-box"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 0}}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
@@ -39,10 +39,10 @@ function Slider({ games }) {
           >
             <motion.h2
               className="title-carrousel-box"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
+              initial={{ opacity: 0, y: -100 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -100 }}
+              transition={{ duration: .6 }}
             >
               {currentGame.title}
             </motion.h2>

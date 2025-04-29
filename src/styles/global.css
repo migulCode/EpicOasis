@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
+
+/* Create variables for animate kiader */
 @theme {
   --animate-loader: Loader 1s ease-in-out 1 forwards;
 
@@ -11,7 +13,7 @@
   }
 }
 
-
+/* Variables for light and dark themes */
 @theme {
 
     --color-claro-fondo: #F6F8FA;
@@ -60,21 +62,35 @@
 
 .left-carrousel-box {
   @apply
-  flex flex-col gap-6 w-[50%]
-  prose-lg
-  max-w-[600px]
+  flex flex-col 
+  xl:max-w-[700px]
+  xl:my-[calc(70px_+_10px)]
+  xl:ml-10
+  items-start
+  max-xl:w-[100%]
+  max-xl:justify-end
+  max-xl:items-center
+  max-xl:h-full
+  max-xl:px-10
+  absolute
+  left-0
+  top-0
+  gap-6
+  prose-p:prose-lg
 }
 
 .title-carrousel-box {
   @apply
-  text-5xl font-bold text-black px-4 py-2 rounded-md w-fit
+  text-5xl font-bold text-black
   dark:text-oscuro-texto
 }
 
 .description-carrousel-box {
   @apply
-  rounded-md leading-snug
+  rounded-md
   dark:text-oscuro-texto-secundario
+  max-xl:mb-30
+  font-medium
 }
 
 
@@ -95,8 +111,9 @@
   left-0
   h-[100vh]
   w-[100%]
-  bg-gradient-to-r from-[var(--color-claro-fondo)] to-[rgba(237,221,83,0)]
- dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(237,221,83,0)]
+  bg-gradient-to-r from-[var(--color-claro-fondo)] to-[rgba(255,255,255,.3)]
+  max-xl:bg-gradient-to-t
+ dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.3)]
 }
 
 .img-carrousel-box {
@@ -105,7 +122,7 @@
   h-full
   object-cover
   object-right
-  max-sm:object-center
+  max-xl:object-center
   transition-[object-position]
   duration-700 ease-in-out
 }
