@@ -14,8 +14,8 @@ function Slider({ games }) {
     );
   };
 
-  if(!games || games.length === 0) {
-    return <div className="slider-container">No hay juegos disponibles</div>;
+  if(!games || !games.length) {
+    return <div className="slider-container">No hay juegos disponibles</div>
   }
 
   const currentGame = games[currentIndex]

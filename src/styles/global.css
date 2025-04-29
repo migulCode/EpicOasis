@@ -111,9 +111,9 @@
   left-0
   h-[100vh]
   w-[100%]
-  bg-gradient-to-r from-[var(--color-claro-fondo)] to-[rgba(255,255,255,.3)]
+  bg-gradient-to-r from-[var(--color-claro-fondo)] to-[rgba(255,255,255,.2)]
   max-xl:bg-gradient-to-t
- dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.3)]
+ dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.2)]
 }
 
 .img-carrousel-box {
