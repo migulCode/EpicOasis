@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
 
 /* Create variables for animate kiader */
 @theme {
@@ -11,6 +17,10 @@
       opacity: 1;
     }
   }
+}
+
+@theme{
+  --font-jetbrains: 'JetBrains Mono', monospace;
 }
 
 /* Variables for light and dark themes */
@@ -62,7 +72,7 @@
 
 .left-carrousel-box {
   @apply
-  flex flex-col 
+  flex flex-col
   xl:max-w-[700px]
   xl:my-[calc(70px_+_10px)]
   xl:ml-10
@@ -76,21 +86,22 @@
   left-0
   top-0
   gap-6
-  prose-p:prose-lg
+
+  max-sm:prose-h2:prose-2xl
+
 }
 
 .title-carrousel-box {
   @apply
-  text-5xl font-bold text-black
-  dark:text-oscuro-texto
+  font-bold
+  sm:text-4xl
 }
 
 .description-carrousel-box {
   @apply
-  rounded-md
   dark:text-oscuro-texto-secundario
   max-xl:mb-30
-  font-medium
+
 }
 
 

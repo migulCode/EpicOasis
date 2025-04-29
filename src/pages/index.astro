@@ -12,6 +12,5 @@ const resGames = await allGames();
 
 <Layout>
   <Slider client:load games={resGames}/>
-  <Buscador client:load />
   <GameList client:visible allGames={resGames} />
 </Layout>
