@@ -54,7 +54,7 @@
 
 .slider-container {
   @apply relative
-  h-[calc(100dvh)]
+  h-[calc(100vh)]
   w-full
   top-0
   left-0
@@ -101,7 +101,6 @@
   @apply
   dark:text-oscuro-texto-secundario
   max-xl:mb-30
-
 }
 
 
