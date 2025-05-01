@@ -23,7 +23,7 @@ function Slider({ games }) {
   return (
     <div className="slider-container">
       {/* Contenido */}
-      <AnimatePresence>
+      <AnimatePresence mode="sync">
         <motion.div
           key={currentGame.id}
           className="carrousel-box"
@@ -44,7 +44,7 @@ function Slider({ games }) {
               exit={{ opacity: 0, y: -100 }}
               transition={{ duration: .6 }}
             >
-              {currentGame.title}
+              {currentGame.name}
             </motion.h2>
 
             <motion.p
@@ -53,8 +53,9 @@ function Slider({ games }) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
+              dangerouslySetInnerHTML={{ __html: `${currentGame.description.slice(0, 300).trim()}...` }}
             >
-              {currentGame.short_description}
+
             </motion.p>
           </motion.div>
 
@@ -66,10 +67,10 @@ function Slider({ games }) {
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
           >
-            <div className="bg-carrousel-box"></div>
+            <motion.div initial={{opacity : 0}} animate={{opacity: 1}} exit={{opacity: 0}} className="bg-carrousel-box"></motion.div>
             <img
-              src={currentGame.thumbnail}
-              alt={currentGame.title}
+              src={currentGame.background_image}
+              alt={currentGame.name}
               className="img-carrousel-box"
             />
           </motion.div>

@@ -10,7 +10,7 @@ export const allGames = () => {
       return response.data.results.map((game) => {
         return {
           id: game.id,
-          title: game.slug,
+          title: game.name,
           short_description:
             "Lorem20 ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           thumbnail: game.background_image,
@@ -22,6 +22,8 @@ export const allGames = () => {
       console.log(error.message);
     });
 };
+
+// Por revision
 
 export const bestGames = () => {
   return axios
@@ -41,6 +43,8 @@ export const bestGames = () => {
       console.log(error.message);
     });
 };
+
+// por revision
 
 export const gameDetails = (id) => {
   return axios

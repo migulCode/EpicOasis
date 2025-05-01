@@ -1,61 +1,134 @@
 [
   {
-    "id": 428090,
-    "slug": "hazumi-and-the-pregnation",
-    "name": "Hazumi and the Pregnation",
-    "name_original": "Hazumi and the Pregnation",
-    "description": "    After mass infertility strikes the globe, a new community is created with the goal to save our species. Their solution? SEX! Now the young and inexperienced Hazumi leaves her old life behind to aid in the repopulation effort. Of course, she must learn how to live in a land where common sense is seemingly flipped on its head.<br/><br/><br/><ul><li><strong>Fully Playable Prostitution Action</strong> – Most sexual encounters are fully interactive. Players may select from a variety of techniques, and have complete control of every action. Satisfy your partner for a bigger payout.<br/><br/></li><li><strong>Grow as a Person</strong> – Hazumi’s stats can be viewed through her smartphone. Raise her sensitivity through sexual acts, or increase charm by redecorating and remodeling Hazumi’s apartment.<br/><br/></li><li><strong>Comprehensive Pregnancy Mechanic</strong> – Hazumi’s body will actively change as a result of pregnancy. In addition to her belly growing each trimester, she will also experience things such as morning sickness, darkening nipples, lactation, and postpartum period. Sexual encounters can also be affected.<br/><br/></li><li><strong>Detailed Menstrual Cycle</strong> – The chance of getting pregnant will depend on the current phase of Hazumi’s menstrual cycle. She will even have her period. \t<br/><br/></li><li><strong>Play at Your Own Pace</strong> – There aren’t any silly things like combat or falling in love to worry about. Some content, such as birth scenes, and x-ray view, can enabled or disabled via an in-game menu.</li></ul><br/>*The Steam Edition supports PCs.<br/>The Android version is not included.<br/><br/>Developer: Mihiraghi<br/>Artist: Taji<br/>English Translation: Feunski<br/>Store page design: Kurige Yoshitaka<br/>Store page PV: Kiyo",
-    "metacritic": null,
-    "metacritic_platforms": [],
-    "released": "2020-02-20",
+    "id": 339958,
+    "slug": "persona-5-royal",
+    "name": "Persona 5 Royal",
+    "name_original": "Persona 5 Royal",
+    "description": "<p>Wear the mask.  Reveal your truth.<br />\nPrepare for an all-new RPG experience in Persona®5 Royal based in the universe of the award-winning series, Persona®! Don the mask of Joker and join the Phantom Thieves of Hearts. Break free from the chains of modern society and stage grand heists to infiltrate the minds of the corrupt and make them change their ways! Persona®5 Royal is packed with new characters, story depth, new locations to explore, &amp; a new grappling hook mechanic for access to new areas. With a new semester at Shujin Academy, get ready to strengthen your abilities in the metaverse and in your daily life. Persona®5 Royal presents a unique visual style and award nominated composer Shoji Meguro returns with an all-new soundtrack. Explore Tokyo, unlock new Personas, customize your own personal Thieves Den, discover a never-before-seen story arc, cutscenes, alternate endings, and more!</p>",
+    "metacritic": 94,
+    "metacritic_platforms": [
+      {
+        "metascore": 94,
+        "url": "https://www.metacritic.com/game/xbox-series-x/persona-5-royal",
+        "platform": {
+          "platform": 186,
+          "name": "Xbox Series S/X",
+          "slug": "xbox-series-x"
+        }
+      },
+      {
+        "metascore": 94,
+        "url": "https://www.metacritic.com/game/switch/persona-5-royal",
+        "platform": {
+          "platform": 7,
+          "name": "Nintendo Switch",
+          "slug": "nintendo-switch"
+        }
+      },
+      {
+        "metascore": 91,
+        "url": "https://www.metacritic.com/game/playstation-5/persona-5-royal",
+        "platform": {
+          "platform": 187,
+          "name": "PlayStation 5",
+          "slug": "playstation5"
+        }
+      },
+      {
+        "metascore": 95,
+        "url": "https://www.metacritic.com/game/pc/persona-5-royal",
+        "platform": {
+          "platform": 4,
+          "name": "PC",
+          "slug": "pc"
+        }
+      },
+      {
+        "metascore": 95,
+        "url": "https://www.metacritic.com/game/playstation-4/persona-5-royal",
+        "platform": {
+          "platform": 18,
+          "name": "PlayStation 4",
+          "slug": "playstation4"
+        }
+      }
+    ],
+    "released": "2020-03-31",
     "tba": false,
-    "updated": "2025-02-07T01:21:10",
-    "background_image": "https://media.rawg.io/media/screenshots/bcd/bcdcee4066b1eb3fb8e949189088314f.jpg",
-    "background_image_additional": "https://media.rawg.io/media/screenshots/65e/65ecd9f345930214eb379a44dc1f5a71.jpg",
-    "website": "",
-    "rating": 5.0,
+    "updated": "2025-04-27T19:10:33",
+    "background_image": "https://media.rawg.io/media/games/a9c/a9c789951de65da545d51f664b4f2ce0.jpg",
+    "background_image_additional": "https://media.rawg.io/media/screenshots/b26/b2604ecc559bccfb72dca2c869f53b63.jpg",
+    "website": "https://atlus.com/p5r/",
+    "rating": 4.76,
     "rating_top": 5,
     "ratings": [
       {
         "id": 5,
         "title": "exceptional",
-        "count": 7,
-        "percent": 100.0
+        "count": 424,
+        "percent": 83.63
+      },
+      {
+        "id": 4,
+        "title": "recommended",
+        "count": 58,
+        "percent": 11.44
+      },
+      {
+        "id": 3,
+        "title": "meh",
+        "count": 17,
+        "percent": 3.35
+      },
+      {
+        "id": 1,
+        "title": "skip",
+        "count": 8,
+        "percent": 1.58
       }
     ],
-    "reactions": {},
-    "added": 31,
-    "added_by_status": {
-      "yet": 2,
-      "owned": 23,
-      "beaten": 1,
-      "toplay": 3,
-      "dropped": 1,
-      "playing": 1
+    "reactions": {
+      "1": 3,
+      "2": 3,
+      "3": 6,
+      "4": 1,
+      "7": 3,
+      "10": 2,
+      "11": 1,
+      "12": 4
     },
-    "playtime": 4,
-    "screenshots_count": 8,
+    "added": 3068,
+    "added_by_status": {
+      "yet": 225,
+      "owned": 1671,
+      "beaten": 448,
+      "toplay": 482,
+      "dropped": 83,
+      "playing": 159
+    },
+    "playtime": 13,
+    "screenshots_count": 6,
     "movies_count": 0,
-    "creators_count": 0,
-    "achievements_count": 12,
-    "parent_achievements_count": 12,
-    "reddit_url": "",
+    "creators_count": 9,
+    "achievements_count": 343,
+    "parent_achievements_count": 129,
+    "reddit_url": "https://www.reddit.com/r/Persona5/",
     "reddit_name": "",
     "reddit_description": "",
     "reddit_logo": "",
-    "reddit_count": 0,
+    "reddit_count": 5150,
     "twitch_count": 0,
-    "youtube_count": 0,
-    "reviews_text_count": 0,
-    "ratings_count": 7,
-    "suggestions_count": 300,
-    "alternative_names": [],
-    "metacritic_url": "",
+    "youtube_count": 1000000,
+    "reviews_text_count": 10,
+    "ratings_count": 497,
+    "suggestions_count": 329,
+    "alternative_names": ["ペルソナ5 ザ・ロイヤル", "女神异闻录5皇家版"],
+    "metacritic_url": "https://www.metacritic.com/game/playstation-4/persona-5-royal",
     "parents_count": 1,
     "additions_count": 0,
     "game_series_count": 0,
     "user_game": null,
-    "reviews_count": 7,
+    "reviews_count": 507,
     "saturated_color": "0f0f0f",
     "dominant_color": "0f0f0f",
     "parent_platforms": [
@@ -65,9 +138,44 @@
           "name": "PC",
           "slug": "pc"
         }
+      },
+      {
+        "platform": {
+          "id": 2,
+          "name": "PlayStation",
+          "slug": "playstation"
+        }
+      },
+      {
+        "platform": {
+          "id": 3,
+          "name": "Xbox",
+          "slug": "xbox"
+        }
+      },
+      {
+        "platform": {
+          "id": 7,
+          "name": "Nintendo",
+          "slug": "nintendo"
+        }
       }
     ],
     "platforms": [
+      {
+        "platform": {
+          "id": 186,
+          "name": "Xbox Series S/X",
+          "slug": "xbox-series-x",
+          "image": null,
+          "year_end": null,
+          "year_start": 2020,
+          "games_count": 1079,
+          "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg"
+        },
+        "released_at": "2020-03-31",
+        "requirements": {}
+      },
       {
         "platform": {
           "id": 4,
@@ -76,52 +184,133 @@
           "image": null,
           "year_end": null,
           "year_start": null,
-          "games_count": 547584,
-          "image_background": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg"
+          "games_count": 547964,
+          "image_background": "https://media.rawg.io/media/games/511/5118aff5091cb3efec399c808f8c598f.jpg"
         },
-        "released_at": "2020-02-20",
+        "released_at": "2020-03-31",
         "requirements": {
-          "minimum": "Minimum:\nOS: Windows® 7/8/8.1/10\nProcessor: Intel Core 2 Duo or better\nMemory: 4 GB RAM\nGraphics: DirectX 9/OpenGL 4.1 capable GPU\nDirectX: Version 9.0\nStorage: 1 GB available space"
+          "minimum": "Minimum:\nRequires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-4790, 3.4 GHz | AMD Ryzen 5 1500X, 3.5 GHz\nMemory: 8 GB RAM\nGraphics: Nvidia GeForce GTX 650 Ti, 2 GB | AMD Radeon R7 360, 2 GB\nDirectX: Version 11\nStorage: 41 GB available space\nAdditional Notes: Low 720p @ 60 FPS. Requires a CPU which supports the AVX and SSE4.2 instruction set.",
+          "recommended": "Recommended:\nRequires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i7-4790, 3.4 GHz | AMD Ryzen 5 1500X 3.5 Ghz\nMemory: 8 GB RAM\nGraphics: Nvidia GeForce GTX 760, 2 GB | AMD Radeon HD 7870, 2 GB\nDirectX: Version 11\nStorage: 41 GB available space\nAdditional Notes: High 1080p @ 60 FPS"
         }
+      },
+      {
+        "platform": {
+          "id": 187,
+          "name": "PlayStation 5",
+          "slug": "playstation5",
+          "image": null,
+          "year_end": null,
+          "year_start": 2020,
+          "games_count": 1244,
+          "image_background": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg"
+        },
+        "released_at": "2020-03-31",
+        "requirements": {}
+      },
+      {
+        "platform": {
+          "id": 7,
+          "name": "Nintendo Switch",
+          "slug": "nintendo-switch",
+          "image": null,
+          "year_end": null,
+          "year_start": null,
+          "games_count": 5626,
+          "image_background": "https://media.rawg.io/media/games/849/849414b978db37d4563ff9e4b0d3a787.jpg"
+        },
+        "released_at": "2020-03-31",
+        "requirements": {}
+      },
+      {
+        "platform": {
+          "id": 1,
+          "name": "Xbox One",
+          "slug": "xbox-one",
+          "image": null,
+          "year_end": null,
+          "year_start": null,
+          "games_count": 5696,
+          "image_background": "https://media.rawg.io/media/games/021/021c4e21a1824d2526f925eff6324653.jpg"
+        },
+        "released_at": "2020-03-31",
+        "requirements": {}
+      },
+      {
+        "platform": {
+          "id": 18,
+          "name": "PlayStation 4",
+          "slug": "playstation4",
+          "image": null,
+          "year_end": null,
+          "year_start": null,
+          "games_count": 6919,
+          "image_background": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg"
+        },
+        "released_at": "2020-03-31",
+        "requirements": {}
       }
     ],
     "stores": [
       {
-        "id": 419018,
+        "id": 858685,
+        "url": "",
+        "store": {
+          "id": 6,
+          "name": "Nintendo Store",
+          "slug": "nintendo",
+          "domain": "nintendo.com",
+          "games_count": 9129,
+          "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+        }
+      },
+      {
+        "id": 858684,
         "url": "",
         "store": {
           "id": 1,
           "name": "Steam",
           "slug": "steam",
           "domain": "store.steampowered.com",
-          "games_count": 110569,
-          "image_background": "https://media.rawg.io/media/games/6fc/6fcf4cd3b17c288821388e6085bb0fc9.jpg"
+          "games_count": 110950,
+          "image_background": "https://media.rawg.io/media/games/120/1201a40e4364557b124392ee50317b99.jpg"
+        }
+      },
+      {
+        "id": 385794,
+        "url": "",
+        "store": {
+          "id": 3,
+          "name": "PlayStation Store",
+          "slug": "playstation-store",
+          "domain": "store.playstation.com",
+          "games_count": 8040,
+          "image_background": "https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
         }
       }
     ],
     "developers": [
       {
-        "id": 172052,
-        "name": "Mihiraghi",
-        "slug": "mihiraghi",
-        "games_count": 1,
-        "image_background": "https://media.rawg.io/media/screenshots/bcd/bcdcee4066b1eb3fb8e949189088314f.jpg"
+        "id": 13953,
+        "name": "Atlus",
+        "slug": "atlus",
+        "games_count": 114,
+        "image_background": "https://media.rawg.io/media/games/68a/68a5aaddf51fa089fe1d2fcc9aa1b62b.jpg"
       }
     ],
     "genres": [
       {
+        "id": 3,
+        "name": "Adventure",
+        "slug": "adventure",
+        "games_count": 146789,
+        "image_background": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg"
+      },
+      {
         "id": 5,
         "name": "RPG",
         "slug": "role-playing-games-rpg",
-        "games_count": 59443,
-        "image_background": "https://media.rawg.io/media/games/713/713269608dc8f2f40f5a670a14b2de94.jpg"
-      },
-      {
-        "id": 51,
-        "name": "Indie",
-        "slug": "indie",
-        "games_count": 77227,
-        "image_background": "https://media.rawg.io/media/games/d0f/d0f91fe1d92332147e5db74e207cfc7a.jpg"
+        "games_count": 59505,
+        "image_background": "https://media.rawg.io/media/games/a6c/a6ccd34125c594abf1a9c9821b9a715d.jpg"
       }
     ],
     "tags": [
@@ -130,102 +319,209 @@
         "name": "Singleplayer",
         "slug": "singleplayer",
         "language": "eng",
-        "games_count": 238777,
-        "image_background": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg"
+        "games_count": 239144,
+        "image_background": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg"
       },
       {
         "id": 40847,
         "name": "Steam Achievements",
         "slug": "steam-achievements",
         "language": "eng",
-        "games_count": 45242,
+        "games_count": 45430,
+        "image_background": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg"
+      },
+      {
+        "id": 40836,
+        "name": "Full controller support",
+        "slug": "full-controller-support",
+        "language": "eng",
+        "games_count": 21419,
+        "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
+      },
+      {
+        "id": 40849,
+        "name": "Steam Cloud",
+        "slug": "steam-cloud",
+        "language": "eng",
+        "games_count": 22047,
+        "image_background": "https://media.rawg.io/media/games/e6d/e6de699bd788497f4b52e2f41f9698f2.jpg"
+      },
+      {
+        "id": 42,
+        "name": "Great Soundtrack",
+        "slug": "great-soundtrack",
+        "language": "eng",
+        "games_count": 3426,
         "image_background": "https://media.rawg.io/media/games/198/1988a337305e008b41d7f536ce9b73f6.jpg"
       },
       {
-        "id": 40845,
-        "name": "Partial Controller Support",
-        "slug": "partial-controller-support",
+        "id": 24,
+        "name": "RPG",
+        "slug": "rpg",
         "language": "eng",
-        "games_count": 13021,
-        "image_background": "https://media.rawg.io/media/games/4e0/4e0e7b6d6906a131307c94266e5c9a1c.jpg"
+        "games_count": 24245,
+        "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg"
       },
       {
-        "id": 11669,
-        "name": "stats",
-        "slug": "stats",
+        "id": 118,
+        "name": "Story Rich",
+        "slug": "story-rich",
         "language": "eng",
-        "games_count": 5482,
-        "image_background": "https://media.rawg.io/media/games/f8c/f8c6a262ead4c16b47e1219310210eb3.jpg"
+        "games_count": 24813,
+        "image_background": "https://media.rawg.io/media/games/6cd/6cd653e0aaef5ff8bbd295bf4bcb12eb.jpg"
       },
       {
-        "id": 44,
-        "name": "Nudity",
-        "slug": "nudity",
+        "id": 34,
+        "name": "Violent",
+        "slug": "violent",
         "language": "eng",
-        "games_count": 7753,
-        "image_background": "https://media.rawg.io/media/games/a0e/a0ef08621301a1eab5e04fa5c96978fa.jpeg"
+        "games_count": 7301,
+        "image_background": "https://media.rawg.io/media/games/0af/0af85e8edddfa55368e47c539914a220.jpg"
       },
       {
-        "id": 192,
-        "name": "Mature",
-        "slug": "mature",
+        "id": 134,
+        "name": "Anime",
+        "slug": "anime",
         "language": "eng",
-        "games_count": 4033,
-        "image_background": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg"
+        "games_count": 15437,
+        "image_background": "https://media.rawg.io/media/games/bee/bee483efadcf9d7e657e52184316a34e.jpg"
       },
       {
-        "id": 1465,
-        "name": "combat",
-        "slug": "combat",
+        "id": 165,
+        "name": "Colorful",
+        "slug": "colorful",
         "language": "eng",
-        "games_count": 14472,
-        "image_background": "https://media.rawg.io/media/games/e1f/e1ffbeb1bac25b19749ad285ca29e158.jpg"
+        "games_count": 25983,
+        "image_background": "https://media.rawg.io/media/screenshots/d07/d07a7e2f7be2428c51ad26326c84e21d.jpg"
       },
       {
-        "id": 5842,
-        "name": "steam",
-        "slug": "steam",
+        "id": 101,
+        "name": "Turn-Based Strategy",
+        "slug": "turn-based-strategy",
         "language": "eng",
-        "games_count": 817,
-        "image_background": "https://media.rawg.io/media/screenshots/800/800c59bb908eb13c696dc7a46f59c148.jpg"
+        "games_count": 5995,
+        "image_background": "https://media.rawg.io/media/games/238/2383a172b4d50a7b44e07980eb7141ea.jpg"
       },
       {
-        "id": 1081,
-        "name": "adult",
-        "slug": "adult",
+        "id": 50,
+        "name": "Sexual Content",
+        "slug": "sexual-content",
         "language": "eng",
-        "games_count": 1672,
-        "image_background": "https://media.rawg.io/media/screenshots/370/3702b7056a560955ecd3c0679c8e8b65.jpg"
+        "games_count": 7609,
+        "image_background": "https://media.rawg.io/media/games/370/3703c683968a54f09630dcf03366ea35.jpg"
       },
       {
-        "id": 1333,
-        "name": "android",
-        "slug": "android",
+        "id": 218,
+        "name": "Multiple Endings",
+        "slug": "multiple-endings",
         "language": "eng",
-        "games_count": 3365,
-        "image_background": "https://media.rawg.io/media/screenshots/4a1/4a194da0aa322a24fa8cdeb060323fd5.jpg"
+        "games_count": 10354,
+        "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
       },
       {
-        "id": 1131,
-        "name": "sex",
-        "slug": "sex",
+        "id": 40937,
+        "name": "Steam Trading Cards",
+        "slug": "steam-trading-cards-2",
         "language": "eng",
-        "games_count": 349,
-        "image_background": "https://media.rawg.io/media/screenshots/b91/b9119e9e9f73f068c8c4876ec5eafd29.jpg"
+        "games_count": 750,
+        "image_background": "https://media.rawg.io/media/games/260/26023c855f1769a93411d6a7ea084632.jpeg"
+      },
+      {
+        "id": 90,
+        "name": "Visual Novel",
+        "slug": "visual-novel",
+        "language": "eng",
+        "games_count": 8560,
+        "image_background": "https://media.rawg.io/media/games/8d6/8d69eb6c32ed6acfd75f82d532144993.jpg"
+      },
+      {
+        "id": 233,
+        "name": "JRPG",
+        "slug": "jrpg",
+        "language": "eng",
+        "games_count": 4835,
+        "image_background": "https://media.rawg.io/media/games/b2c/b2c9c6115114c8f7d461b5430e8a7d4a.jpg"
+      },
+      {
+        "id": 142,
+        "name": "Detective",
+        "slug": "detective",
+        "language": "eng",
+        "games_count": 3737,
+        "image_background": "https://media.rawg.io/media/games/b2c/b2c9c6115114c8f7d461b5430e8a7d4a.jpg"
+      },
+      {
+        "id": 175,
+        "name": "Turn-Based Combat",
+        "slug": "turn-based-combat",
+        "language": "eng",
+        "games_count": 5744,
+        "image_background": "https://media.rawg.io/media/games/75c/75c086892cbf0aed952293f440a935a4.jpg"
+      },
+      {
+        "id": 216,
+        "name": "Heist",
+        "slug": "heist",
+        "language": "eng",
+        "games_count": 570,
+        "image_background": "https://media.rawg.io/media/games/b50/b501727147644474562935f19a60134e.jpg"
+      },
+      {
+        "id": 572,
+        "name": "Emotional",
+        "slug": "emotional",
+        "language": "eng",
+        "games_count": 3792,
+        "image_background": "https://media.rawg.io/media/games/7ad/7adc6352280fe0e6626902e444e22195.jpg"
+      },
+      {
+        "id": 160,
+        "name": "Dating Sim",
+        "slug": "dating-sim",
+        "language": "eng",
+        "games_count": 6191,
+        "image_background": "https://media.rawg.io/media/screenshots/5d9/5d9d6da555c357edde9cfa2db622083f.jpg"
+      },
+      {
+        "id": 206,
+        "name": "Party-Based RPG",
+        "slug": "party-based-rpg",
+        "language": "eng",
+        "games_count": 1358,
+        "image_background": "https://media.rawg.io/media/games/d89/d89bd0cf4fcdc10820892980cbba0f49.jpg"
+      },
+      {
+        "id": 295,
+        "name": "Soundtrack",
+        "slug": "soundtrack",
+        "language": "eng",
+        "games_count": 3199,
+        "image_background": "https://media.rawg.io/media/games/dec/decdfa154a72265cd2914097666a99d5.jpg"
       }
     ],
     "publishers": [
       {
-        "id": 41582,
-        "name": "Mihiraghi",
-        "slug": "mihiraghi",
-        "games_count": 1,
-        "image_background": "https://media.rawg.io/media/screenshots/bcd/bcdcee4066b1eb3fb8e949189088314f.jpg"
+        "id": 3408,
+        "name": "SEGA",
+        "slug": "sega-2",
+        "games_count": 1263,
+        "image_background": "https://media.rawg.io/media/games/0fd/0fd84d36596a83ef2e5a35f63a072218.jpg"
+      },
+      {
+        "id": 9065,
+        "name": "Atlus",
+        "slug": "atlus",
+        "games_count": 247,
+        "image_background": "https://media.rawg.io/media/games/9d3/9d3e5f3b9fbe3769e693c93b5b91300a.jpg"
       }
     ],
-    "esrb_rating": null,
+    "esrb_rating": {
+      "id": 4,
+      "name": "Mature",
+      "slug": "mature"
+    },
     "clip": null,
-    "description_raw": "Mature Content Description\nAll characters depicted are age 18 years or older.\nThis game contains graphic sex, non-consensual sex, adult language, full nudity, depictions of childbirth, drug use, abortion, and prostitution. All depictions of genitals are censored with a mosaic pattern.About This Game\nAfter mass infertility strikes the globe, a new community is created with the goal to save our species. Their solution? SEX! Now the young and inexperienced Hazumi leaves her old life behind to aid in the repopulation effort. Of course, she must learn how to live in a land where common sense is seemingly flipped on its head.\nFully Playable Prostitution Action – Most sexual encounters are fully interactive. Players may select from a variety of techniques, and have complete control of every action. Satisfy your partner for a bigger payout.\nGrow as a Person – Hazumi’s stats can be viewed through her smartphone. Raise her sensitivity through sexual acts, or increase charm by redecorating and remodeling Hazumi’s apartment.\nComprehensive Pregnancy Mechanic – Hazumi’s body will actively change as a result of pregnancy. In addition to her belly growing each trimester, she will also experience things such as morning sickness, darkening nipples, lactation, and postpartum period. Sexual encounters can also be affected.\nDetailed Menstrual Cycle – The chance of getting pregnant will depend on the current phase of Hazumi’s menstrual cycle. She will even have her period.\nPlay at Your Own Pace – There aren’t any silly things like combat or falling in love to worry about. Some content, such as birth scenes, and x-ray view, can enabled or disabled via an in-game menu.\n*The Steam Edition supports PCs.\nThe Android version is not included.\nDeveloper: Mihiraghi\nArtist: Taji\nEnglish Translation: Feunski\nStore page design: Kurige Yoshitaka\nStore page PV: Kiyo"
+    "description_raw": "Wear the mask.  Reveal your truth.\nPrepare for an all-new RPG experience in Persona®5 Royal based in the universe of the award-winning series, Persona®! Don the mask of Joker and join the Phantom Thieves of Hearts. Break free from the chains of modern society and stage grand heists to infiltrate the minds of the corrupt and make them change their ways! Persona®5 Royal is packed with new characters, story depth, new locations to explore, & a new grappling hook mechanic for access to new areas. With a new semester at Shujin Academy, get ready to strengthen your abilities in the metaverse and in your daily life. Persona®5 Royal presents a unique visual style and award nominated composer Shoji Meguro returns with an all-new soundtrack. Explore Tokyo, unlock new Personas, customize your own personal Thieves Den, discover a never-before-seen story arc, cutscenes, alternate endings, and more!"
   },
   {
     "id": 974379,
@@ -1327,48 +1623,51 @@
     "description_raw": ""
   },
   {
-    "id": 830060,
-    "slug": "sonic-triple-trouble-16-bit",
-    "name": "Sonic Triple Trouble 16-Bit (NoahNCopeland)",
-    "name_original": "Sonic Triple Trouble 16-Bit (NoahNCopeland)",
-    "description": "<p>What if Sonic Triple Trouble had been originally released on the Sega Genesis/MegaDrive, after Sonic 3 &amp; Knuckles?</p>\n<p>This is a fangame re-imagining of the Game Gear game Sonic Triple Trouble in the style of the Genesis Sonic classics.</p>\n<p>All credit goes to Noah N. Copeland at:<br />\nhttps://twitter.com/NoahNCopeland?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor</p>\n<p>Features:</p>\n<pre><code>- All levels themes from Sonic Triple Trouble recreated in 16-Bit Style  \n- New stage layouts, enemies, and gimmicks!  \n- 3D Special Stages  \n- Sega Genesis accurate Colors &amp;amp; Sound  \n- 360 Sonic Physics  \n- Switch between Sonic and Tails in real-time!  \n- Gamepad Support\n</code></pre>\n<p><strong><em>Sonic Triple Trouble 16-Bit is in no way affiliated with Sega or Sonic Team. This is a non-profit fan project.</em></strong></p>",
+    "id": 932677,
+    "slug": "octopath-traveler-ii",
+    "name": "OCTOPATH TRAVELER II",
+    "name_original": "OCTOPATH TRAVELER II",
+    "description": "The story takes place in Solistia, a land comprising an eastern and western continent divided by the sea. <br/><br/>It is a bustling era, wherein large vessels navigate busy sea routes and the power of steam gives birth to new technologies.<br/><br/>Some people thrill to glamorous stars of the stage and industry, while others are brought to tears by war, plague, and poverty.<br/><br/>In this faraway realm, eight travelers hailing from different regions venture forth for their own reasons. Step into their shoes and explore the land as you see fit, using their unique talents to aid you along your journey. <br/><br/>Embark on an adventure all your own.<h3>KEY FEATURES</h3><ul><li>Begin your adventure as one of eight new travelers, each with their own origins, motivations, and unique skills.<br/></li><li>The series’ HD-2D graphics, a fusion of retro pixel art and 3DCG, have reached even greater heights.<br/></li><li>The story takes place in Solistia, where diverse cultures thrive from east to west and the industries of the new era flourish. You can sail the seas and explore every corner of a world that changes from day to night.<br/></li><li>Each traveler has a unique set of Path Actions they can use to battle townspeople, obtain items, take others along in their travels, and more. Where will you go? What will you do? Every path is yours to take.<br/></li><li>Familiar mechanics from the original game have been preserved, like the freedom to develop your travelers’ jobs and skills, as well as the Break and Boost system that made battles so exhilarating. New mechanics have also been added.</li></ul>",
     "metacritic": null,
     "metacritic_platforms": [],
-    "released": "2022-08-02",
+    "released": null,
     "tba": false,
-    "updated": "2025-02-13T23:27:58",
-    "background_image": "https://media.rawg.io/media/screenshots/a9c/a9c0a6fb4def5538d39544934bded4b3.jpg",
-    "background_image_additional": "https://media.rawg.io/media/screenshots/eeb/eeb7cbbd6a40d6583495dfcca03c85db.jpg",
-    "website": "https://gamejolt.com/games/sonictripletrouble16bit/322794",
-    "rating": 4.83,
+    "updated": "2025-02-28T15:45:24",
+    "background_image": "https://media.rawg.io/media/screenshots/7c0/7c015e0ab17a4255a9dd8452eeb96e50.jpg",
+    "background_image_additional": "https://media.rawg.io/media/screenshots/f73/f7324e0e2eb93452a3d1f6631eb9ccb1.jpg",
+    "website": "",
+    "rating": 4.71,
     "rating_top": 5,
     "ratings": [
       {
         "id": 5,
         "title": "exceptional",
         "count": 5,
-        "percent": 83.33
+        "percent": 71.43
       },
       {
         "id": 4,
         "title": "recommended",
-        "count": 1,
-        "percent": 16.67
+        "count": 2,
+        "percent": 28.57
       }
     ],
-    "reactions": {},
-    "added": 10,
+    "reactions": null,
+    "added": 80,
     "added_by_status": {
-      "owned": 2,
-      "beaten": 7,
-      "toplay": 1
+      "yet": 5,
+      "owned": 69,
+      "beaten": 1,
+      "toplay": 3,
+      "dropped": 1,
+      "playing": 1
     },
-    "playtime": 0,
+    "playtime": 10,
     "screenshots_count": 6,
     "movies_count": 0,
     "creators_count": 0,
-    "achievements_count": 0,
-    "parent_achievements_count": 0,
+    "achievements_count": 24,
+    "parent_achievements_count": 24,
     "reddit_url": "",
     "reddit_name": "",
     "reddit_description": "",
@@ -1377,15 +1676,15 @@
     "twitch_count": 0,
     "youtube_count": 0,
     "reviews_text_count": 0,
-    "ratings_count": 6,
-    "suggestions_count": 211,
+    "ratings_count": 7,
+    "suggestions_count": 399,
     "alternative_names": [],
     "metacritic_url": "",
     "parents_count": 0,
     "additions_count": 0,
     "game_series_count": 0,
     "user_game": null,
-    "reviews_count": 6,
+    "reviews_count": 7,
     "saturated_color": "0f0f0f",
     "dominant_color": "0f0f0f",
     "parent_platforms": [
@@ -1406,49 +1705,236 @@
           "image": null,
           "year_end": null,
           "year_start": null,
-          "games_count": 547583,
+          "games_count": 547965,
           "image_background": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg"
         },
-        "released_at": "2022-08-02",
-        "requirements": {}
+        "released_at": null,
+        "requirements": {
+          "minimum": "Minimum:\nOS: Windows® 10 / 11 64-bit\nProcessor: AMD Ryzen™ 3 1200 / Intel® Core™ i3-6100\nMemory: 8 GB RAM\nGraphics: AMD Radeon™ RX 460 / NVIDIA® GeForce® GTX 750\nDirectX: Version 12\nStorage: 10 GB available space\nAdditional Notes: 60 FPS @ 1280x720, Preset &quot;Low&quot;, 2GB VRAM required",
+          "recommended": "Recommended:\nOS: Windows® 10 / 11 64-bit\nProcessor: AMD Ryzen™ 3 1200 / Intel® Core™ i5-6400\nMemory: 8 GB RAM\nGraphics: AMD Radeon™ RX 470 / Intel® Arc™ A750 / NVIDIA® GeForce® GTX 1060 6GB VRAM\nDirectX: Version 12\nStorage: 10 GB available space\nAdditional Notes: 60 FPS @ 1920x1080, Preset &quot;Highest&quot;, Systen RAM 16GB required when running on Intel GPU"
+        }
       }
     ],
-    "stores": [],
-    "developers": [],
+    "stores": [
+      {
+        "id": 931099,
+        "url": "",
+        "store": {
+          "id": 1,
+          "name": "Steam",
+          "slug": "steam",
+          "domain": "store.steampowered.com",
+          "games_count": 110950,
+          "image_background": "https://media.rawg.io/media/games/120/1201a40e4364557b124392ee50317b99.jpg"
+        }
+      }
+    ],
+    "developers": [
+      {
+        "id": 4132,
+        "name": "Square Enix",
+        "slug": "square-enix",
+        "games_count": 368,
+        "image_background": "https://media.rawg.io/media/games/214/2140885d34e3a3398b45036e5d870971.jpg"
+      },
+      {
+        "id": 10964,
+        "name": "Acquire",
+        "slug": "acquire",
+        "games_count": 42,
+        "image_background": "https://media.rawg.io/media/games/87e/87e6d38aaa58ef00280626d876115e42.jpg"
+      }
+    ],
     "genres": [
       {
-        "id": 4,
-        "name": "Action",
-        "slug": "action",
-        "games_count": 186751,
+        "id": 5,
+        "name": "RPG",
+        "slug": "role-playing-games-rpg",
+        "games_count": 59505,
+        "image_background": "https://media.rawg.io/media/games/a6c/a6ccd34125c594abf1a9c9821b9a715d.jpg"
+      }
+    ],
+    "tags": [
+      {
+        "id": 31,
+        "name": "Singleplayer",
+        "slug": "singleplayer",
+        "language": "eng",
+        "games_count": 239144,
+        "image_background": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg"
+      },
+      {
+        "id": 40847,
+        "name": "Steam Achievements",
+        "slug": "steam-achievements",
+        "language": "eng",
+        "games_count": 45430,
+        "image_background": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg"
+      },
+      {
+        "id": 40836,
+        "name": "Full controller support",
+        "slug": "full-controller-support",
+        "language": "eng",
+        "games_count": 21419,
         "image_background": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg"
       },
       {
-        "id": 3,
-        "name": "Adventure",
-        "slug": "adventure",
-        "games_count": 146620,
-        "image_background": "https://media.rawg.io/media/games/c50/c5085506fe4b5e20fc7aa5ace842c20b.jpg"
+        "id": 40849,
+        "name": "Steam Cloud",
+        "slug": "steam-cloud",
+        "language": "eng",
+        "games_count": 22047,
+        "image_background": "https://media.rawg.io/media/games/e6d/e6de699bd788497f4b52e2f41f9698f2.jpg"
       },
       {
-        "id": 51,
-        "name": "Indie",
-        "slug": "indie",
-        "games_count": 77227,
-        "image_background": "https://media.rawg.io/media/games/d0f/d0f91fe1d92332147e5db74e207cfc7a.jpg"
+        "id": 13,
+        "name": "Atmospheric",
+        "slug": "atmospheric",
+        "language": "eng",
+        "games_count": 36877,
+        "image_background": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg"
       },
       {
-        "id": 83,
-        "name": "Platformer",
-        "slug": "platformer",
-        "games_count": 100869,
-        "image_background": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg"
+        "id": 24,
+        "name": "RPG",
+        "slug": "rpg",
+        "language": "eng",
+        "games_count": 24245,
+        "image_background": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg"
+      },
+      {
+        "id": 118,
+        "name": "Story Rich",
+        "slug": "story-rich",
+        "language": "eng",
+        "games_count": 24813,
+        "image_background": "https://media.rawg.io/media/games/6cd/6cd653e0aaef5ff8bbd295bf4bcb12eb.jpg"
+      },
+      {
+        "id": 36,
+        "name": "Open World",
+        "slug": "open-world",
+        "language": "eng",
+        "games_count": 8539,
+        "image_background": "https://media.rawg.io/media/games/e6d/e6de699bd788497f4b52e2f41f9698f2.jpg"
+      },
+      {
+        "id": 64,
+        "name": "Fantasy",
+        "slug": "fantasy",
+        "language": "eng",
+        "games_count": 30755,
+        "image_background": "https://media.rawg.io/media/games/af7/af7a831001c5c32c46e950cc883b8cb7.jpg"
+      },
+      {
+        "id": 122,
+        "name": "Pixel Graphics",
+        "slug": "pixel-graphics",
+        "language": "eng",
+        "games_count": 96757,
+        "image_background": "https://media.rawg.io/media/games/003/0031c0067559d41df19cf98ad87e02aa.jpg"
+      },
+      {
+        "id": 134,
+        "name": "Anime",
+        "slug": "anime",
+        "language": "eng",
+        "games_count": 15437,
+        "image_background": "https://media.rawg.io/media/games/bee/bee483efadcf9d7e657e52184316a34e.jpg"
+      },
+      {
+        "id": 102,
+        "name": "Turn-Based",
+        "slug": "turn-based",
+        "language": "eng",
+        "games_count": 5479,
+        "image_background": "https://media.rawg.io/media/games/fd9/fd92f105dcd6491bc5d61135033d1f19.jpg"
+      },
+      {
+        "id": 88,
+        "name": "Cute",
+        "slug": "cute",
+        "language": "eng",
+        "games_count": 37010,
+        "image_background": "https://media.rawg.io/media/games/fae/faebf3c8cbf30db3f46bfbecf6ada3d6.jpg"
+      },
+      {
+        "id": 145,
+        "name": "Choices Matter",
+        "slug": "choices-matter",
+        "language": "eng",
+        "games_count": 7077,
+        "image_background": "https://media.rawg.io/media/games/704/704f831d2d132e9614931f1c4eab9e86.jpg"
+      },
+      {
+        "id": 82,
+        "name": "Magic",
+        "slug": "magic",
+        "language": "eng",
+        "games_count": 10548,
+        "image_background": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg"
+      },
+      {
+        "id": 40937,
+        "name": "Steam Trading Cards",
+        "slug": "steam-trading-cards-2",
+        "language": "eng",
+        "games_count": 750,
+        "image_background": "https://media.rawg.io/media/games/260/26023c855f1769a93411d6a7ea084632.jpeg"
+      },
+      {
+        "id": 233,
+        "name": "JRPG",
+        "slug": "jrpg",
+        "language": "eng",
+        "games_count": 4835,
+        "image_background": "https://media.rawg.io/media/games/b2c/b2c9c6115114c8f7d461b5430e8a7d4a.jpg"
+      },
+      {
+        "id": 116,
+        "name": "2.5D",
+        "slug": "25d",
+        "language": "eng",
+        "games_count": 2540,
+        "image_background": "https://media.rawg.io/media/games/075/0753492cda7ee3c9bd4a3ca673fd0c8c.jpg"
+      },
+      {
+        "id": 175,
+        "name": "Turn-Based Combat",
+        "slug": "turn-based-combat",
+        "language": "eng",
+        "games_count": 5744,
+        "image_background": "https://media.rawg.io/media/games/75c/75c086892cbf0aed952293f440a935a4.jpg"
+      },
+      {
+        "id": 572,
+        "name": "Emotional",
+        "slug": "emotional",
+        "language": "eng",
+        "games_count": 3792,
+        "image_background": "https://media.rawg.io/media/games/7ad/7adc6352280fe0e6626902e444e22195.jpg"
+      },
+      {
+        "id": 206,
+        "name": "Party-Based RPG",
+        "slug": "party-based-rpg",
+        "language": "eng",
+        "games_count": 1358,
+        "image_background": "https://media.rawg.io/media/games/d89/d89bd0cf4fcdc10820892980cbba0f49.jpg"
       }
     ],
-    "tags": [],
-    "publishers": [],
+    "publishers": [
+      {
+        "id": 308,
+        "name": "Square Enix",
+        "slug": "square-enix",
+        "games_count": 601,
+        "image_background": "https://media.rawg.io/media/games/59a/59a3ebcba3d08c51532c6ca877aff256.jpg"
+      }
+    ],
     "esrb_rating": null,
     "clip": null,
-    "description_raw": "What if Sonic Triple Trouble had been originally released on the Sega Genesis/MegaDrive, after Sonic 3 & Knuckles?\n\nThis is a fangame re-imagining of the Game Gear game Sonic Triple Trouble in the style of the Genesis Sonic classics.\n\nAll credit goes to Noah N. Copeland at:\nhttps://twitter.com/NoahNCopeland?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor\n\nFeatures:\n\n    - All levels themes from Sonic Triple Trouble recreated in 16-Bit Style\n    - New stage layouts, enemies, and gimmicks!\n    - 3D Special Stages\n    - Sega Genesis accurate Colors & Sound\n    - 360 Sonic Physics\n    - Switch between Sonic and Tails in real-time!\n    - Gamepad Support\n\n***Sonic Triple Trouble 16-Bit is in no way affiliated with Sega or Sonic Team. This is a non-profit fan project.***"
+    "description_raw": "OCTOPATH TRAVELER II Prologue Demo\nA free demo is now available! You can choose any of the eight protagonists, play for three hours, and carry over your saved game data to the full game. Travel beyond starting areas is restricted, but you can explore those corners of Solistia to your heart's content.\nAbout the GameThe story takes place in Solistia, a land comprising an eastern and western continent divided by the sea.\nIt is a bustling era, wherein large vessels navigate busy sea routes and the power of steam gives birth to new technologies.\nSome people thrill to glamorous stars of the stage and industry, while others are brought to tears by war, plague, and poverty.\nIn this faraway realm, eight travelers hailing from different regions venture forth for their own reasons. Step into their shoes and explore the land as you see fit, using their unique talents to aid you along your journey.\nEmbark on an adventure all your own.KEY FEATURESBegin your adventure as one of eight new travelers, each with their own origins, motivations, and unique skills.\nThe series’ HD-2D graphics, a fusion of retro pixel art and 3DCG, have reached even greater heights.\nThe story takes place in Solistia, where diverse cultures thrive from east to west and the industries of the new era flourish. You can sail the seas and explore every corner of a world that changes from day to night.\nEach traveler has a unique set of Path Actions they can use to battle townspeople, obtain items, take others along in their travels, and more. Where will you go? What will you do? Every path is yours to take.\nFamiliar mechanics from the original game have been preserved, like the freedom to develop your travelers’ jobs and skills, as well as the Break and Boost system that made battles so exhilarating. New mechanics have also been added."
   }
 ]
