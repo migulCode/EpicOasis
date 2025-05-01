@@ -1,16 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import GameList from "../components/games/List.jsx"
-import Buscador from "../components/Buscador.jsx"
-import Slider from "../components/games/Slider.jsx"
+import GameList from "../components/games/List.jsx";
+import Buscador from "../components/Buscador.jsx";
+import Slider from "../components/games/Slider.jsx";
 import { allGames } from "../services/games";
-
+import games from "../utils/bestGames.json";
 
 const resGames = await allGames();
 
+const bestGames = games.map((game) => {
+  return {
+    id: game.id,
+    name: game.name,
+    description: game.description,
+    background_image: game.background_image,
+    plataformas: game.platforms
+  };
+});
 ---
 
 <Layout>
-  <Slider client:load games={resGames}/>
+  <Slider client:load games={bestGames} />
   <GameList client:visible allGames={resGames} />
 </Layout>

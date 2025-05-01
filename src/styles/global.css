@@ -54,7 +54,7 @@
 
 .slider-container {
   @apply relative
-  h-[calc(100vh)]
+  h-dvh
   w-full
   top-0
   left-0
@@ -81,7 +81,7 @@
   max-xl:justify-end
   max-xl:items-center
   max-xl:h-full
-  max-xl:px-10
+  max-xl:px-4
   absolute
   left-0
   top-0
@@ -121,9 +121,10 @@
   left-0
   h-[100vh]
   w-[100%]
-  bg-gradient-to-r from-[var(--color-claro-fondo)] to-[rgba(255,255,255,.2)]
+  bg-gradient-to-r from-[var(--color-claro-fondo)]  to-[rgba(255,255,255,.1)]
   max-xl:bg-gradient-to-t
- dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.2)]
+  max-xl:from-50%
+ dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.1)]
 }
 
 .img-carrousel-box {

@@ -1,13 +1,45 @@
 ---
-
+import Search from "@lucide/astro/icons/search";
+import Eclipse from "@lucide/astro/icons/eclipse";
 ---
 
-<header class="flex justify-between items-center p-4 fixed top-0 left-0 bg-transparent w-full h-[70px] z-1">
-  <div class="flex items-center gap-4 prose-h1:prose-xl max-sm:prose-h1:prose-base font-bold">
+<header
+  class="flex justify-between items-center p-4 fixed top-0 left-0 bg-transparent w-full h-[70px] z-1 dark:text-oscuro-texto text-claro-texto"
+>
+  <div
+    class="flex items-center gap-4 prose-h1:prose-xl max-sm:prose-h1:prose-base font-bold"
+  >
     <h1 class="">EpicOasis</h1>
   </div>
-  <div class="bg-gray-700">
-    <button>BUSCADOR</button>
-    <button>MODO</button>
+  <div class="flex gap-6 max-sm:gap-2 font-bol max-sm:text-base">
+    <button
+      title="Click para Buscar"
+      class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300"
+      ><Search class="text-current" size={27} stroke-width="2" /> Buscador</button
+    >
+    <button
+      title="Click para cambiar de tema"
+      class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300"
+      ><Eclipse class="text-current" size={27} stroke-width="2" />
+    </button>
   </div>
 </header>
+
+<script>
+  import { animate, onScroll } from "animejs";
+
+  const header = document.querySelector("header");
+
+  if (header) {
+    animate(header, {
+      opacity: [0, 1],
+      translateY: [-100, 0],
+      duration: 500,
+      easing: "easeInOutQuad",
+    });
+
+    animate(header, {
+      autoplay: onScroll({}),
+    });
+  }
+</script>
