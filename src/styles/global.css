@@ -54,7 +54,7 @@
 
 .slider-container {
   @apply relative
-  h-dvh
+  h-[calc(100vh_-_70px)]
   w-full
   top-0
   left-0
@@ -64,10 +64,10 @@
 .carrousel-box {
   @apply
   flex
-  justify-start
-  w-full
-  gap-6
-  px-10
+  items-center
+  size-full
+  px-20
+  max-xl:px-0
 }
 
 .left-carrousel-box {
@@ -82,10 +82,11 @@
   max-xl:items-center
   max-xl:h-full
   max-xl:px-4
-  absolute
-  left-0
-  top-0
+
   gap-6
+
+  absolute
+
 
   max-sm:prose-h2:prose-2xl
 
@@ -119,7 +120,7 @@
   absolute
   top-0
   left-0
-  h-[100vh]
+  h-[110vh]
   w-[100%]
   bg-gradient-to-r from-[var(--color-claro-fondo)]  to-[rgba(255,255,255,.1)]
   max-xl:bg-gradient-to-t
@@ -127,10 +128,21 @@
  dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.1)]
 }
 
+.bg-carrousel-box-bottom {
+  @apply
+  absolute
+  top-0
+  left-0
+  h-[110vh]
+  w-[100%]
+  bg-gradient-to-t from-[var(--color-claro-fondo)] to-[rgba(255,255,255,.1)]
+ dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.1)]
+}
+
 .img-carrousel-box {
   @apply
   w-full
-  h-full
+  h-[calc(100vh_+_10vh)]
   object-cover
   object-right
   max-xl:object-center

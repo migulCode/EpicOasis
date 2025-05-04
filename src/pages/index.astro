@@ -6,13 +6,18 @@ import Slider from "../components/games/Slider.jsx";
 import { allGames } from "../services/games";
 import games from "../utils/bestGames.json";
 
+
+const htmlToText = (html : String) => {
+  return html.replace(/<[^>]*>/g, '').trim().slice(0, 300) + '...';
+}
+
 const resGames = await allGames();
 
 const bestGames = games.map((game) => {
   return {
     id: game.id,
     name: game.name,
-    description: game.description,
+    description: htmlToText(game.description),
     background_image: game.background_image,
     plataformas: game.platforms
   };
@@ -21,5 +26,5 @@ const bestGames = games.map((game) => {
 
 <Layout>
   <Slider client:load games={bestGames} />
-  <GameList client:visible allGames={resGames} />
+  <GameList client:load allGames={resGames} />
 </Layout>

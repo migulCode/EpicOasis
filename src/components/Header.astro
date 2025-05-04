@@ -25,21 +25,32 @@ import Eclipse from "@lucide/astro/icons/eclipse";
   </div>
 </header>
 
-<script>
-  import { animate, onScroll } from "animejs";
+<style>
+  header {
+    transition:
+      background-color 0.4s ease-out,
+      backdrop-filter 0.4s ease-out;
 
-  const header = document.querySelector("header");
-
-  if (header) {
-    animate(header, {
-      opacity: [0, 1],
-      translateY: [-100, 0],
-      duration: 500,
-      easing: "easeInOutQuad",
-    });
-
-    animate(header, {
-      autoplay: onScroll({}),
-    });
+    opacity: 0;
+    transform: translateY(-100%); /* Empieza fuera de la pantalla arriba */
+    animation:
+      fadeInDown 0.6s ease-out forwards,
+      backgroundFilter 0.6s 0.6s ease-out forwards; /* Nombre, duración, easing, delay, fill-mode */
+    border-bottom: 1px solid; /* Para evitar el parpadeo del borde */
   }
-</script>
+
+  /* --- Keyframes para la animación de entrada (Opcional) --- */
+  @keyframes fadeInDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes backgroundFilter {
+    to {
+      background-color: rgba(150, 150, 150, 0.3); /* Gris translúcido */
+      backdrop-filter: blur(5px) saturate(150%); /* Con blur */
+    }
+  }
+</style>
