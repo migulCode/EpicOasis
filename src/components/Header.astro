@@ -4,7 +4,7 @@ import Eclipse from "@lucide/astro/icons/eclipse";
 ---
 
 <header
-  class="flex justify-between items-center p-4 fixed top-0 left-0 bg-transparent w-full h-[70px] z-1 dark:text-oscuro-texto text-claro-texto"
+  class="flex justify-between items-center p-4 fixed top-0 left-0 bg-transparent w-full h-[70px] z-10 dark:text-oscuro-texto text-claro-texto max-sm:h-[50px]"
 >
   <div
     class="flex items-center gap-4 prose-h1:prose-xl max-sm:prose-h1:prose-base font-bold"
@@ -13,44 +13,96 @@ import Eclipse from "@lucide/astro/icons/eclipse";
   </div>
   <div class="flex gap-6 max-sm:gap-2 font-bol max-sm:text-base">
     <button
-      title="Click para Buscar"
+      title="Click to Search"
       class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300"
-      ><Search class="text-current" size={27} stroke-width="2" /> Buscador</button
+      ><Search class="text-current" size={27} stroke-width="2" />Searcher</button
     >
     <button
-      title="Click para cambiar de tema"
+      id="theme-toggle"
+      title="Click to change theme"
       class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300"
       ><Eclipse class="text-current" size={27} stroke-width="2" />
     </button>
   </div>
 </header>
 
-<style>
-  header {
-    transition:
-      background-color 0.4s ease-out,
-      backdrop-filter 0.4s ease-out;
+{/* Script para manejar el modo oscuro */}
+<script is:inline>
+  const themeToggle = document.getElementById('theme-toggle');
+  const localStorageKey = 'theme'; // Key para guardar en localStorage
 
+  // Función para aplicar el tema (añade/quita clase 'dark' al <html> : documentElement es la raiz OSEA la etiqueta <html>)
+
+  const applyTheme = (theme) => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  };
+
+  // Función para obtener el tema preferido del sistema
+  const getSystemPreference = () => {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  };
+
+  console.log('System preference:', getSystemPreference());
+  // Determinar y aplicar el tema inicial
+  const storedTheme = localStorage.getItem(localStorageKey);
+  const initialTheme = storedTheme || getSystemPreference();
+  applyTheme(initialTheme);
+
+  // Añadir listener al botón
+  themeToggle?.addEventListener('click', () => {
+    // Determinar el tema actual (leyendo la clase del <html>)
+    const currentTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    // Calcular el nuevo tema
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    // Aplicar el nuevo tema
+    applyTheme(newTheme);
+    // Guardar la preferencia en localStorage
+    localStorage.setItem(localStorageKey, newTheme);
+  });
+</script>
+
+<style>
+  /* Estilos base para el header (incluyendo los de la animación de scroll si los tenías) */
+  header {
+
+    backdrop-filter: blur(0px) saturate(100%);
+    transition: background-color 0.4s ease-out, backdrop-filter 0.4s ease-out;
     opacity: 0;
-    transform: translateY(-100%); /* Empieza fuera de la pantalla arriba */
-    animation:
-      fadeInDown 0.6s ease-out forwards,
-      backgroundFilter 0.6s 0.6s ease-out forwards; /* Nombre, duración, easing, delay, fill-mode */
-    border-bottom: 1px solid; /* Para evitar el parpadeo del borde */
+    transform: translateY(-100%);
+    animation: fadeInDown 0.6s ease-out 0.2s forwards;
   }
 
-  /* --- Keyframes para la animación de entrada (Opcional) --- */
+  header.scrolled {
+    background-color: rgba(150, 150, 150, 0.15);
+    backdrop-filter: blur(8px) saturate(180%);
+  }
+
   @keyframes fadeInDown {
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
-
-  @keyframes backgroundFilter {
-    to {
-      background-color: rgba(150, 150, 150, 0.3); /* Gris translúcido */
-      backdrop-filter: blur(5px) saturate(150%); /* Con blur */
-    }
-  }
 </style>
+
+<script is:inline>
+  const header = document.querySelector("header");
+  const scrollThreshold = 10;
+
+  const updateHeaderClass = () => {
+    if (window.scrollY > scrollThreshold) {
+      header?.classList.add("scrolled");
+    } else {
+      header?.classList.remove("scrolled");
+    }
+  };
+
+  document.addEventListener('DOMContentLoaded', updateHeaderClass);
+  window.addEventListener("scroll", updateHeaderClass, { passive: true });
+</script>
+
