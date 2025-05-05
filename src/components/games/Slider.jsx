@@ -41,18 +41,17 @@ function Slider({ games }) {
 
   const currentGame = games[currentIndex];
   const platforms = currentGame.plataformas || [];
-  console.log(platforms);
 
   return (
     <div className="slider-container">
       <div className="carrousel-box">
         {/* Columna izquierda: Título + Descripción */}
         <AnimatePresence mode="sync">
-          <motion.div
-            className="left-carrousel-box"
+          <motion.div className="left-carrousel-box" key={currentGame.id}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            key={currentGame.id}
-          >
+            transition={{ duration: .7 }}>
             <motion.h2
               className="title-carrousel-box"
               initial={{ opacity: 0, y: -100 }}
@@ -75,14 +74,18 @@ function Slider({ games }) {
               >
                 <p className="text-bold text-xl">
                   Available in:
-                  <AnimatePresence mode="wait">
+                  <AnimatePresence>
                     <motion.span
-                      key={currentPlatformIndex} // La key cambia para activar AnimatePresence
+                      key={currentPlatformIndex}
                       initial={{ y: 20, opacity: 0 }} // Empieza abajo y transparente
                       animate={{ y: 0, opacity: 1 }} // Entra al centro y visible
                       exit={{ y: -20, opacity: 0 }} // Sale hacia arriba y transparente
                       transition={{ duration: 0.5, ease: "easeInOut" }}
-                      style={{ position: "absolute", width: "100%", marginLeft:10 }} // Posición absoluta para superponer
+                      style={{
+                        position: "absolute",
+                        width: "100%",
+                        marginLeft: 10,
+                      }} // Posición absoluta para superponer
                       className="platform-text" // Añade una clase para estilos si es necesario
                     >
                       {platforms[currentPlatformIndex]?.platform?.name}
@@ -96,7 +99,7 @@ function Slider({ games }) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 1, delay: 0.2 }}
+                transition={{ duration: 0.7 }}
               >
                 {currentGame.description}
               </motion.p>
@@ -117,18 +120,18 @@ function Slider({ games }) {
       </div>
 
       {/* Botones */}
-      <div className="absolute bottom-8 right-10 flex gap-4 z-20">
+      <div className="slider-controls absolute w-full top-0 left-0 flex justify-between items-center gap-4 h-full pointer-events-none">
         <button
           onClick={prevSlide}
-          className="bg-white px-4 py-2 rounded-md shadow hover:bg-gray-200"
+          className="slider-control-prev slider-control-button"
         >
-          ⬅️
+          🠜
         </button>
         <button
           onClick={nextSlide}
-          className="bg-white px-4 py-2 rounded-md shadow hover:bg-gray-200"
+          className="slider-control-next slider-control-button"
         >
-          ➡️
+          🠞
         </button>
       </div>
     </div>

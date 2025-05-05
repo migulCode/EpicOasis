@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
+@custom-variant dark (&:where(.dark, .dark *));
 
 @font-face {
   font-family: "JetBrains Mono";
@@ -150,6 +151,13 @@
   duration-700 ease-in-out
 }
 
+.slider-control-button {
+ @apply text-claro-texto px-4 py-2 text-center
+  dark:text-oscuro-texto
+  max-sm:text-xl
+  text-2xl
+  pointer-events-auto
+}
 
 
 /* Cards Design */
@@ -159,8 +167,11 @@
   flex
   flex-wrap
   justify-center
-  gap-10
+  gap-5
   max-w-[1350px]
   m-auto
-  my-10
+
+  prose-h2:prose-xl
+  max-sm:prose-h2:prose-lg
+
 }
