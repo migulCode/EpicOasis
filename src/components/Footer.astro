@@ -1,0 +1,32 @@
+---
+import { fechaYMD } from "../utils/formatDate.js";
+---
+
+<footer
+  class="mt-12 pt-8 pb-8 px-4 border-t border-claro-borde dark:border-oscuro-borde text-claro-texto dark:text-oscuro-texto"
+>
+  <div
+    class="max-w-[1500px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4"
+  >
+    <div class="description-page text-center md:text-left">
+      <p>[log] session terminated</p>
+      <p>status: 0 - safe shutdown</p>
+      <p>env: production | version: v1.2.1 | build@{`${fechaYMD()}`}</p>
+    </div>
+    <div class="description-owner text-center md:text-right">
+      <p>
+        Elaborado con <span class="text-red-500">&#x2665;</span> por
+        <a
+          title="autor"
+          href="https://github.com/migulCode"
+          rel="noopener noreferrer"
+          class="underline hover:text-claro-texto-secundario dark:hover:text-oscuro-texto-secundario transition-colors"
+        >
+          migulCode
+        </a>
+      </p>
+      <p>[&#10003;] system ready for next launch</p>
+    </div>
+  </div>
+</footer>
+

@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 function Slider({ games }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,16 +14,14 @@ function Slider({ games }) {
         setCurrentPlatformIndex(
           (prevIndex) => (prevIndex + 1) % platforms.length
         );
-      }, 1500); // Cambia cada 1.5 segundos (ajusta según necesites)
+      }, 1500);
 
-      // Limpia el intervalo cuando el componente se desmonta o currentGame cambia
       return () => {
-        setCurrentPlatformIndex(0); // Reinicia el índice de la plataforma
+        setCurrentPlatformIndex(0);
 
         return clearInterval(intervalId);
       };
     }
-    // Dependencias: Reinicia el intervalo si el juego actual cambia o si la lista de plataformas cambia
   }, [currentIndex]);
 
   const nextSlide = () => {
@@ -47,11 +46,14 @@ function Slider({ games }) {
       <div className="carrousel-box">
         {/* Columna izquierda: Título + Descripción */}
         <AnimatePresence mode="sync">
-          <motion.div className="left-carrousel-box" key={currentGame.id}
+          <motion.div
+            className="left-carrousel-box"
+            key={currentGame.id}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: .7 }}>
+            transition={{ duration: 0.7 }}
+          >
             <motion.h2
               className="title-carrousel-box"
               initial={{ opacity: 0, y: -100 }}
@@ -63,16 +65,8 @@ function Slider({ games }) {
             </motion.h2>
 
             <motion.div>
-              <div
-                className="platform-container"
-                style={{
-                  height: "2em",
-                  overflow: "hidden",
-                  position: "relative",
-                  marginBottom: "1rem",
-                }}
-              >
-                <p className="text-bold text-xl">
+              <div className="relative h-[2rem] overflow-hidden mb-3 not-prose text-bold text-xl max-sm:text-base ">
+                <p className="">
                   Available in:
                   <AnimatePresence>
                     <motion.span
@@ -81,12 +75,7 @@ function Slider({ games }) {
                       animate={{ y: 0, opacity: 1 }} // Entra al centro y visible
                       exit={{ y: -20, opacity: 0 }} // Sale hacia arriba y transparente
                       transition={{ duration: 0.5, ease: "easeInOut" }}
-                      style={{
-                        position: "absolute",
-                        width: "100%",
-                        marginLeft: 10,
-                      }} // Posición absoluta para superponer
-                      className="platform-text" // Añade una clase para estilos si es necesario
+                      className="absolute w-full ml-3"
                     >
                       {platforms[currentPlatformIndex]?.platform?.name}
                     </motion.span>
@@ -120,18 +109,18 @@ function Slider({ games }) {
       </div>
 
       {/* Botones */}
-      <div className="slider-controls absolute w-full top-0 left-0 flex justify-between items-center gap-4 h-full pointer-events-none">
+      <div className="slider-controls">
         <button
           onClick={prevSlide}
           className="slider-control-prev slider-control-button"
         >
-          🠜
+          <ChevronLeft className="button-icon"/>
         </button>
         <button
           onClick={nextSlide}
           className="slider-control-next slider-control-button"
         >
-          🠞
+          <ChevronRight className="button-icon"/>
         </button>
       </div>
     </div>

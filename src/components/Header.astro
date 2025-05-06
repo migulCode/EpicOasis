@@ -4,60 +4,70 @@ import Eclipse from "@lucide/astro/icons/eclipse";
 ---
 
 <header
-  class="flex justify-between items-center p-4 fixed top-0 left-0 bg-transparent w-full h-[70px] z-10 dark:text-oscuro-texto text-claro-texto max-sm:h-[50px]"
+  class="fixed top-0 left-0 w-full z-10 dark:text-oscuro-texto text-claro-texto max-sm:py-0 max-sm:px-3 max-xl:px-3"
 >
   <div
-    class="flex items-center gap-4 prose-h1:prose-xl max-sm:prose-h1:prose-base font-bold"
+    class="flex justify-between items-center max-w-[1500px] mx-auto h-[70px] max-sm:h-[50px] "
   >
-    <h1 class="">EpicOasis</h1>
-  </div>
-  <div class="flex gap-6 max-sm:gap-2 font-bol max-sm:text-base">
-    <button
-      title="Click to Search"
-      class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300"
-      ><Search class="text-current" size={27} stroke-width="2" />Searcher</button
-    >
-    <button
-      id="theme-toggle"
-      title="Click to change theme"
-      class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300"
-      ><Eclipse class="text-current" size={27} stroke-width="2" />
-    </button>
+    <div class="prose-h1:prose-xl max-sm:prose-h1:prose-base font-bold">
+      <h1>EpicOasis</h1>
+    </div>
+    <div class="flex gap-6 max-sm:gap-2 font-bol max-sm:text-base">
+      <button
+        title="Click to Search"
+        class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300"
+        ><Search
+          class="text-current"
+          size={27}
+          stroke-width="2"
+        />Searcher</button
+      >
+      <button
+        id="theme-toggle"
+        title="Click to change theme"
+        class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300"
+        ><Eclipse class="text-current" size={27} stroke-width="2" />
+      </button>
+    </div>
   </div>
 </header>
 
-{/* Script para manejar el modo oscuro */}
+
 <script is:inline>
-  const themeToggle = document.getElementById('theme-toggle');
-  const localStorageKey = 'theme'; // Key para guardar en localStorage
+  const themeToggle = document.getElementById("theme-toggle");
+  const localStorageKey = "theme"; // Key para guardar en localStorage
 
   // Función para aplicar el tema (añade/quita clase 'dark' al <html> : documentElement es la raiz OSEA la etiqueta <html>)
 
   const applyTheme = (theme) => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   };
 
   // Función para obtener el tema preferido del sistema
   const getSystemPreference = () => {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
   };
 
-  console.log('System preference:', getSystemPreference());
+  console.log("System preference:", getSystemPreference());
   // Determinar y aplicar el tema inicial
   const storedTheme = localStorage.getItem(localStorageKey);
   const initialTheme = storedTheme || getSystemPreference();
   applyTheme(initialTheme);
 
   // Añadir listener al botón
-  themeToggle?.addEventListener('click', () => {
+  themeToggle?.addEventListener("click", () => {
     // Determinar el tema actual (leyendo la clase del <html>)
-    const currentTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    const currentTheme = document.documentElement.classList.contains("dark")
+      ? "dark"
+      : "light";
     // Calcular el nuevo tema
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
 
     // Aplicar el nuevo tema
     applyTheme(newTheme);
@@ -69,9 +79,10 @@ import Eclipse from "@lucide/astro/icons/eclipse";
 <style>
   /* Estilos base para el header (incluyendo los de la animación de scroll si los tenías) */
   header {
-
     backdrop-filter: blur(0px) saturate(100%);
-    transition: background-color 0.4s ease-out, backdrop-filter 0.4s ease-out;
+    transition:
+      background-color 0.4s ease-out,
+      backdrop-filter 0.4s ease-out;
     opacity: 0;
     transform: translateY(-100%);
     animation: fadeInDown 0.6s ease-out 0.2s forwards;
@@ -102,7 +113,6 @@ import Eclipse from "@lucide/astro/icons/eclipse";
     }
   };
 
-  document.addEventListener('DOMContentLoaded', updateHeaderClass);
+  document.addEventListener("DOMContentLoaded", updateHeaderClass);
   window.addEventListener("scroll", updateHeaderClass, { passive: true });
 </script>
-
