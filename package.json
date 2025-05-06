@@ -18,6 +18,7 @@
     "animejs": "^4.0.0",
     "astro": "^5.2.3",
     "axios": "^1.8.4",
+    "lucide-react": "^0.507.0",
     "motion": "^12.7.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

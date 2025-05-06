@@ -13,34 +13,51 @@
 @theme {
   --animate-loader: Loader 1s ease-in-out 1 forwards;
 
+  --animate-indicate-button: IndicateSpace 2s 0.5s ease-out 1 forwards;
+
   @keyframes Loader {
     to {
       opacity: 1;
     }
   }
+
+  @keyframes IndicateSpace {
+    /* Se establece los mismos valores para cuando este 0 y 100*/
+
+    0%,
+    100% {
+      background-color: transparent;
+      border-color: transparent;
+    }
+    50% {
+      /* Utilizamos variables locales (estas variables se crean en la clase de elementos) */
+
+      background-color: var(--indicate-bg-color);
+      border-color: var(--indicate-border-color);
+    }
+  }
 }
 
-@theme{
-  --font-jetbrains: 'JetBrains Mono', monospace;
+@theme {
+  --font-jetbrains: "JetBrains Mono", monospace;
 }
 
 /* Variables for light and dark themes */
 @theme {
-
-    --color-claro-fondo: #F6F8FA;
-    --color-claro-tarjeta: #EAEEF2;
-    --color-claro-texto: #24292F;
-    --color-claro-texto-secundario: #424A53;
-    --color-claro-borde: #D0D7DE;
-    --color-claro-icono: #6E7781;
+  --color-claro-fondo: #f3f4f6;           /* Gris claro, suave y moderno */
+  --color-claro-tarjeta: #e5e7eb;         /* Gris un poco más oscuro para tarjetas */
+  --color-claro-texto: #23272f;           /* Gris oscuro para texto principal */
+  --color-claro-texto-secundario: #6b7280;/* Gris medio para texto secundario */
+  --color-claro-borde: #d1d5db;           /* Gris claro para bordes */
+  --color-claro-icono: #4b5563;
 
   /* -variables para el tema oscuro */
-    --color-oscuro-fondo: #0F1115;
-    --color-oscuro-tarjeta: #24292F;
-    --color-oscuro-texto: #F6F8FA;
-    --color-oscuro-texto-secundario: #D0D7DE;
-    --color-oscuro-borde: #32383F;
-    --color-oscuro-icono: #AFB8C1;
+  --color-oscuro-fondo: #0f1115;
+  --color-oscuro-tarjeta: #24292f;
+  --color-oscuro-texto: #f6f8fa;
+  --color-oscuro-texto-secundario: #d0d7de;
+  --color-oscuro-borde: #32383f;
+  --color-oscuro-icono: #afb8c1;
 }
 
 /*
@@ -53,18 +70,22 @@
 
 /* Slider design */
 
+/* Los @apply son clases semanticas las cuales nos permite
+  crear clases personalizadas con las utilidades de tailwind
+  aparte permite tener un codigo mas limpio html de clases
+  y evitar el DRY (Don't Repeat Yourself)
+*/
+
 .slider-container {
   @apply relative
   h-[calc(100vh_-_70px)]
   w-full
   top-0
-  left-0
-
+  left-0;
 }
 
 .carrousel-box {
-  @apply
-  flex
+  @apply flex
   items-center
   size-full
   px-20
@@ -72,8 +93,7 @@
 }
 
 .left-carrousel-box {
-  @apply
-  flex flex-col
+  @apply flex flex-col
   xl:max-w-[700px]
   xl:my-[calc(70px_+_10px)]
   xl:ml-10
@@ -89,36 +109,30 @@
   absolute
 
 
-  max-sm:prose-h2:prose-2xl
-
+  max-sm:prose-h2:prose-2xl;
 }
 
 .title-carrousel-box {
-  @apply
-  font-bold
-  sm:text-4xl
+  @apply font-bold
+  sm:text-4xl;
 }
 
 .description-carrousel-box {
-  @apply
-  dark:text-oscuro-texto-secundario
-  max-xl:mb-30
+  @apply dark:text-oscuro-texto-secundario
+  max-xl:mb-30;
 }
 
-
 .right-carrousel-box {
-  @apply
-  absolute
+  @apply absolute
   top-0
   right-0
   h-[100vh]
   w-[100%]
-  -z-1
+  -z-1;
 }
 
 .bg-carrousel-box {
-  @apply
-  absolute
+  @apply absolute
   top-0
   left-0
   h-[110vh]
@@ -126,52 +140,94 @@
   bg-gradient-to-r from-[var(--color-claro-fondo)]  to-[rgba(255,255,255,.1)]
   max-xl:bg-gradient-to-t
   max-xl:from-50%
- dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.1)]
+ dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.1)];
 }
 
 .bg-carrousel-box-bottom {
-  @apply
-  absolute
+  @apply absolute
   top-0
   left-0
   h-[110vh]
   w-[100%]
   bg-gradient-to-t from-[var(--color-claro-fondo)] to-[rgba(255,255,255,.1)]
- dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.1)]
+ dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.1)];
 }
 
 .img-carrousel-box {
-  @apply
-  w-full
+  @apply w-full
   h-[calc(100vh_+_10vh)]
   object-cover
   object-right
   max-xl:object-center
   transition-[object-position]
-  duration-700 ease-in-out
+  duration-700 ease-in-out;
+}
+
+
+/*? Slider controls */
+
+.slider-controls{
+  @apply absolute w-full top-0 left-0 flex justify-between items-center gap-4 h-full pointer-events-none;
+
 }
 
 .slider-control-button {
- @apply text-claro-texto px-4 py-2 text-center
+  @apply text-claro-texto text-center
   dark:text-oscuro-texto
+  hover:text-gray-400
+  dark:hover:text-gray-700
+  hover:transition-colors
+  hover:duration-500
   max-sm:text-xl
-  text-2xl
   pointer-events-auto
+  border
+  border-transparent
+  h-1/2
+  w-1/16
+  max-xl:h-1/12
+  flex
+  justify-center
+  items-center
+
+  ;
+
+  --indicate-bg-color: rgba(246, 248, 250, 0.7);
+  --indicate-border-color: var(--color-claro-borde);
+
+  animation: var(--animate-indicate-button);
 }
 
+/*
+  El where nos esta diciendo que cualquier elemento padre que tenga la clase .dark
+  o si cualquier ancestro tiene la clase .dark
+  se le aplicara el estilo que sigue
+  en este caso a la clase .slider-control-button
+  se le aplicara un cambio a las variables locales
+  que se encuentran en la clase .slider-control-button
+*/
+
+:where(.dark, .dark *) .slider-control-button {
+  --indicate-bg-color: rgba(15, 17, 21, 0.7);
+  --indicate-border-color: var(--color-oscuro-borde);
+}
+
+
+.button-icon{
+  @apply size-12
+
+}
 
 /* Cards Design */
 
 .card-container {
-  @apply
-  flex
+  @apply flex
   flex-wrap
   justify-center
-  gap-5
-  max-w-[1350px]
+  gap-10
+  max-w-[1500px]
   m-auto
 
-  prose-h2:prose-xl
-  max-sm:prose-h2:prose-lg
 
+  prose-h2:prose-xl
+  max-sm:prose-h2:prose-lg;
 }
