@@ -7,15 +7,15 @@ import Eclipse from "@lucide/astro/icons/eclipse";
   class="fixed top-0 left-0 w-full z-10 dark:text-oscuro-texto text-claro-texto max-sm:py-0 max-sm:px-3 max-xl:px-3"
 >
   <div
-    class="flex justify-between items-center max-w-[1500px] mx-auto h-[70px] max-sm:h-[50px] "
+    class="flex justify-between items-center max-w-[1500px] mx-auto h-[70px] max-sm:h-[50px]"
   >
     <div class="prose-h1:prose-xl max-sm:prose-h1:prose-base font-bold">
-      <h1>EpicOasis</h1>
+      <a href="/" target="_self"><h1>EpicOasis</h1></a>
     </div>
     <div class="flex gap-6 max-sm:gap-2 font-bol max-sm:text-base">
       <button
         title="Click to Search"
-        class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300"
+        class="flex items-center gap-2 p-2 rounded-lg font-semibold bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300"
         ><Search
           class="text-current"
           size={27}
@@ -32,12 +32,9 @@ import Eclipse from "@lucide/astro/icons/eclipse";
   </div>
 </header>
 
-
 <script is:inline>
-  const themeToggle = document.getElementById("theme-toggle");
-  const localStorageKey = "theme"; // Key para guardar en localStorage
-
-  // Función para aplicar el tema (añade/quita clase 'dark' al <html> : documentElement es la raiz OSEA la etiqueta <html>)
+  const localStorageKey = "theme";
+  const themeToggle = document.getElementById("theme-toggle")
 
   const applyTheme = (theme) => {
     if (theme === "dark") {
@@ -47,33 +44,23 @@ import Eclipse from "@lucide/astro/icons/eclipse";
     }
   };
 
-  // Función para obtener el tema preferido del sistema
-  const getSystemPreference = () => {
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
+  const getSystemPreference = () =>
+    window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
-  };
 
-  console.log("System preference:", getSystemPreference());
-  // Determinar y aplicar el tema inicial
   const storedTheme = localStorage.getItem(localStorageKey);
   const initialTheme = storedTheme || getSystemPreference();
   applyTheme(initialTheme);
 
-  // Añadir listener al botón
   themeToggle?.addEventListener("click", () => {
-    // Determinar el tema actual (leyendo la clase del <html>)
     const currentTheme = document.documentElement.classList.contains("dark")
       ? "dark"
       : "light";
-    // Calcular el nuevo tema
     const newTheme = currentTheme === "dark" ? "light" : "dark";
-
-    // Aplicar el nuevo tema
     applyTheme(newTheme);
-    // Guardar la preferencia en localStorage
     localStorage.setItem(localStorageKey, newTheme);
-  });
+  })
 </script>
 
 <style>
@@ -111,8 +98,7 @@ import Eclipse from "@lucide/astro/icons/eclipse";
     } else {
       header?.classList.remove("scrolled");
     }
-  };
+  }
 
-  document.addEventListener("DOMContentLoaded", updateHeaderClass);
   window.addEventListener("scroll", updateHeaderClass, { passive: true });
 </script>

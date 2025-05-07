@@ -113,12 +113,14 @@ function Slider({ games }) {
         <button
           onClick={prevSlide}
           className="slider-control-prev slider-control-button"
+          title="Go to previous slide"
         >
           <ChevronLeft className="button-icon"/>
         </button>
         <button
           onClick={nextSlide}
           className="slider-control-next slider-control-button"
+          title="Go to next slide"
         >
           <ChevronRight className="button-icon"/>
         </button>

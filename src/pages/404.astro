@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Loading from "../components/assets/Loading.svg";
+---
+
+<Layout>
+  <div
+    class="relative min-h-screen flex flex-col items-center justify-center bg-claro-fondo dark:bg-oscuro-fondo transition-colors duration-500"
+  >
+    <div
+      class="absolute inset-0 z-0 bg-white/60 dark:bg-[#1a1d23]/60 backdrop-blur-md"
+      aria-hidden="true"
+    ></div>
+
+    <div class="relative z-10 flex flex-col items-center text-center">
+      <h1 class="text-9xl font-extrabold text-claro-texto dark:text-oscuro-texto drop-shadow-lg select-none">
+        4<Loading class="inline w-24" />4
+      </h1>
+      <p class="mt-8 text-xl text-claro-texto-secundario dark:text-oscuro-texto-secundario">
+        Oh, shit! The page you are looking for doesn't exist.
+      </p>
+      <a
+        href="/"
+        class="mt-6 px-6 py-2 rounded-lg bg-claro-tarjeta dark:bg-oscuro-tarjeta text-claro-texto dark:text-oscuro-texto font-semibold shadow hover:bg-claro-borde dark:hover:bg-oscuro-borde transition-colors"
+      >
+        Go back home
+      </a>
+    </div>
+  </div>
+</Layout>

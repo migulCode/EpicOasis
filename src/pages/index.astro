@@ -1,19 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import GameList from "../components/games/Cards.jsx";
+import GameList from "../components/games/Card.jsx";
 
 import Slider from "../components/games/Slider.jsx";
 import { allGames } from "../services/games";
 import games from "../utils/bestGames.json";
-
-const htmlToText = (html: String) => {
-  return (
-    html
-      .replace(/<[^>]*>/g, "")
-      .trim()
-      .slice(0, 300) + "..."
-  );
-};
+import { htmlToText } from "../utils/formatHTMLToString.js";
 
 const resGames = await allGames();
 
@@ -21,7 +13,7 @@ const bestGames = games.map((game) => {
   return {
     id: game.id,
     name: game.name,
-    description: htmlToText(game.description),
+    description: htmlToText(game.description).slice(0, 250) + "...",
     background_image: game.background_image,
     plataformas: game.platforms,
   };

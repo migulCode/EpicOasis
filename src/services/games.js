@@ -44,27 +44,15 @@ export const bestGames = () => {
     });
 };
 
-// por revision
+
 
 export const gameDetails = (id) => {
   return axios
     .get(`${URL_GAMES}/${id}?key=${API_KEY}`)
     .then((response) => {
-      return {
-        id: response.data.id,
-        title: response.data.slug,
-        short_description: response.data.short_description,
-        thumbnail: response.data.background_image,
-        description: response.data.description,
-        release_date: response.data.released,
-        rating: response.data.rating,
-        platforms: response.data.platforms.map(
-          (platform) => platform.platform.name
-        ),
-      };
+      return {...response.data};
     })
     .catch((error) => {
-      console.trace();
       console.log(error.message);
     });
 };
