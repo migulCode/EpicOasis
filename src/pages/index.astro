@@ -1,34 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import GameList from "../components/games/Cards.jsx";
+import GameList from "../components/games/Card.jsx";
 
 import Slider from "../components/games/Slider.jsx";
-import { allGames } from "../services/games";
+import { bestGames } from "../services/games";
 import games from "../utils/bestGames.json";
+import { htmlToText } from "../utils/formatHTMLToString.js";
 
-const htmlToText = (html: String) => {
-  return (
-    html
-      .replace(/<[^>]*>/g, "")
-      .trim()
-      .slice(0, 300) + "..."
-  );
-};
+const resBestGames = await bestGames();
 
-const resGames = await allGames();
-
-const bestGames = games.map((game) => {
+const bestGamesSlider = games.map((game) => {
   return {
-    id: game.id,
-    name: game.name,
-    description: htmlToText(game.description),
-    background_image: game.background_image,
-    plataformas: game.platforms,
-  };
-});
+    ...game,
+    description: (htmlToText(game.description).slice(0, 250) + "...")
+  }
+})
 ---
 
 <Layout>
-  <Slider client:load games={bestGames} />
-  <GameList client:load allGames={resGames} />
+  <Slider client:load games={bestGamesSlider} />
+  <GameList client:load games={resBestGames} />
 </Layout>

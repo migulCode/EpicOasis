@@ -1,5 +1,6 @@
 import axios from "axios";
 import { API_KEY } from "astro:env/server";
+import { htmlToTextCustom} from "../utils/formatHTMLToString.js";
 
 const URL_GAMES = "https://api.rawg.io/api/games";
 
@@ -18,7 +19,6 @@ export const allGames = () => {
       });
     })
     .catch((error) => {
-      console.trace();
       console.log(error.message);
     });
 };
@@ -27,44 +27,23 @@ export const allGames = () => {
 
 export const bestGames = () => {
   return axios
-    .get(`${URL_GAMES}?key=${API_KEY}&page_size=6&ordering=-rating`)
-    .then((response) => {
-      return response.data.results.map((game) => {
-        return {
-          id: game.id,
-          title: game.slug,
-          short_description: "asdadsadafaweaw",
-          thumbnail: game.background_image,
-        };
-      });
-    })
+    .get(`${URL_GAMES}?key=${API_KEY}&page_size=9&ordering=-rating&ordering=-added&tags=multiplayer`)
+    .then((response) => response.data.results)
     .catch((error) => {
-      console.trace();
       console.log(error.message);
     });
 };
 
-// por revision
 
-export const gameDetails = (id) => {
+
+export const gameDetails = (name) => {
+
   return axios
-    .get(`${URL_GAMES}/${id}?key=${API_KEY}`)
+    .get(`${URL_GAMES}/${name}?key=${API_KEY}`)
     .then((response) => {
-      return {
-        id: response.data.id,
-        title: response.data.slug,
-        short_description: response.data.short_description,
-        thumbnail: response.data.background_image,
-        description: response.data.description,
-        release_date: response.data.released,
-        rating: response.data.rating,
-        platforms: response.data.platforms.map(
-          (platform) => platform.platform.name
-        ),
-      };
+      return {...response.data, description: htmlToTextCustom(response.data.description)};
     })
     .catch((error) => {
-      console.trace();
       console.log(error.message);
     });
 };

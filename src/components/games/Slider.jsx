@@ -14,6 +14,7 @@ function Slider({ games }) {
         setCurrentPlatformIndex(
           (prevIndex) => (prevIndex + 1) % platforms.length
         );
+
       }, 1500);
 
       return () => {
@@ -39,7 +40,7 @@ function Slider({ games }) {
   }
 
   const currentGame = games[currentIndex];
-  const platforms = currentGame.plataformas || [];
+  const platforms = currentGame.platforms || [];
 
   return (
     <div className="slider-container">
@@ -92,6 +93,13 @@ function Slider({ games }) {
               >
                 {currentGame.description}
               </motion.p>
+              <a
+                href={`/game/${currentGame.slug}`}
+                className="max-xl:mb-30 inline-block mt-6 px-6 py-3 rounded-lg bg-claro-tarjeta dark:bg-oscuro-tarjeta text-claro-texto dark:text-oscuro-texto font-semibold shadow-md hover:opacity-80 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-claro-borde dark:focus:ring-oscuro-borde focus:ring-offset-2 dark:focus:ring-offset-claro-fondo"// Pequeño delay para que aparezca después de la descripción
+                title={`View details for ${currentGame.name}`}
+              >
+                View Details
+              </a>
             </motion.div>
           </motion.div>
         </AnimatePresence>
@@ -113,12 +121,14 @@ function Slider({ games }) {
         <button
           onClick={prevSlide}
           className="slider-control-prev slider-control-button"
+          title="Go to previous slide"
         >
           <ChevronLeft className="button-icon"/>
         </button>
         <button
           onClick={nextSlide}
           className="slider-control-next slider-control-button"
+          title="Go to next slide"
         >
           <ChevronRight className="button-icon"/>
         </button>
