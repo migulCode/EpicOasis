@@ -78,7 +78,8 @@
 
 .slider-container {
   @apply relative
-  h-[calc(100vh_-_70px)]
+  h-[calc(100vh_-_10vh)]
+  max-xl:h-screen
   w-full
   top-0
   left-0;
@@ -105,9 +106,7 @@
   max-xl:px-4
 
   gap-6
-
   absolute
-
 
   max-sm:prose-h2:prose-2xl;
 }
@@ -118,8 +117,7 @@
 }
 
 .description-carrousel-box {
-  @apply dark:text-oscuro-texto-secundario
-  max-xl:mb-30;
+  @apply dark:text-oscuro-texto-secundario;
 }
 
 .right-carrousel-box {
@@ -220,14 +218,18 @@
 /* Cards Design */
 
 .card-container {
+  @apply
+  prose-h2:prose-2xl
+  m-auto
+  max-w-[1500px]
+}
+
+.card-box {
   @apply flex
   flex-wrap
   justify-center
   gap-10
-  max-w-[1500px]
-  m-auto
 
-
-  prose-h2:prose-xl
+  prose-h3:prose-xl
   max-sm:prose-h2:prose-lg;
 }

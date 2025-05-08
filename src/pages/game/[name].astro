@@ -3,9 +3,8 @@ import Layout from "../../layouts/Layout.astro";
 
 import { gameDetails } from "../../services/games";
 
-
 const { name } = Astro.params;
-const game = await gameDetails(name)
+const game = await gameDetails(name);
 
 if (!game) {
   return Astro.redirect("/404");
@@ -32,9 +31,7 @@ if (!game) {
     </div>
 
     <!-- Contenido principal -->
-    <section
-      class="relative max-w-5xl mx-auto px-4 pt-80 md:pt-[380px] pb-12"
-    >
+    <section class="relative max-w-5xl mx-auto px-4 pt-80 md:pt-[380px] pb-12">
       <div
         class="bg-claro-tarjeta dark:bg-oscuro-tarjeta rounded-xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8"
       >
@@ -63,10 +60,9 @@ if (!game) {
             {game.name}
           </h1>
           <p
-            class="text-claro-texto-secundario dark:text-oscuro-texto-secundario text-base md:text-lg"
-            set:html={game.description}
-          >
-
+            class=" whitespace-pre-line text-claro-texto-secundario dark:text-oscuro-texto-secundario text-base md:text-lg"
+            >
+            {game.description}
           </p>
           <div class="flex flex-wrap gap-4 mt-2">
             <span
@@ -87,13 +83,13 @@ if (!game) {
           </div>
           <div class="flex flex-wrap gap-2 mt-4">
             {
-              game.platforms?.map(({ platform }: { platform: { name: string } }) => (
-                <span
-                  class="px-2 py-1 rounded bg-claro-borde dark:bg-oscuro-borde text-xs text-claro-texto dark:text-oscuro-texto"
-                >
-                  {platform.name}
-                </span>
-              ))
+              game.platforms?.map(
+                ({ platform }: { platform: { name: string } }) => (
+                  <span class="px-2 py-1 rounded bg-claro-borde dark:bg-oscuro-borde text-xs text-claro-texto dark:text-oscuro-texto">
+                    {platform.name}
+                  </span>
+                )
+              )
             }
           </div>
           {
