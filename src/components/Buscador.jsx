@@ -1,3 +1,4 @@
+// TODO arreglar el problema de la barra de busqueda y reorganizar el diseño
 import { useState } from "react";
 
 const App = () => {

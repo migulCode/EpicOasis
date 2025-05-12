@@ -1,6 +1,7 @@
 ---
+// TODO  revisar el diseño y el codigo generado por IA
 import Layout from "../../layouts/Layout.astro";
-import Galerie from "../../components/games/Galerie.jsx";
+import Gallery from "../../components/games/Gallery.jsx";
 
 import { gameDetails, gameScreenshots } from "../../services/games";
 
@@ -280,29 +281,13 @@ if (!game) {
         }
 
         {/* Galería de imágenes */}
-        {
-          game.screenshots && game.screenshots.length > 0 && (
-            <div class="mt-8">
-              <h3 class="text-2xl font-bold text-claro-texto dark:text-oscuro-texto mb-4">
-                Gallery
-              </h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {game.screenshots.map((screenshot) => (
-                  <div class="overflow-hidden rounded-lg border border-claro-borde dark:border-oscuro-borde bg-claro-tarjeta dark:bg-oscuro-tarjeta transition-transform hover:scale-[1.02]">
-                    <img
-                      src={screenshot.image}
-                      alt={`Screenshot of ${game.name}`}
-                      class="w-full h-auto object-cover aspect-video"
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )
-        }
-
-        <Galerie client:load screenshots={screenshots} />
+        <div class="mt-8">
+          <h3
+            class="text-2xl font-bold text-claro-texto dark:text-oscuro-texto mb-4">
+            Gallery
+          </h3>
+          <Gallery client:load screenshots={screenshots} />
+        </div>
       </div>
     </section>
   </main>

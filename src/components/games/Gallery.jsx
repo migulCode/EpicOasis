@@ -1,7 +1,9 @@
+// TODO revisar el diseño y el codigo generado por IA
+
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function Galerie({ screenshots }) {
+export default function Gallery({ screenshots }) {
   // Estado para la imagen seleccionada y el modo de pantalla completa
   const [selectedImage, setSelectedImage] = useState(
     screenshots?.[0]?.image || null
