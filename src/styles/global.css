@@ -44,12 +44,12 @@
 
 /* Variables for light and dark themes */
 @theme {
-  --color-claro-fondo: #f3f4f6;           /* Gris claro, suave y moderno */
-  --color-claro-tarjeta: #e5e7eb;         /* Gris un poco más oscuro para tarjetas */
-  --color-claro-texto: #23272f;           /* Gris oscuro para texto principal */
-  --color-claro-texto-secundario: #6b7280;/* Gris medio para texto secundario */
-  --color-claro-borde: #d1d5db;           /* Gris claro para bordes */
-  --color-claro-icono: #4b5563;
+  --color-claro-fondo: #eef2ff;           /* Fondo azul indigo muy suave */
+  --color-claro-tarjeta: #f5f7ff;         /* Tarjeta ligeramente más clara */
+  --color-claro-texto: #1e293b;           /* Texto principal azul oscuro */
+  --color-claro-texto-secundario: #334155; /* Texto secundario slate */
+  --color-claro-borde: #cbd5e1;           /* Borde con toque de azul */
+  --color-claro-icono: #3b82f6;
 
   /* -variables para el tema oscuro */
   --color-oscuro-fondo: #0f1115;
