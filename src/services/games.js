@@ -23,7 +23,6 @@ export const allGames = () => {
     });
 };
 
-// Por revision
 
 export const bestGames = () => {
   return axios
@@ -47,3 +46,14 @@ export const gameDetails = (name) => {
       console.log(error.message);
     });
 };
+
+export const gameScreenshots = (name) => {
+  return axios
+    .get(`${URL_GAMES}/${name}/screenshots?key=${API_KEY}`)
+    .then((response) => {
+      return response.data.results;
+    })
+    .catch((error) => {
+      console.log(error.message);
+    });
+}
