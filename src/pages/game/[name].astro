@@ -1,16 +1,16 @@
 ---
 // TODO  revisar el diseño y el codigo generado por IA
-import Layout from "../../layouts/Layout.astro";
-import Gallery from "../../components/games/Gallery.jsx";
+import Layout from "../../layouts/Layout.astro"
+import Gallery from "../../components/games/Gallery.jsx"
 
-import { gameDetails, gameScreenshots } from "../../services/games";
+import { gameDetails, gameScreenshots } from "../../services/games"
 
-const { name } = Astro.params;
-const game = await gameDetails(name);
-const screenshots = await gameScreenshots(name);
+const { name } = Astro.params
+const game = await gameDetails(name)
+const screenshots = await gameScreenshots(name)
 
 if (!game) {
-  return Astro.redirect("/404");
+  return Astro.redirect("/404")
 }
 // game debe ser el objeto con la estructura que diste
 ---
@@ -43,7 +43,7 @@ if (!game) {
               new Date(game.released).toLocaleDateString("en-US", {
                 year: "numeric",
                 month: "long",
-                day: "numeric",
+                day: "numeric"
               })
             }
           </p>
@@ -283,7 +283,8 @@ if (!game) {
         {/* Galería de imágenes */}
         <div class="mt-8">
           <h3
-            class="text-2xl font-bold text-claro-texto dark:text-oscuro-texto mb-4">
+            class="text-2xl font-bold text-claro-texto dark:text-oscuro-texto mb-4"
+          >
             Gallery
           </h3>
           <Gallery client:load screenshots={screenshots} />
