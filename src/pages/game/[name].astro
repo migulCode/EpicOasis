@@ -1,14 +1,14 @@
 ---
 // TODO  revisar el diseño y el codigo generado por IA
 import Layout from "../../layouts/Layout.astro"
-import Gallery from "../../components/games/Gallery.jsx"
+import Gallery from "../../components/games/Gallery.js"
+import type { Game } from "../../types/api.ts"
 
 import { gameDetails, gameScreenshots } from "../../services/games"
 
 const { name } = Astro.params
-const game = await gameDetails(name)
+const game = await gameDetails(name) as Game
 const screenshots = await gameScreenshots(name)
-
 if (!game) {
   return Astro.redirect("/404")
 }

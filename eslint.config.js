@@ -4,6 +4,7 @@ import js from "@eslint/js"
 // Importa variables globales predefinidas (browser, node, etc.)
 import globals from "globals"
 // Importa configuraciones y reglas específicas para TypeScript
+import typescript from "typescript-eslint"
 // Importa plugin para manejar archivos .astro
 import astroPlugin from "eslint-plugin-astro"
 // Importa plugin para reglas específicas de React
@@ -17,6 +18,9 @@ export default [
   // === CONFIGURACIONES BASE ===
   // Aplica las reglas recomendadas de JavaScript
   js.configs.recommended,
+
+  // Aplicar reglas para typescript
+  ...typescript.configs.recommended,
 
   // Aplica las reglas recomendadas de astro
   ...astroPlugin.configs.recommended,
@@ -74,6 +78,14 @@ export default [
   {
     // Define todos los tipos de archivos que serán verificados
     files: ["**/*.{js,mjs,cjs,ts,tsx,jsx,astro}"],
+
+    // Configuración del lenguaje y parser
+    languageOptions: {
+      // Define variables globales disponibles (window, document, etc.)
+      globals: {
+        ...globals.browser // Variables del navegador
+      }
+    },
 
     // Registra el plugin de estilo
     plugins: {

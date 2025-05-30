@@ -1,11 +1,11 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion"
+import { useEffect, useState } from "react"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 
 function Slider({ games }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-  const [currentPlatformIndex, setCurrentPlatformIndex] = useState(0);
+  const [currentPlatformIndex, setCurrentPlatformIndex] = useState(0)
 
   useEffect(() => {
     // Solo ejecuta si hay más de una plataforma
@@ -13,34 +13,34 @@ function Slider({ games }) {
       const intervalId = setInterval(() => {
         setCurrentPlatformIndex(
           (prevIndex) => (prevIndex + 1) % platforms.length
-        );
+        )
 
-      }, 1500);
+      }, 1500)
 
       return () => {
-        setCurrentPlatformIndex(0);
+        setCurrentPlatformIndex(0)
 
-        return clearInterval(intervalId);
-      };
+        return clearInterval(intervalId)
+      }
     }
-  }, [currentIndex]);
+  }, [currentIndex])
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % games.length);
-  };
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % games.length)
+  }
 
   const prevSlide = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + games.length) % games.length
-    );
-  };
-
-  if (!games || !games.length) {
-    return <div className="slider-container">No hay juegos disponibles</div>;
+    )
   }
 
-  const currentGame = games[currentIndex];
-  const platforms = currentGame.platforms || [];
+  if (!games || !games.length) {
+    return <div className="slider-container">No hay juegos disponibles</div>
+  }
+
+  const currentGame = games[currentIndex]
+  const platforms = currentGame.platforms || []
 
   return (
     <div className="slider-container">
@@ -134,7 +134,7 @@ function Slider({ games }) {
         </button>
       </div>
     </div>
-  );
+  )
 }
 
-export default Slider;
+export default Slider

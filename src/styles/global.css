@@ -29,6 +29,7 @@
       background-color: transparent;
       border-color: transparent;
     }
+
     50% {
       /* Utilizamos variables locales (estas variables se crean en la clase de elementos) */
 
@@ -44,11 +45,16 @@
 
 /* Variables for light and dark themes */
 @theme {
-  --color-claro-fondo: #eef2ff;           /* Fondo azul indigo muy suave */
-  --color-claro-tarjeta: #f5f7ff;         /* Tarjeta ligeramente más clara */
-  --color-claro-texto: #1e293b;           /* Texto principal azul oscuro */
-  --color-claro-texto-secundario: #334155; /* Texto secundario slate */
-  --color-claro-borde: #cbd5e1;           /* Borde con toque de azul */
+  --color-claro-fondo: #eef2ff;
+  /* Fondo azul indigo muy suave */
+  --color-claro-tarjeta: #f5f7ff;
+  /* Tarjeta ligeramente más clara */
+  --color-claro-texto: #1e293b;
+  /* Texto principal azul oscuro */
+  --color-claro-texto-secundario: #334155;
+  /* Texto secundario slate */
+  --color-claro-borde: #cbd5e1;
+  /* Borde con toque de azul */
   --color-claro-icono: #3b82f6;
 
   /* -variables para el tema oscuro */
@@ -77,43 +83,19 @@
 */
 
 .slider-container {
-  @apply relative
-  h-[calc(100vh_-_10vh)]
-  max-xl:h-screen
-  w-full
-  top-0
-  left-0;
+  @apply relative h-[calc(100vh_-_10vh)] max-xl:h-screen w-full top-0 left-0;
 }
 
 .carrousel-box {
-  @apply flex
-  items-center
-  size-full
-  px-20
-  max-xl:px-0
+  @apply flex items-center size-full px-20 max-xl:px-0
 }
 
 .left-carrousel-box {
-  @apply flex flex-col
-  xl:max-w-[700px]
-  xl:my-[calc(70px_+_10px)]
-  xl:ml-10
-  items-start
-  max-xl:w-[100%]
-  max-xl:justify-end
-  max-xl:items-center
-  max-xl:h-full
-  max-xl:px-4
-
-  gap-6
-  absolute
-
-  max-sm:prose-h2:prose-2xl;
+  @apply flex flex-col xl:max-w-[700px] xl:my-[calc(70px_+_10px)] xl:ml-10 items-start max-xl:w-[100%] max-xl:justify-end max-xl:items-center max-xl:h-full max-xl:px-4 gap-6 absolute max-sm:prose-h2:prose-2xl;
 }
 
 .title-carrousel-box {
-  @apply font-bold
-  sm:text-4xl;
+  @apply font-bold sm:text-4xl;
 }
 
 .description-carrousel-box {
@@ -121,73 +103,31 @@
 }
 
 .right-carrousel-box {
-  @apply absolute
-  top-0
-  right-0
-  h-[100vh]
-  w-[100%]
-  -z-1;
+  @apply absolute top-0 right-0 h-[100vh] w-[100%] -z-1;
 }
 
 .bg-carrousel-box {
-  @apply absolute
-  top-0
-  left-0
-  h-[110vh]
-  w-[100%]
-  bg-gradient-to-r from-[var(--color-claro-fondo)]  to-[rgba(255,255,255,.1)]
-  max-xl:bg-gradient-to-t
-  max-xl:from-50%
- dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.1)];
+  @apply absolute top-0 left-0 h-[110vh] w-[100%] bg-gradient-to-r from-[var(--color-claro-fondo)] to-[rgba(255, 255, 255, .1)] max-xl:bg-gradient-to-t max-xl:from-50% dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0, 0, 0, .1)];
 }
 
 .bg-carrousel-box-bottom {
-  @apply absolute
-  top-0
-  left-0
-  h-[110vh]
-  w-[100%]
-  bg-gradient-to-t from-[var(--color-claro-fondo)] to-[rgba(255,255,255,.1)]
- dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.1)];
+  @apply absolute top-0 left-0 h-[110vh] w-[100%] bg-gradient-to-t from-[var(--color-claro-fondo)] to-[rgba(255, 255, 255, .1)] dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0, 0, 0, .1)];
 }
 
 .img-carrousel-box {
-  @apply w-full
-  h-[calc(100vh_+_10vh)]
-  object-cover
-  object-right
-  max-xl:object-center
-  transition-[object-position]
-  duration-700 ease-in-out;
+  @apply w-full h-[calc(100vh_+_10vh)] object-cover object-right max-xl:object-center transition-[object-position] duration-700 ease-in-out;
 }
 
 
 /*? Slider controls */
 
-.slider-controls{
+.slider-controls {
   @apply absolute w-full top-0 left-0 flex justify-between items-center gap-4 h-full pointer-events-none;
 
 }
 
 .slider-control-button {
-  @apply text-claro-texto text-center
-  dark:text-oscuro-texto
-  hover:text-gray-400
-  dark:hover:text-gray-700
-  hover:transition-colors
-  hover:duration-500
-  max-sm:text-xl
-  pointer-events-auto
-  border
-  border-transparent
-  h-1/2
-  w-1/16
-  max-xl:h-1/12
-  flex
-  justify-center
-  items-center
-
-  ;
+  @apply text-claro-texto text-center dark:text-oscuro-texto hover:text-gray-400 dark:hover:text-gray-700 hover:transition-colors hover:duration-500 max-sm:text-xl pointer-events-auto border border-transparent h-1/2 w-1/16 max-xl:h-1/12 flex justify-center items-center;
 
   --indicate-bg-color: rgba(246, 248, 250, 0.7);
   --indicate-border-color: var(--color-claro-borde);
@@ -210,26 +150,54 @@
 }
 
 
-.button-icon{
+.button-icon {
   @apply size-12
-
 }
 
 /* Cards Design */
 
 .card-container {
-  @apply
-  prose-h2:prose-2xl
-  m-auto
-  max-w-[1500px]
+  @apply prose-h2:prose-2xl m-auto max-w-[1500px]
 }
 
 .card-box {
-  @apply flex
-  flex-wrap
-  justify-center
-  gap-10
+  @apply flex flex-wrap justify-center gap-10 prose-h3:prose-xl max-sm:prose-h2:prose-lg;
+}
 
-  prose-h3:prose-xl
-  max-sm:prose-h2:prose-lg;
+
+.scrollbar-custom {
+  /* Para Webkit (Chrome, Safari, Edge) */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.3) transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  height: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
+
+/* Tema oscuro */
+.dark .scrollbar-custom {
+  scrollbar-color: rgba(107, 114, 128, 0.4) transparent;
+}
+
+.dark .scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(107, 114, 128, 0.4);
+}
+
+.dark .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.6);
 }
