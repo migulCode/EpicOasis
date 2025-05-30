@@ -57,28 +57,27 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
   }
 
   return (
-    <div className="w-full my-8">
+    <div className="w-full ">
       {/* Imagen principal con estado de carga */}
-      <div className="w-full h-[50vh] relative mb-4 overflow-hidden bg-claro-tarjeta dark:bg-oscuro-tarjeta rounded-lg">
+      <div className="w-full h-[50vh] max-h-[500px] relative mb-4 overflow-hidden bg-claro-tarjeta dark:bg-oscuro-tarjeta rounded-lg">
         <AnimatePresence mode="wait">
           <Img src={selectedImage} key={screenshots[currentIndex].id}/>
         </AnimatePresence>
-        <button className="absolute opacity-0 z-10 size-full top-0 left-0" title="Presiona para hacerlo mas grande" onClick={() => toggleFullscreen()}></button>
+        <button className="absolute opacity-0 size-full top-0 left-0" title="Presiona para hacerlo mas grande" onClick={() => toggleFullscreen()}></button>
       </div>
 
-      {/* Thumbnails con estado de carga */}
-      <div className="w-full overflow-x-auto scrollbar-custom h-full">
-        <div className="flex gap-3 pb-2">
+
+      <div className="scrollbar-custom">
+        <div className="flex gap-4 items-center justify-start overflow-x-auto p-4">
           {screenshots.map((screenshot, index) => (
             <motion.div
               key={screenshot.id}
-              className={` mt-3.5 relative cursor-pointer rounded-lg  bg-claro-tarjeta dark:bg-oscuro-tarjeta ${
+              className={`shrink-0 relative inset-0 transition-transform duration-300 hover:scale-110 cursor-pointer rounded-lg bg-claro-tarjeta w-[170px] aspect-7/4 dark:bg-oscuro-tarjeta ${
                 selectedImage === screenshot.image
-                  ? "outline-2 outline-claro-icono dark:outline-oscuro-icono"
+                  ? "outline-2 outline-claro-icono dark:outline-oscuro-icono outline-offset-2"
                   : ""
               }`}
               onClick={() => handleSelectImage(screenshot.image, index)}
-              whileHover={{ scale: 1.05 }}
             >
               <Img src={screenshot.image} key={screenshot.image} />
             </motion.div>
@@ -87,37 +86,30 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
       </div>
 
       {/* Fullscreen Mode */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {isFullscreen && (
           <motion.div
-            className="fixed inset-0 z-50 bg-claro-fondo/95 dark:bg-oscuro-fondo/95 flex items-center justify-center"
+            className="fixed inset-0 z-10 bg-claro-fondo/95 dark:bg-oscuro-fondo/95 flex items-center justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
+
             <motion.div
-              className="relative w-[90vw] h-[90vh] flex flex-col items-center justify-center"
-              layoutId="featured-image"
+              className="relative top-0 left-0 z-20 w-[90vw] h-[90vh] size-full flex flex-col items-center justify-center"
             >
 
-
-              <motion.img
-                src={selectedImage}
-                alt="Featured screenshot fullscreen"
-                className="max-w-full max-h-full object-contain"
-              />
-
               <button
-                className="absolute top-4 right-4 bg-claro-borde/70 dark:bg-oscuro-borde/70 rounded-full p-3 text-claro-texto dark:text-oscuro-texto hover:bg-claro-borde dark:hover:bg-oscuro-borde transition-colors"
-                onClick={toggleFullscreen}
+                className="absolute top-2 right-2 md:top-4 md:right-4 z-30 bg-[var(--color-claro-tarjeta)]/95 dark:bg-[var(--color-oscuro-tarjeta)]/90 hover:bg-[var(--color-claro-borde)]/60 dark:hover:bg-[var(--color-oscuro-icono)]/20 backdrop-blur-sm rounded-lg p-1.5 md:p-2 transition-colors duration-200 shadow-sm border border-[var(--color-claro-borde)] dark:border-[var(--color-oscuro-borde)]"
+                title="Cerrar pantalla completa"
+                onClick={() => toggleFullscreen()}
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="w-4 h-4 md:w-5 md:h-5 text-[var(--color-claro-texto)] dark:text-[var(--color-oscuro-icono)]"
                   fill="none"
-                  viewBox="0 0 24 24"
                   stroke="currentColor"
+                  viewBox="0 0 24 24"
                 >
                   <path
                     strokeLinecap="round"
@@ -128,22 +120,36 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
                 </svg>
               </button>
 
+              <motion.img
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 1.05 }}
+                key={`fullscreen-${selectedImage}`}
+                transition={{
+                  duration: 0.3
+                }}
+                src={selectedImage}
+                alt="Featured screenshot fullscreen"
+                className="max-w-full max-h-full object-contain w-full h-full"
+              />
+
+
               <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-5">
                 {screenshots.map((screenshot, index) => (
                   <motion.div
-                    key={`fullscreen-${screenshot.id || index}`}
-                    className={`w-7 h-4 rounded-full cursor-pointer
+                    key={`fullscreen-${screenshot.id}`}
+                    className={`w-7 h-4 rounded-full cursor-pointer hover:scale-125 transition-transform duration-300 outline-2 outline-claro-icono dark:outline-oscuro-icono outline-offset-2
                                ${index === currentIndex
                     ? "bg-claro-icono dark:bg-oscuro-icono"
                     : "bg-claro-borde dark:bg-oscuro-borde"
                   }`}
                     onClick={() => handleSelectImage(screenshot.image, index)}
-                    whileHover={{ scale: 1.2 }}
                   />
                 ))}
               </div>
             </motion.div>
           </motion.div>
+
         )}
       </AnimatePresence>
     </div>

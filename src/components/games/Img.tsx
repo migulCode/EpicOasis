@@ -60,6 +60,7 @@ export default function Img({ src }: { src: string }) {
         alt="Game Image"
         className="w-full h-full object-cover rounded-lg"
         initial={{ opacity: 0, scale: 0.95 }}
+        loading="lazy"
         animate={{
           opacity: loadImage ? 1 : 0,
           scale: loadImage ? 1 : 0.95
