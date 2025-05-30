@@ -1,13 +1,13 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import GameList from "../components/games/Card.jsx";
+import Layout from "../layouts/Layout.astro"
+import GameList from "../components/games/Card.jsx"
 
-import Slider from "../components/games/Slider.jsx";
-import { bestGames } from "../services/games";
-import games from "../utils/bestGames.json";
-import { htmlToText } from "../utils/formatHTMLToString.js";
+import Slider from "../components/games/Slider.jsx"
+import { bestGames } from "../services/games"
+import games from "../utils/bestGames.json"
+import { htmlToText } from "../utils/formatHTMLToString.js"
 
-const resBestGames = await bestGames();
+const resBestGames = await bestGames()
 
 const bestGamesSlider = games.map((game) => {
   return {

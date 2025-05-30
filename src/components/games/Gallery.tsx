@@ -4,8 +4,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import type { Screenshot } from "../../types/api.ts"
 import Img from "./Img.jsx"
 
-import "../../styles/util.css"
-
 export default function Gallery({ screenshots } : { screenshots: Screenshot[] }) {
 
   // Estado para la imagen seleccionada y el modo de pantalla completa
