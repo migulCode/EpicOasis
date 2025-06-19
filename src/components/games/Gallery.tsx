@@ -29,6 +29,18 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
     return () => clearInterval(interval)
   }, [screenshots, isFullscreen, selectedImage])
 
+  useEffect(() => {
+    if (isFullscreen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    // Limpieza por si el componente se desmonta con fullscreen activo
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [isFullscreen])
+
   // Actualiza la imagen seleccionada cuando cambia el índice actual
   useEffect(() => {
     if (screenshots && screenshots[currentIndex]) {
@@ -57,13 +69,13 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
   }
 
   return (
-    <div className="w-full ">
+    <div className="w-full">
       {/* Imagen principal con estado de carga */}
-      <div className="w-full h-[50vh] max-h-[500px] relative mb-4 overflow-hidden bg-claro-tarjeta dark:bg-oscuro-tarjeta rounded-lg">
+      <div className="w-full h-[50vh] max-h-[500px] relative mb-4 overflow-hidden bg-claro-tarjeta dark:bg-oscuro-tarjeta rounded-lg ">
         <AnimatePresence mode="wait">
           <Img src={selectedImage} key={screenshots[currentIndex].id}/>
         </AnimatePresence>
-        <button className="absolute opacity-0 size-full top-0 left-0" title="Presiona para hacerlo mas grande" onClick={() => toggleFullscreen()}></button>
+        <button className="absolute opacity-0 size-full top-0 left-0 cursor-pointer" title="Press to make it fullscreen" onClick={() => toggleFullscreen()}></button>
       </div>
 
 
@@ -101,8 +113,8 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
             >
 
               <button
-                className="absolute top-2 right-2 md:top-4 md:right-4 z-30 bg-[var(--color-claro-tarjeta)]/95 dark:bg-[var(--color-oscuro-tarjeta)]/90 hover:bg-[var(--color-claro-borde)]/60 dark:hover:bg-[var(--color-oscuro-icono)]/20 backdrop-blur-sm rounded-lg p-1.5 md:p-2 transition-colors duration-200 shadow-sm border border-[var(--color-claro-borde)] dark:border-[var(--color-oscuro-borde)]"
-                title="Cerrar pantalla completa"
+                className="absolute top-2 right-2 md:top-4 md:right-4 z-30 bg-[var(--color-claro-tarjeta)]/95 dark:bg-[var(--color-oscuro-tarjeta)]/90 hover:bg-[var(--color-claro-borde)]/60 dark:hover:bg-[var(--color-oscuro-icono)]/20 backdrop-blur-sm rounded-lg p-1.5 md:p-2 transition-colors duration-200 shadow-sm border border-[var(--color-claro-borde)] dark:border-[var(--color-oscuro-borde)] cursor-pointer"
+                title="Close fullscreen"
                 onClick={() => toggleFullscreen()}
               >
                 <svg
@@ -138,7 +150,7 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
                 {screenshots.map((screenshot, index) => (
                   <motion.div
                     key={`fullscreen-${screenshot.id}`}
-                    className={`w-7 h-4 rounded-full cursor-pointer hover:scale-125 transition-transform duration-300 outline-2 outline-claro-icono dark:outline-oscuro-icono outline-offset-2
+                    className={`size-4 rounded-full cursor-pointer hover:scale-125 transition-transform duration-300 outline-2 outline-claro-icono dark:outline-oscuro-icono outline-offset-2
                                ${index === currentIndex
                     ? "bg-claro-icono dark:bg-oscuro-icono"
                     : "bg-claro-borde dark:bg-oscuro-borde"

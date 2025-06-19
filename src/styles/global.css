@@ -13,43 +13,28 @@
 @theme {
   --animate-loader: Loader 1s ease-in-out 1 forwards;
 
-  --animate-indicate-button: IndicateSpace 2s 0.5s ease-out 1 forwards;
-
   @keyframes Loader {
     to {
       opacity: 1;
     }
   }
 
-  @keyframes IndicateSpace {
-    /* Se establece los mismos valores para cuando este 0 y 100*/
-
-    0%,
-    100% {
-      background-color: transparent;
-      border-color: transparent;
-    }
-    50% {
-      /* Utilizamos variables locales (estas variables se crean en la clase de elementos) */
-
-      background-color: var(--indicate-bg-color);
-      border-color: var(--indicate-border-color);
-    }
-  }
 }
 
-@theme {
-  --font-jetbrains: "JetBrains Mono", monospace;
-}
 
 /* Variables for light and dark themes */
 @theme {
-  --color-claro-fondo: #eef2ff;           /* Fondo azul indigo muy suave */
-  --color-claro-tarjeta: #f5f7ff;         /* Tarjeta ligeramente más clara */
-  --color-claro-texto: #1e293b;           /* Texto principal azul oscuro */
-  --color-claro-texto-secundario: #334155; /* Texto secundario slate */
-  --color-claro-borde: #cbd5e1;           /* Borde con toque de azul */
-  --color-claro-icono: #475569;
+
+  --font-jetbrains: "JetBrains Mono", monospace;
+
+  --color-claro-fondo: #3E2323;          /* Fondo oscuro, zapote muy oscuro */
+  --color-claro-tarjeta: #4A2C2C;        /* Tarjeta, un poco más clara que el fondo */
+  --color-claro-texto: #F2E9E4;          /* Texto claro, beige rosado */
+  --color-claro-texto-secundario: #E5D1CB;/* Texto secundario, beige rosado */
+  --color-claro-borde: #7A3535;          /* Borde, zapote muy oscuro */
+  --color-claro-icono: #E26D5A;
+  --color-claro-enlace: #e07a5f;      /* Enlace tema claro: berenjena */
+
 
   /* -variables para el tema oscuro */
   --color-oscuro-fondo: #0f1115;
@@ -58,6 +43,7 @@
   --color-oscuro-texto-secundario: #d0d7de;
   --color-oscuro-borde: #32383f;
   --color-oscuro-icono: #afb8c1;
+  --color-oscuro-enlace: #f4a259;     /* Enlace tema oscuro: salmón pastel */
 }
 
 /*
@@ -104,7 +90,6 @@
   max-xl:items-center
   max-xl:h-full
   max-xl:px-4
-
   gap-6
   absolute
 
@@ -113,11 +98,11 @@
 
 .title-carrousel-box {
   @apply font-bold
-  sm:text-4xl;
+  sm:text-4xl
 }
 
 .description-carrousel-box {
-  @apply dark:text-oscuro-texto-secundario;
+  @apply dark:text-oscuro-texto-secundario text-claro-texto-secundario;
 }
 
 .right-carrousel-box {
@@ -185,14 +170,8 @@
   max-xl:h-1/12
   flex
   justify-center
-  items-center
+  items-center;
 
-  ;
-
-  --indicate-bg-color: rgba(246, 248, 250, 0.7);
-  --indicate-border-color: var(--color-claro-borde);
-
-  animation: var(--animate-indicate-button);
 }
 
 /*
@@ -202,13 +181,12 @@
   en este caso a la clase .slider-control-button
   se le aplicara un cambio a las variables locales
   que se encuentran en la clase .slider-control-button
-*/
 
-:where(.dark, .dark *) .slider-control-button {
+  :where(.dark, .dark *) .slider-control-button {
   --indicate-bg-color: rgba(15, 17, 21, 0.7);
   --indicate-border-color: var(--color-oscuro-borde);
 }
-
+*/
 
 .button-icon{
   @apply size-12
