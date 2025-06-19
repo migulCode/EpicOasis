@@ -31,7 +31,7 @@ function List({ games }) {
           ))}
       </div>
     </section>
-  );
+  )
 }
 
-export default List;
+export default List
