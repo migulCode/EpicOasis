@@ -4,7 +4,7 @@ import Eclipse from "@lucide/astro/icons/eclipse"
 ---
 
 <header
-  class="fixed top-0 left-0 w-full z-10 dark:text-oscuro-texto text-claro-texto max-sm:py-0 max-sm:px-3 max-xl:px-3"
+  class="fixed top-0 left-0 w-full z-1 dark:text-oscuro-texto text-claro-texto max-sm:py-0 max-sm:px-3 max-xl:px-3"
 >
   <div
     class="flex justify-between items-center max-w-[1500px] mx-auto h-[70px] max-sm:h-[50px]"
@@ -15,7 +15,7 @@ import Eclipse from "@lucide/astro/icons/eclipse"
     <div class="flex gap-6 max-sm:gap-2 font-bol max-sm:text-base">
       <button
         title="Click to Search"
-        class="flex items-center gap-2 p-2 rounded-lg font-semibold bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300 cursor-pointer"
+        class="flex items-center gap-2 p-2 rounded-lg font-semibold bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300 cursor-pointer border-1 border-claro-borde dark:border-oscuro-borde"
       ><Search
           class="text-current"
           size={27}
@@ -25,7 +25,7 @@ import Eclipse from "@lucide/astro/icons/eclipse"
       <button
         id="theme-toggle"
         title="Click to change theme"
-        class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300 cursor-pointer "
+        class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300 cursor-pointer border-1 border-claro-borde dark:border-oscuro-borde"
       ><Eclipse class="text-current" size={27} stroke-width="2" />
       </button>
     </div>

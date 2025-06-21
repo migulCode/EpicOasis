@@ -56,3 +56,12 @@ export const gameScreenshots = (name) => {
       console.log(error.message)
     })
 }
+
+export const searchGames = (name = "a") => {
+  return axios
+    .get(`${URL_GAMES}?key=${API_KEY}&search=${name}}`)
+    .then((response) => response.data)
+    .catch(error => {
+      console.log(error)
+    })
+}

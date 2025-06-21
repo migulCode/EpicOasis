@@ -99,6 +99,7 @@
 .title-carrousel-box {
   @apply font-bold
   sm:text-4xl
+  text-center
 }
 
 .description-carrousel-box {
