@@ -13,6 +13,8 @@ export const GET: APIRoute = async ({ request }) => {
 
     const getGames = await searchGames(getName)
 
+    delete getGames.next
+
     return new Response(JSON.stringify(getGames), {
       status: 200,
       statusText: "OK!",
