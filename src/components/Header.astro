@@ -1,10 +1,11 @@
 ---
 import Search from "@lucide/astro/icons/search"
-import Eclipse from "@lucide/astro/icons/eclipse"
+import SunMoon from "@lucide/astro/icons/sun-moon"
+import Searcher from "./Searcher.jsx"
 ---
 
 <header
-  class="fixed top-0 left-0 w-full z-10 dark:text-oscuro-texto text-claro-texto max-sm:py-0 max-sm:px-3 max-xl:px-3"
+  class="fixed top-0 left-0 w-full z-1 dark:text-oscuro-texto text-claro-texto max-sm:py-0 max-sm:px-3 max-xl:px-3"
 >
   <div
     class="flex justify-between items-center max-w-[1500px] mx-auto h-[70px] max-sm:h-[50px]"
@@ -15,7 +16,8 @@ import Eclipse from "@lucide/astro/icons/eclipse"
     <div class="flex gap-6 max-sm:gap-2 font-bol max-sm:text-base">
       <button
         title="Click to Search"
-        class="flex items-center gap-2 p-2 rounded-lg font-semibold bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300 cursor-pointer"
+        class="flex items-center gap-2 p-2 rounded-lg font-semibold bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300 cursor-pointer border-1 border-claro-borde dark:border-oscuro-borde"
+        id="open-searcher"
       ><Search
           class="text-current"
           size={27}
@@ -25,12 +27,39 @@ import Eclipse from "@lucide/astro/icons/eclipse"
       <button
         id="theme-toggle"
         title="Click to change theme"
-        class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300 cursor-pointer "
-      ><Eclipse class="text-current" size={27} stroke-width="2" />
+        class="flex items-center gap-2 p-2 rounded-lg bg-claro-fondo dark:bg-oscuro-fondo hover:bg-claro-fondo/80 dark:hover:bg-oscuro-fondo/80 transition-colors duration-300 cursor-pointer border-1 border-claro-borde dark:border-oscuro-borde"
+      ><SunMoon class="text-current" size={27} stroke-width="2" />
       </button>
     </div>
   </div>
 </header>
+<Searcher client:load />
+
+
+<style>
+
+  header {
+    backdrop-filter: blur(0px) saturate(100%);
+    transition:
+      background-color 0.4s ease-out,
+      backdrop-filter 0.4s ease-out;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: fadeInDown 0.6s ease-out 0.2s forwards;
+  }
+
+  header.scrolled {
+    background-color: rgba(150, 150, 150, 0.15);
+    backdrop-filter: blur(8px) saturate(180%);
+  }
+
+  @keyframes fadeInDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
 
 <script is:inline>
 const localStorageKey = "theme"
@@ -63,31 +92,6 @@ themeToggle?.addEventListener("click", () => {
 })
 </script>
 
-<style>
-
-  header {
-    backdrop-filter: blur(0px) saturate(100%);
-    transition:
-      background-color 0.4s ease-out,
-      backdrop-filter 0.4s ease-out;
-    opacity: 0;
-    transform: translateY(-100%);
-    animation: fadeInDown 0.6s ease-out 0.2s forwards;
-  }
-
-  header.scrolled {
-    background-color: rgba(150, 150, 150, 0.15);
-    backdrop-filter: blur(8px) saturate(180%);
-  }
-
-  @keyframes fadeInDown {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>
-
 <script is:inline>
 const header = document.querySelector("header")
 const scrollThreshold = 10
@@ -101,4 +105,14 @@ const updateHeaderClass = () => {
 }
 
 window.addEventListener("scroll", updateHeaderClass, { passive: true })
+</script>
+
+<script is:inline >
+const openSearcherButton = document.querySelector("#open-searcher")
+const searcher = document.querySelector("#searcher")
+
+openSearcherButton.addEventListener("click", () => {
+  searcher.classList.remove("hidden")
+  document.body.style.overflow = "hidden"
+})
 </script>

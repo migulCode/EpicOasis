@@ -95,7 +95,7 @@ function Slider({ games }) {
               </motion.p>
               <a
                 href={`/game/${currentGame.slug}`}
-                className="max-xl:mb-30 inline-block mt-6 px-6 py-3 rounded-lg bg-claro-tarjeta dark:bg-oscuro-tarjeta text-claro-texto dark:text-oscuro-texto font-semibold shadow-md hover:opacity-80 transition-opacity duration-300 focus:outline-none focus:ring-2 focus:ring-claro-borde dark:focus:ring-oscuro-borde focus:ring-offset-2 dark:focus:ring-offset-claro-fondo"// Pequeño delay para que aparezca después de la descripción
+                className="max-xl:mb-30 inline-block mt-6 px-6 py-3 rounded-lg bg-claro-tarjeta dark:bg-oscuro-tarjeta text-claro-texto dark:text-oscuro-texto font-semibold shadow-md hover:opacity-80 transition-opacity duration-300 focus:outline-none focus:ring-2  border-1 border-claro-borde dark:border-oscuro-borde"// Pequeño delay para que aparezca después de la descripción
                 title={`View details for ${currentGame.name}`}
               >
                 View Details

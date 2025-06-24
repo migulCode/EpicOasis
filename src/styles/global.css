@@ -2,6 +2,7 @@
 @plugin '@tailwindcss/typography';
 @custom-variant dark (&:where(.dark, .dark *));
 
+
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
@@ -20,7 +21,6 @@
   }
 
 }
-
 
 /* Variables for light and dark themes */
 @theme {
@@ -99,6 +99,7 @@
 .title-carrousel-box {
   @apply font-bold
   sm:text-4xl
+  text-center
 }
 
 .description-carrousel-box {

@@ -83,7 +83,7 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
         <div className="flex gap-4 items-center justify-start overflow-x-auto p-4">
           {screenshots.map((screenshot, index) => (
             <motion.div
-              key={screenshot.id}
+              key={screenshot.image}
               className={`shrink-0 relative inset-0 transition-transform duration-300 hover:scale-110 cursor-pointer rounded-lg bg-claro-tarjeta w-[170px] aspect-7/4 dark:bg-oscuro-tarjeta ${
                 selectedImage === screenshot.image
                   ? "outline-2 outline-claro-icono dark:outline-oscuro-icono outline-offset-2"
@@ -91,7 +91,7 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
               }`}
               onClick={() => handleSelectImage(screenshot.image, index)}
             >
-              <Img src={screenshot.image} key={screenshot.image} />
+              <Img src={screenshot.image} key={screenshot.id} />
             </motion.div>
           ))}
         </div>
