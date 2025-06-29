@@ -2,14 +2,13 @@ import { motion } from "motion/react"
 import type { GameSearchResult } from "../../types/result"
 import GameCard from "./GameCard"
 
-
-// --- Componente Principal de Resultados ---
 export default function Results({ games }: { games: GameSearchResult }) {
+
 
   if (!games) {
     return (
-      <div className="text-center py-20 max-w-[1300px] mx-auto">
-        <p className="text-xl text-claro-texto-secundario dark:text-oscuro-texto-secundario">Search for a game to get started.</p>
+      <div className="text-center py-20">
+        <p className="text-claro-texto-secundario dark:text-oscuro-texto-secundario">Search for a game to get started.</p>
       </div>
     )
   }

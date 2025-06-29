@@ -1,7 +1,8 @@
+import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { useState, useEffect, memo } from "react"
 
-function Img({ src }: { src: string }) {
+export default function Img({ src, isDown, hasClass } : { src: string, isDown: boolean, hasClass: boolean }) {
+
   const [imageStatus, setImageStatus] = useState<"loading" | "loaded" | "error">("loading")
 
   useEffect(() => {
@@ -34,16 +35,15 @@ function Img({ src }: { src: string }) {
   }, [src])
 
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-lg">
+    <div className={`relative  ${isDown ? "-z-1" : "mb-3 w-full aspect-94/53 min-h-50"} `}>
       {/* Imagen principal */}
       <motion.img
         src={src}
         alt="Game Image"
-        className="w-full h-full object-cover"
-        initial={{ opacity: 0, scale: 0.95 }}
+        className={`${hasClass ? "img-carrousel-box" : "object-cover size-full rounded-lg"}`}
+        initial={{ opacity: 0 }}
         animate={{
-          opacity: imageStatus === "loaded" ? 1 : 0,
-          scale: imageStatus === "loaded" ? 1 : 0.95
+          opacity: imageStatus === "loaded" ? 1 : 0
         }}
         transition={{ duration: 0.3, ease: "easeOut" }}
         loading="lazy"
@@ -53,11 +53,11 @@ function Img({ src }: { src: string }) {
       <AnimatePresence>
         {imageStatus === "loading" && (
           <motion.div
-            className="absolute inset-0 z-10 flex items-center justify-center"
+            className={`absolute inset-0 z-10 flex items-center justify-center ${hasClass ? "img-carrousel-box" : ""}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, transition: { duration: 0.2 } }}
-            transition={{ duration: 0.15 }}
+            transition={{ duration: 0.5 }}
           >
             <div className="relative">
               <motion.div
@@ -74,7 +74,7 @@ function Img({ src }: { src: string }) {
       <AnimatePresence>
         {imageStatus === "error" && (
           <motion.div
-            className="absolute inset-0 z-10 bg-claro-tarjeta dark:bg-oscuro-tarjeta flex items-center justify-center"
+            className={`absolute inset-0 z-10 bg-claro-tarjeta dark:bg-oscuro-tarjeta flex items-center justify-center ${hasClass ? "img-carrousel-box" : ""}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2 }}
@@ -87,6 +87,5 @@ function Img({ src }: { src: string }) {
       </AnimatePresence>
     </div>
   )
-}
 
-export default memo(Img)
+}

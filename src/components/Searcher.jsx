@@ -1,4 +1,3 @@
-// TODO arreglar el problema de la barra de busqueda y reorganizar el diseño
 import { useState, useEffect, useMemo } from "react"
 import Results from "./searcher/Results"
 import { motion } from "motion/react"

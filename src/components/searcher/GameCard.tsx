@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import type { Game } from "../../types/result.ts"
+import type { Game } from "../../types/result.d"
 
 
 export default function GameCard({ game }: { game: Game }) {

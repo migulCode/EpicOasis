@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import Img from "./MainImg"
 
 function Slider({ games }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -104,14 +105,14 @@ function Slider({ games }) {
           </motion.div>
         </AnimatePresence>
 
-        {/* Columna derecha: Imagen */}
+        {/* Imagen */}
         <div className="right-carrousel-box">
           <div className="bg-carrousel-box"></div>
           <div className="bg-carrousel-box-bottom"></div>
-          <img
+          <Img
             src={currentGame.background_image}
-            alt={currentGame.name}
-            className="img-carrousel-box"
+            isDown={true}
+            hasClass={true}
           />
         </div>
       </div>

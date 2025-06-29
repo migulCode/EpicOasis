@@ -1,7 +1,7 @@
 // TODO revisar el diseño y el codigo generado por IA
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import type { Screenshot } from "../../types/api.ts"
+import type { Screenshot } from "../../types/api"
 import Img from "./Img.jsx"
 
 export default function Gallery({ screenshots } : { screenshots: Screenshot[] }) {

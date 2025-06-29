@@ -1,3 +1,5 @@
+import Img from "./MainImg.jsx"
+
 function List({ games }) {
   return (
     <section className="card-container prose-h2:prose-xl max-sm:prose-h2:prose-base">
@@ -11,14 +13,12 @@ function List({ games }) {
               key={game.id}
               style={{ animation: `var(--animate-loader) ${index * 0.1}s` }}
               title={game.name}
-              className="flex flex-col items-center border-1 p-3 min-w-[300px] max-w-[400px] bg-claro-tarjeta border-claro-borde dark:bg-oscuro-tarjeta dark:border-oscuro-borde rounded-lg shadow-md max-md:w-[90%] max-md:min-w-none max-md:max-w-[600px] opacity-0 prose-a:prose-xl"
+              className=" flex flex-col items-center border-1 p-3 min-w-[300px] max-w-[400px] bg-claro-tarjeta border-claro-borde dark:bg-oscuro-tarjeta dark:border-oscuro-borde rounded-lg shadow-md max-md:w-[90%] max-md:min-w-none max-md:max-w-[600px] opacity-0 prose-a:prose-xl"
             >
-              <figure className="mt-auto mb-3 w-full aspect-94/53 min-h-50">
-                <img
-                  className="size-full object-cover object-top"
-                  loading="lazy"
+              <figure className="">
+
+                <Img
                   src={game.background_image}
-                  alt={game.name}
                 />
               </figure>
               <a
