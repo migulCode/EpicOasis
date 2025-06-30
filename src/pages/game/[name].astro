@@ -1,17 +1,16 @@
 ---
 import Layout from "../../layouts/Layout.astro"
 import Gallery from "../../components/games/Gallery.js"
-import type { Game } from "../../types/api.d"
-
 import { gameDetails, gameScreenshots } from "../../services/games"
 
+import type { GameDetail } from "../../types/APIResult"
+
 const { name } = Astro.params
-const game = await gameDetails(name) as Game
+const game = await gameDetails(name) as GameDetail
 const screenshots = await gameScreenshots(name)
 if (!game) {
   return Astro.redirect("/404")
 }
-// game debe ser el objeto con la estructura que diste
 ---
 
 <Layout>

@@ -60,13 +60,13 @@ const Searcher = () => {
   ] : "#E5D1CB"
 
   return (
-    <div className="fixed size-full z-1 inset-0 bg-claro-fondo dark:bg-oscuro-fondo overflow-auto hidden scrollbar-custom" id="searcher">
+    <div className="fixed size-full z-1 inset-0 bg-claro-fondo dark:bg-oscuro-fondo overflow-auto hidden scrollbar-custom not-prose" id="searcher">
       <form
         autoComplete="off"
-        className="flex flex-row items-center  h-22"
+        className="flex flex-row items-center h-20"
         onSubmit={e => e.preventDefault()}>
         <input
-          className="flex-grow outline-none placeholder:pl-1 pl-4 text-2xl h-full"
+          className="flex-grow outline-none placeholder:pl-1 pl-4 text-xl h-full"
           type="text"
           name="search"
           onChange={handlerWrite}
@@ -75,20 +75,21 @@ const Searcher = () => {
         />
         <button
           key={nameGame}
-          className="p-5 cursor-pointer h-full"
+          className="p-5 cursor-pointer h-full max-sm:p-1"
+          title="Close search"
           onClick={handlerCloseWindow}>
           <SquareX
             size={40}
-            strokeWidth="2"
+            strokeWidth="1.5"
           />
         </button>
       </form>
       <motion.div
         key={nameGame}
-        className="h-1"
+        className="h-[3px]"
         style={{ width: nameGame ? "0" : "100%" }}
         animate={{ width: "100%", backgroundColor: rainbowColors,
-          transition: { duration: 2, backgroundColor: { repeat: isLoading ? Infinity : 0, duration: isLoading ? 3 : 1 } } }}> </motion.div>
+          transition: { duration: 2, backgroundColor: { repeat: isLoading ? Infinity : 0, duration: isLoading ? 3 : 0 } } }}> </motion.div>
 
 
       {memoizedResults}

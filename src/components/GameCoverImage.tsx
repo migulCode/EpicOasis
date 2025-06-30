@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
-export default function Img({ src, isDown, hasClass } : { src: string, isDown: boolean, hasClass: boolean }) {
+export default function Img({ src, isDown, hasClass } : { src: string, isDown?: boolean, hasClass?: boolean }) {
 
   const [imageStatus, setImageStatus] = useState<"loading" | "loaded" | "error">("loading")
 
@@ -35,12 +35,12 @@ export default function Img({ src, isDown, hasClass } : { src: string, isDown: b
   }, [src])
 
   return (
-    <div className={`relative  ${isDown ? "-z-1" : "mb-3 w-full aspect-94/53 min-h-50"} `}>
+    <div className={`relative bg-claro-fondo dark:bg-oscuro-tarjeta ${isDown ? "-z-1" : "mb-3 w-full aspect-94/53 min-h-50 rounded-lg overflow-hidden"} `}>
       {/* Imagen principal */}
       <motion.img
         src={src}
         alt="Game Image"
-        className={`${hasClass ? "img-carrousel-box" : "object-cover size-full rounded-lg"}`}
+        className={`${hasClass ? "img-carrousel-box" : "object-cover size-full"}`}
         initial={{ opacity: 0 }}
         animate={{
           opacity: imageStatus === "loaded" ? 1 : 0
@@ -74,7 +74,7 @@ export default function Img({ src, isDown, hasClass } : { src: string, isDown: b
       <AnimatePresence>
         {imageStatus === "error" && (
           <motion.div
-            className={`absolute inset-0 z-10 bg-claro-tarjeta dark:bg-oscuro-tarjeta flex items-center justify-center ${hasClass ? "img-carrousel-box" : ""}`}
+            className={`absolute inset-0 z-10 flex items-center justify-center ${hasClass ? "img-carrousel-box" : ""}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2 }}

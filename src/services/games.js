@@ -1,28 +1,10 @@
 import axios from "axios"
 import { API_KEY } from "astro:env/server"
-import { htmlToTextCustom } from "../utils/formatHTMLToString.js"
+import { htmlToTextCustom } from "../utils/formatHTMLToString.ts"
 
 const URL_GAMES = "https://api.rawg.io/api/games"
 
-export const allGames = () => {
-  return axios
-    .get(`${URL_GAMES}?key=${API_KEY}`)
-    .then((response) => {
-      return response.data.results.map((game) => {
-        return {
-          id: game.id,
-          title: game.name,
-          thumbnail: game.background_image
-        }
-      })
-    })
-    .catch((error) => {
-      console.log(error.message)
-    })
-}
-
-
-export const bestGames = () => {
+export const TopRatedGames = () => {
   return axios
     .get(`${URL_GAMES}?key=${API_KEY}&page_size=9&ordering=-rating&ordering=-added&tags=multiplayer`)
     .then((response) => response.data.results)
@@ -31,9 +13,7 @@ export const bestGames = () => {
     })
 }
 
-
 export const gameDetails = (name) => {
-
   return axios
     .get(`${URL_GAMES}/${name}?key=${API_KEY}`)
     .then((response) => {
@@ -48,6 +28,7 @@ export const gameScreenshots = (name) => {
   return axios
     .get(`${URL_GAMES}/${name}/screenshots?key=${API_KEY}`)
     .then((response) => {
+
       return response.data.results
     })
     .catch((error) => {
@@ -55,7 +36,7 @@ export const gameScreenshots = (name) => {
     })
 }
 
-export const searchGames = (name = "a") => {
+export const searchGames = (name = "") => {
   return axios
     .get(`${URL_GAMES}?key=${API_KEY}&search=${name}}`)
     .then((response) => response.data)

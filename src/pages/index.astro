@@ -1,23 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import GameList from "../components/Card.jsx"
+import GameList from "../components/Card.js"
+import Slider from "../components/Slider.tsx"
+import { TopRatedGames } from "../services/games"
+import bestGames from "../utils/bestGames.json"
+import truncateDescription from "../utils/truncateDescription.ts"
 
-import Slider from "../components/Slider.jsx"
-import { bestGames } from "../services/games"
-import games from "../utils/bestGames.json"
-import { htmlToText } from "../utils/formatHTMLToString.js"
+import type { GameDetail } from "../types/APIResult"
 
-const resBestGames = await bestGames()
+const resTopRatedGames = await TopRatedGames()
 
-const bestGamesSlider = games.map((game) => {
+const bestGamesWithShortenedDescription : GameDetail[] = bestGames.map((game : any) => { // eslint-disable-line @ts-
   return {
     ...game,
-    description: (htmlToText(game.description).slice(0, 250) + "...")
+    description: truncateDescription(game.description, 250)
   }
 })
 ---
 
 <Layout>
-  <Slider client:load games={bestGamesSlider} />
-  <GameList client:load games={resBestGames} />
+  <Slider client:load gamesDetail={bestGamesWithShortenedDescription} />
+  <GameList client:load games={resTopRatedGames} />
 </Layout>

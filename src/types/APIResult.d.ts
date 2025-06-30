@@ -1,3 +1,5 @@
+import type { number, string } from "astro:schema"
+
 // Interfaz para plataforma individual
 interface Platform {
   id: number
@@ -72,6 +74,33 @@ interface Genre {
   slug: string
 }
 
+// Interfaz para plataforma con requisitos (nueva)
+interface PlatformWithRequirements {
+  platform: Platform
+  released_at: string
+  requirements?: {
+    minimum?: string
+    recommended?: string
+  }
+}
+
+// Interfaz para puntuación de Metacritic por plataforma
+interface MetacriticPlatform {
+  metascore: number
+  url: string
+}
+
+
+interface Developer {
+  id: number
+  name: string
+  slug: string
+  games_count: number
+  image_background?: string
+}
+
+type Publisher = Developer
+
 // Interfaz para un juego individual
 export interface Game {
   slug: string
@@ -107,6 +136,36 @@ export interface Game {
   genres: Genre[]
 }
 
+// GameDetail extendido con campos únicos de Welcome
+export interface GameDetail extends Game {
+  name_original: string
+  description: string
+  description_raw?: string
+  background_image_additional?: string
+  website?: string
+  metacritic_platforms?: MetacriticPlatform[]
+  screenshots_count: number
+  movies_count?: number
+  creators_count?: number
+  achievements_count?: number
+  parent_achievements_count?: number
+  reddit_url?: string
+  reddit_name?: string
+  reddit_description?: string
+  reddit_logo?: string
+  reddit_count?: number
+  twitch_count?: number
+  youtube_count?: number
+  metacritic_url?: string
+  parents_count?: number
+  additions_count?: number
+  game_series_count?: number
+  alternative_names?: string[]
+  platforms: PlatformWithRequirements[]
+  developers: Developer[]
+  publishers: Publisher[]
+}
+
 // Interfaz principal para la respuesta de la API
 export interface GameSearchResult {
   count: number
@@ -114,4 +173,13 @@ export interface GameSearchResult {
   previous: string | null
   results: Game[]
   user_platforms: boolean
+}
+
+
+export interface Screenshot {
+  id: number
+  image: string
+  width: number
+  height: number
+  is_deleted: boolean
 }
