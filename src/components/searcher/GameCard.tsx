@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import type { Game } from "../../types/result.ts"
+import type { Game } from "../../types/APIResult"
 
 
 export default function GameCard({ game }: { game: Game }) {
@@ -9,7 +9,7 @@ export default function GameCard({ game }: { game: Game }) {
     <motion.div
       layout // Permite animaciones suaves si la lista se reordena
       className="relative aspect-[3/4] w-full overflow-hidden rounded-xl shadow-lg group cursor-pointer"
-      onClick={() => window.open(`../game/${game.slug}`, "_blank")}
+      onClick={() => window.open(`../game/${game.slug}`, "_self")}
     >
       {/* Imagen de fondo */}
       <img

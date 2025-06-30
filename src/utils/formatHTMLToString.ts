@@ -1,10 +1,10 @@
 //! Evitemos el XSS :D
 
-export const htmlToText = (html) => {
+export const htmlToText = (html : string) => {
   return html.replace(/<[^>]*>/g, "").trim()
 }
 
-export const htmlToTextCustom = (html) => {
+export const htmlToTextCustom = (html : string) => {
   const brMarker = "---BR_MARKER_ONLY---" // Marcador temporal para los saltos de línea
 
   let text = html.replace(/<br\s*\/?>/gi, brMarker) // Reemplazar <br /> por el marcador

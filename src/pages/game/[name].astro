@@ -1,18 +1,16 @@
 ---
-// TODO  revisar el diseño y el codigo generado por IA
 import Layout from "../../layouts/Layout.astro"
 import Gallery from "../../components/games/Gallery.js"
-import type { Game } from "../../types/api.ts"
-
 import { gameDetails, gameScreenshots } from "../../services/games"
 
+import type { GameDetail } from "../../types/APIResult"
+
 const { name } = Astro.params
-const game = await gameDetails(name) as Game
+const game = await gameDetails(name) as GameDetail
 const screenshots = await gameScreenshots(name)
 if (!game) {
   return Astro.redirect("/404")
 }
-// game debe ser el objeto con la estructura que diste
 ---
 
 <Layout>
@@ -199,7 +197,7 @@ if (!game) {
                       href={game.website}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="text-claro-enlace dark:text-oscuro-enlace underline hover:text-claro-enlace/70 dark:hover:text-oscuro-enlace/70 transition-colors text-sm block mt-1"
+                      class="text-claro-enlace dark:text-oscuro-enlace underline hover:text-claro-enlace/70 dark:hover:text-oscuro-enlace/70 transition-colors text-sm block mt-1 truncate"
                     >
                       {game.website}
                     </a>

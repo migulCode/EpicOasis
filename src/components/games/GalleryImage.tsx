@@ -89,5 +89,4 @@ function Img({ src }: { src: string }) {
   )
 }
 
-// ✅ CLAVE: Memoizar para evitar re-renders innecesarios
 export default memo(Img)

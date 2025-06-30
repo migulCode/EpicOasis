@@ -1,11 +1,15 @@
 import { motion, AnimatePresence } from "framer-motion"
 import { useEffect, useState } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import Img from "./GameCoverImage"
+import type { GameDetail } from "../types/APIResult"
 
-function Slider({ games }) {
+function Slider({ gamesDetail }: { gamesDetail: GameDetail[] }) {
   const [currentIndex, setCurrentIndex] = useState(0)
-
   const [currentPlatformIndex, setCurrentPlatformIndex] = useState(0)
+
+  const currentGame = gamesDetail[currentIndex]
+  const platforms = currentGame.platforms || []
 
   useEffect(() => {
     // Solo ejecuta si hay más de una plataforma
@@ -26,21 +30,19 @@ function Slider({ games }) {
   }, [currentIndex])
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % games.length)
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % gamesDetail.length)
   }
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + games.length) % games.length
+      (prevIndex) => (prevIndex - 1 + gamesDetail.length) % gamesDetail.length
     )
   }
 
-  if (!games || !games.length) {
+  if (!gamesDetail || !gamesDetail.length) {
     return <div className="slider-container">No hay juegos disponibles</div>
   }
 
-  const currentGame = games[currentIndex]
-  const platforms = currentGame.platforms || []
 
   return (
     <div className="slider-container">
@@ -104,14 +106,14 @@ function Slider({ games }) {
           </motion.div>
         </AnimatePresence>
 
-        {/* Columna derecha: Imagen */}
+        {/* Imagen */}
         <div className="right-carrousel-box">
           <div className="bg-carrousel-box"></div>
           <div className="bg-carrousel-box-bottom"></div>
-          <img
+          <Img
             src={currentGame.background_image}
-            alt={currentGame.name}
-            className="img-carrousel-box"
+            isDown={true}
+            hasClass={true}
           />
         </div>
       </div>
