@@ -64,7 +64,7 @@
 
 .slider-container {
   @apply relative
-  h-[calc(100vh_-_10vh)]
+  h-[calc(100lvh_-_10lvh)]
   max-xl:h-screen
   w-full
   top-0
@@ -110,7 +110,7 @@
   @apply absolute
   top-0
   right-0
-  h-[100vh]
+  h-[100lvh]
   w-[100%]
   -z-1;
 }
@@ -119,7 +119,7 @@
   @apply absolute
   top-0
   left-0
-  h-[110vh]
+  h-[110lvh]
   w-[100%]
   bg-gradient-to-r from-[var(--color-claro-fondo)]  to-[rgba(255,255,255,.1)]
   max-xl:bg-gradient-to-t
@@ -131,7 +131,7 @@
   @apply absolute
   top-0
   left-0
-  h-[110vh]
+  h-[110lvh]
   w-[100%]
   bg-gradient-to-t from-[var(--color-claro-fondo)] to-[rgba(255,255,255,.1)]
  dark:from-[var(--color-oscuro-fondo)] dark:to-[rgba(0,0,0,.1)];
@@ -139,7 +139,7 @@
 
 .img-carrousel-box {
   @apply w-full
-  h-[calc(100vh_+_10vh)]
+  h-[calc(100lvh_+_10lvh)]
   object-cover
   object-right
   max-xl:object-center

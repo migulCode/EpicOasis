@@ -70,7 +70,7 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
   return (
     <div className="w-full">
       {/* Imagen principal con estado de carga */}
-      <div className="w-full h-[50vh] max-h-[500px] relative mb-4 overflow-hidden bg-claro-tarjeta dark:bg-oscuro-tarjeta rounded-lg ">
+      <div className="w-full h-[50lvh] max-h-[500px] relative mb-4 overflow-hidden bg-claro-tarjeta dark:bg-oscuro-tarjeta rounded-lg ">
         <AnimatePresence mode="wait">
           <Img src={selectedImage} key={screenshots[currentIndex].id}/>
         </AnimatePresence>
@@ -108,7 +108,7 @@ export default function Gallery({ screenshots } : { screenshots: Screenshot[] })
           >
 
             <motion.div
-              className="relative top-0 left-0 z-20 w-[90vw] h-[90vh] size-full flex flex-col items-center justify-center"
+              className="relative top-0 left-0 z-20 w-[90vw] h-[90lvh] size-full flex flex-col items-center justify-center"
             >
 
               <button
