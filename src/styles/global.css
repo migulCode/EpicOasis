@@ -25,15 +25,15 @@
 /* Variables for light and dark themes */
 @theme {
 
-  --font-jetbrains: "JetBrains Mono", monospace;
+  --font-jetbrains: "JetBrains Mono", Ubuntu, Arial, monospace;
 
-  --color-claro-fondo: #3E2323;          /* Fondo oscuro, zapote muy oscuro */
-  --color-claro-tarjeta: #4A2C2C;        /* Tarjeta, un poco más clara que el fondo */
-  --color-claro-texto: #F2E9E4;          /* Texto claro, beige rosado */
-  --color-claro-texto-secundario: #E5D1CB;/* Texto secundario, beige rosado */
-  --color-claro-borde: #7A3535;          /* Borde, zapote muy oscuro */
-  --color-claro-icono: #E26D5A;
-  --color-claro-enlace: #e07a5f;      /* Enlace tema claro: berenjena */
+  --color-claro-fondo: #f5f6fb;
+  --color-claro-tarjeta: #ffffff;
+  --color-claro-texto: #1f2933;
+  --color-claro-texto-secundario: #4b5563;
+  --color-claro-borde: #d1d5db;
+  --color-claro-icono: #6b7280;
+  --color-claro-enlace: #2563eb;
 
 
   /* -variables para el tema oscuro */

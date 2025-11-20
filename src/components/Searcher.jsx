@@ -25,7 +25,7 @@ const Searcher = () => {
           setGame("")
         })
         .finally(() => setIsLoading(false))
-    }, 2000)
+    }, 1000)
 
     return () => clearTimeout(timeout)
   }, [nameGame])
@@ -45,18 +45,11 @@ const Searcher = () => {
   }
 
   const rainbowColors = isLoading ? [
-    "#ff0000", // Rojo
     "#ff8000", // Naranja
     "#ffff00", // Amarillo
     "#80ff00", // Verde lima
-    "#00ff00", // Verde
-    "#00ff80", // Verde agua
     "#00ffff", // Cian
-    "#0080ff", // Azul cielo
-    "#0000ff", // Azul
-    "#8000ff", // Violeta
-    "#ff00ff", // Magenta
-    "#ff0080" // Rosa
+    "#0080ff" // Azul cielo
   ] : "#E5D1CB"
 
   return (
@@ -89,7 +82,7 @@ const Searcher = () => {
         className="h-[3px]"
         style={{ width: nameGame ? "0" : "100%" }}
         animate={{ width: "100%", backgroundColor: rainbowColors,
-          transition: { duration: 2, backgroundColor: { repeat: isLoading ? Infinity : 0, duration: isLoading ? 3 : 0 } } }}> </motion.div>
+          transition: { duration: 1, backgroundColor: { repeat: isLoading ? Infinity : 0, duration: isLoading ? 3 : 0 } } }}> </motion.div>
 
 
       {memoizedResults}
